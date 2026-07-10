@@ -49,9 +49,9 @@ jobs:
           ALPACA_SECRET_KEY: ${{ inputs.agent_id == 'hermes' && secrets.ALPACA_SECRET_KEY_HERMES || inputs.agent_id == 'helios' && secrets.ALPACA_SECRET_KEY_HELIOS || inputs.agent_id == 'eris' && secrets.ALPACA_SECRET_KEY_ERIS || secrets.ALPACA_SECRET_KEY }}
           GEMINI_API_KEY: ${{ inputs.agent_id == 'hermes' && secrets.GEMINI_API_KEY_HERMES || inputs.agent_id == 'helios' && secrets.GEMINI_API_KEY_HELIOS || inputs.agent_id == 'eris' && secrets.GEMINI_API_KEY_ERIS || secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_2: ${{ inputs.agent_id == 'hermes' && secrets.GEMINI_API_KEY_HERMES_2 || inputs.agent_id == 'helios' && secrets.GEMINI_API_KEY_HELIOS_2 || inputs.agent_id == 'eris' && secrets.GEMINI_API_KEY_ERIS_2 || secrets.GEMINI_API_KEY_2 }}
-          # Eris has no dedicated Groq secret — falls through to the shared
-          # secrets.GROQ_API_KEY, same as Plutus itself.
-          GROQ_API_KEY: ${{ inputs.agent_id == 'hermes' && secrets.GROK_API_KEY_2 || inputs.agent_id == 'helios' && secrets.GROQ_API_KEY_HELIOS || secrets.GROQ_API_KEY }}
+          # Eris has no dedicated Groq secret — shares Hermes's GROK_API_KEY_2,
+          # same pairing as Plutus/Helios sharing GROQ_API_KEY.
+          GROQ_API_KEY: ${{ (inputs.agent_id == 'hermes' || inputs.agent_id == 'eris') && secrets.GROK_API_KEY_2 || inputs.agent_id == 'helios' && secrets.GROQ_API_KEY_HELIOS || secrets.GROQ_API_KEY }}
           EXTRA_CONTEXT: ${{ inputs.extra_context }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}

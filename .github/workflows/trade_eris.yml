@@ -40,10 +40,10 @@ jobs:
       ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY_ERIS }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_ERIS }}
       GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_ERIS_2 }}
-      # No dedicated Groq key for Eris — reuses Plutus's shared GROQ_API_KEY
-      # as the final Gemini-quota-exhausted fallback, same secret Plutus
-      # itself falls through to.
-      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      # No dedicated Groq key for Eris — shares Hermes's GROK_API_KEY_2 as
+      # the final Gemini-quota-exhausted fallback, same pairing as
+      # Plutus/Helios sharing GROQ_API_KEY.
+      GROQ_API_KEY: ${{ secrets.GROK_API_KEY_2 }}
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       NOTIFY_SECRET: ${{ secrets.NOTIFY_SECRET }}
