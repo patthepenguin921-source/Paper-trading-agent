@@ -1,0 +1,37 @@
+name: Backfill Agent History From Alpaca
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent_id:
+        description: "Which agent to backfill"
+        required: true
+        default: "eris"
+        type: choice
+        options:
+          - plutus
+          - helios
+          - hermes
+          - eris
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Backfill history from Alpaca portfolio history
+        env:
+          AGENT_ID: ${{ inputs.agent_id }}
+          ALPACA_API_KEY: ${{ inputs.agent_id == 'hermes' && secrets.ALPACA_API_KEY_HERMES || inputs.agent_id == 'helios' && secrets.ALPACA_API_KEY_HELIOS || inputs.agent_id == 'eris' && secrets.ALPACA_API_KEY_ERIS || secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ inputs.agent_id == 'hermes' && secrets.ALPACA_SECRET_KEY_HERMES || inputs.agent_id == 'helios' && secrets.ALPACA_SECRET_KEY_HELIOS || inputs.agent_id == 'eris' && secrets.ALPACA_SECRET_KEY_ERIS || secrets.ALPACA_SECRET_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: PYTHONPATH=. python scripts/backfill_history.py

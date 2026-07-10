@@ -1,0 +1,28 @@
+name: CI
+
+# Runs the pytest suite on every PR/push — previously nothing checked the
+# code before it traded. Covers the pure risk/sizing logic (_enforce_caps,
+# _canonical_symbol, _account_state_anomaly, schedule.market_phase); see
+# tests/ for details.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Run tests
+        run: PYTHONPATH=. pytest -v

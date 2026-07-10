@@ -1,0 +1,53 @@
+name: Hermes Trading Bot (news-catalyst / event-driven)
+
+on:
+  # Triggered by a Supabase pg_cron job ('hermes-trigger') — see trade.yml
+  # for why this no longer uses GitHub's native `schedule:` trigger.
+  # Intended cadence is every 15 minutes during market hours, same as
+  # Plutus/Helios (see instructions_hermes.md and schedule.py); regardless
+  # of how often this external trigger actually fires, main.py itself now
+  # self-throttles real decision runs to ~15 minutes apart via
+  # ai_agent.should_throttle_cadence(), so a faster or misconfigured
+  # trigger can no longer burn through Gemini/Groq quota or cause
+  # more-frequent-than-intended trading.
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Internal: set to 'schedule' by the Supabase cron caller. Leave blank for a manual run."
+        required: false
+
+concurrency:
+  group: trade-hermes
+  # Cadence throttling (should_throttle_cadence) reads then writes Supabase,
+  # which is racy if two runs for the same agent overlap (e.g. a manual dispatch
+  # landing mid-cron-run) — both can read "last run was N minutes ago" and both
+  # proceed, causing double orders. This serializes runs per agent instead:
+  # cancel-in-progress: false means an in-flight run always finishes, and only
+  # the single most recent queued trigger survives behind it.
+  cancel-in-progress: false
+
+jobs:
+  trade:
+    uses: ./.github/workflows/_reusable-trade.yml
+    with:
+      agent_id: hermes
+      run_trigger: ${{ github.event.inputs.source || github.event_name }}
+    secrets:
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY_HERMES }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY_HERMES }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_HERMES }}
+      GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_HERMES_2 }}
+      # NOTE: this references GROK_API_KEY_2 (typo'd, pre-existing) rather
+      # than a Hermes-suffixed Groq secret — preserved as-is rather than
+      # silently "corrected" to a secret name that may not actually exist.
+      GROQ_API_KEY: ${{ secrets.GROK_API_KEY_2 }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      NOTIFY_SECRET: ${{ secrets.NOTIFY_SECRET }}
+      # Reddit OAuth app credentials (script-type app at reddit.com/prefs/apps).
+      # Without these, the Reddit sentiment fetch falls back to the public
+      # .json endpoints, which 403 all GitHub Actions IPs — i.e. Reddit
+      # sentiment silently doesn't happen at all. Empty until the secrets
+      # are added.
+      REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+      REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}

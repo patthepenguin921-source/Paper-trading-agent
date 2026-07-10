@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+
+# Run artifacts — these used to be committed to the repo root by workflows
+# (test-gemini.yml, manual-order.yml, check-positions.yml, cancel-orders.yml).
+# They now upload as GitHub Actions artifacts instead; see those workflow
+# files' "Upload result" steps.
+last_cancel_result.json
+last_gemini_test.json
+last_order_result.json
+last_positions_check.json
