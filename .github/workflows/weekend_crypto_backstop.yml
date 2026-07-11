@@ -46,4 +46,4 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           NOTIFY_SECRET: ${{ secrets.NOTIFY_SECRET }}
-        run: python scripts/weekend_crypto_backstop.py
+        run: PYTHONPATH=. python scripts/weekend_crypto_backstop.py
