@@ -462,6 +462,55 @@ def _log_positions(context: dict):
         print(f"Could not update positions snapshot ({e}) — non-fatal.")
 
 
+def _log_open_orders():
+    """
+    Replaces this agent's stored open-orders snapshot (agent_open_orders)
+    with what Alpaca reports right now. The agents have managed GTC limit
+    orders since the 2026-07-09 changes, and those orders silently reserve
+    shares and cash — but until this existed they were only visible inside
+    each run's prompt context, never to the dashboard. Called after each
+    run's own orders have been submitted so the snapshot reflects
+    post-trade reality.
+
+    Plain delete-then-insert rather than _log_positions' upsert-then-prune:
+    nothing else writes this table (snapshot.py doesn't touch it), and the
+    per-agent workflow concurrency groups already prevent two of the same
+    agent's runs from overlapping. Best-effort — a logging failure here
+    must never block or fail a trading run.
+    """
+    try:
+        orders = ac.get_open_orders_summary()
+        requests.delete(
+            f"{SUPABASE_URL}/rest/v1/agent_open_orders",
+            headers=_supabase_headers(),
+            params={"agent_id": f"eq.{config.AGENT_ID}"},
+            timeout=15,
+        ).raise_for_status()
+        if not orders:
+            return
+        rows = [
+            {
+                "agent_id": config.AGENT_ID,
+                "symbol": o["symbol"],
+                "side": o.get("side"),
+                "order_type": o.get("order_type"),
+                "qty": o.get("qty"),
+                "notional": o.get("notional"),
+                "limit_price": o.get("limit_price"),
+                "age_minutes": o.get("age_minutes"),
+            }
+            for o in orders
+        ]
+        requests.post(
+            f"{SUPABASE_URL}/rest/v1/agent_open_orders",
+            headers={**_supabase_headers(), "Prefer": "return=minimal"},
+            json=rows,
+            timeout=15,
+        ).raise_for_status()
+    except Exception as e:
+        print(f"Could not update open-orders snapshot ({e}) — non-fatal.")
+
+
 _RECENT_TRADES_LOOKBACK_DAYS = 14
 _RECENT_TRADES_LIMIT = 20
 

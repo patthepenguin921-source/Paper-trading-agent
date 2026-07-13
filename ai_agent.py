@@ -63,7 +63,7 @@ from store import (  # noqa: F401
     _minutes_since_last_real_run, should_throttle_cadence,
     _daily_missed_opportunities, _build_daily_report, _log_daily_report,
     _supabase_headers, _notify, _log_run, _log_decisions, _refresh_account_state,
-    log_idle, _log_positions, _recent_trade_outcomes, _confidence_calibration,
+    log_idle, _log_positions, _log_open_orders, _recent_trade_outcomes, _confidence_calibration,
     _minutes_since_last_buy,
 )
 
@@ -751,6 +751,7 @@ def run(extra_context: str = ""):
             print(f"Could not refresh post-trade account state ({e}); logging pre-trade snapshot instead.")
             post_context = context
         _log_positions(post_context)
+        _log_open_orders()
 
         run_id = _log_run(market_open, post_context, overall_reasoning, error=None, news_context=news_context)
         _log_decisions(run_id, decisions)
@@ -844,6 +845,7 @@ def run_premarket_review(extra_context: str = ""):
             print(f"Could not refresh post-trade account state ({e}); logging pre-trade snapshot instead.")
             post_context = context
         _log_positions(post_context)
+        _log_open_orders()
 
         run_id = _log_run(market_open=False, context=post_context, overall_reasoning=overall_reasoning,
                            error=None, news_context=news_context)
@@ -961,6 +963,7 @@ def run_crypto_afterhours(extra_context: str = ""):
             print(f"Could not refresh post-trade account state ({e}); logging pre-trade snapshot instead.")
             post_context = context
         _log_positions(post_context)
+        _log_open_orders()
 
         run_id = _log_run(market_open=False, context=post_context, overall_reasoning=overall_reasoning,
                            error=None, news_context=news_context)
