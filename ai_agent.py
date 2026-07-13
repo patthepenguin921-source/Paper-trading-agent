@@ -345,9 +345,12 @@ def _build_decision_prompt(context: dict, news_context: str | None,
         'Alpaca — no margin, no shorting, ever. A "short"/"cover" decision on one of '
         "those is simply rejected regardless of your shorting setting; only "
         '"buy"/"sell" apply to them, and both can be fractional/notional. Crypto '
-        "trades 24/7, but you're only actually run on the same schedule as your "
-        "equity trading (market hours plus the pre-market review) — you won't see "
-        "or act on crypto moves that happen during your own overnight pause."
+        "trades 24/7: this market-hours run covers it alongside your meme stocks, "
+        "and a separate off-hours/weekend decision cycle (crypto-only — see "
+        "run_crypto_afterhours) covers the nights, weekends, and holidays this run "
+        "doesn't. You do get real, ongoing eyes on it outside market hours now — "
+        "just from a different run than this one, so don't assume a position sat "
+        "unwatched just because it moved while the equity market was closed."
         if has_crypto else ""
     )
 
@@ -864,16 +867,133 @@ def run_premarket_review(extra_context: str = ""):
         raise
 
 
+_OFFHOURS_CRYPTO_FRAMING = """
+
+## This is an off-hours/weekend crypto-only decision run
+Equity markets are closed right now, so only your crypto pairs (formatted
+"BASE/USD") can actually execute this run — any buy/sell decision on a meme
+stock is rejected in code, so don't spend a decision on one. Crypto trades
+24/7 on Alpaca; this run exists specifically so you get a real, ongoing
+decision cycle on it overnight and on weekends instead of only reacting
+once your market-hours run picks back up.
+"""
+
+
+def run_crypto_afterhours(extra_context: str = ""):
+    """
+    Off-hours/weekend counterpart to run(): until now, the equity-market-
+    hours run (run(), triggered by trade_eris.yml's Supabase-scheduled
+    cron) was the only place any agent's crypto leg ever got a real trading
+    decision, even though crypto trades 24/7 on Alpaca — nights, weekends,
+    and holidays got nothing but the stop-loss disaster brake (see
+    run_weekend_crypto_backstop below). This is the real thing: the full AI
+    decision cycle, restricted in code to crypto-only symbols
+    (_enforce_caps' restrict_to_crypto=True) since equity markets are
+    actually closed and any equity order here would be premature.
+
+    Only meaningful for an agent with at least one crypto symbol in its
+    universe (currently only Eris) — a no-op otherwise, so this is safe to
+    wire into main.py's dispatch for every agent rather than special-casing
+    which ones call it.
+
+    Invoked from main.py's "quiet" phase branch, which is in turn reached
+    both by the regular Supabase-triggered dispatch (on the rare tick that
+    lands just as the market closes/reopens) and by
+    crypto_afterhours_trade.yml's own independent schedule — the latter is
+    what actually guarantees this runs on a real cadence overnight and on
+    weekends, since the Supabase cron is itself scoped to market hours.
+    """
+    if not any(ac.is_crypto(s) for s in config.AGENT["universe"]):
+        print(f"{config.AGENT['label']} has no crypto in its universe — nothing to do off-hours.")
+        return
+
+    context = None
+    news_context = None
+    overall_reasoning = ""
+    try:
+        _cancel_stale_orders()
+        context = _build_context()
+        print(
+            f"Off-hours crypto context built: {len(context['watchlist'])} watchlist symbols, "
+            f"{len(context['held_positions'])} held."
+        )
+
+        anomaly = _account_state_anomaly(context)
+        if anomaly:
+            print(anomaly)
+            _log_run(market_open=False, context=context, overall_reasoning="", error=anomaly, news_context=None)
+            _notify("Skipped off-hours crypto run on bad account data", anomaly[:200])
+            return
+
+        stop_loss_decisions = _apply_stop_loss_backstop(crypto_only=True)
+        if stop_loss_decisions:
+            # Rebuild so the model reasons from the post-close state instead
+            # of seeing a position the backstop just liquidated.
+            context = _build_context()
+
+        news_context, news_age_minutes = _get_news_context()
+
+        manual_framing = (
+            f"\n\n## Manual context from Carter (injected for this run only)\n{extra_context}\n"
+            if extra_context else ""
+        )
+
+        ai_response = _call_model(
+            context, news_context,
+            extra_framing=_OFFHOURS_CRYPTO_FRAMING + manual_framing,
+            news_age_minutes=news_age_minutes,
+        )
+        overall_reasoning = ai_response.get("overall_reasoning", "")
+        decisions = ai_response.get("decisions", [])
+
+        held_long_symbols = {s for s, p in context["held_positions"].items() if p["side"] == "long"}
+        decisions = _enforce_caps(
+            decisions, context, ac.get_pending_buy_info(),
+            ac.get_pending_short_info(held_long_symbols),
+            restrict_to_crypto=True,
+        )
+        _execute(decisions)
+        decisions = stop_loss_decisions + decisions
+
+        try:
+            post_context = _refresh_account_state()
+        except Exception as e:
+            print(f"Could not refresh post-trade account state ({e}); logging pre-trade snapshot instead.")
+            post_context = context
+        _log_positions(post_context)
+
+        run_id = _log_run(market_open=False, context=post_context, overall_reasoning=overall_reasoning,
+                           error=None, news_context=news_context)
+        _log_decisions(run_id, decisions)
+
+        print(f"Off-hours crypto run complete. Reasoning: {overall_reasoning}")
+        for d in decisions:
+            print(f"  {d['symbol']}: {d['action']} -> {d.get('order_status')} | {d.get('reasoning', '')}")
+
+        executed = [d for d in decisions if d.get("order_id")]
+        if executed:
+            summary = ", ".join(f"{d['action'].upper()} {_notify_size(d)} {d['symbol']}" for d in executed)
+            _notify("made an off-hours crypto move", summary)
+
+    except Exception as e:
+        safe_msg = _safe_str(e)
+        print(f"Off-hours crypto run failed: {safe_msg}")
+        _log_run(market_open=False, context=context, overall_reasoning=overall_reasoning,
+                 error=safe_msg, news_context=news_context)
+        _notify("Off-hours crypto run failed", safe_msg[:200])
+        raise
+
+
 def run_weekend_crypto_backstop():
     """
-    No-AI, crypto-only sweep of _apply_stop_loss_backstop(). Crypto trades
-    24/7 on Alpaca, but every other entry point into this module (run(),
-    run_premarket_review()) is only ever called from main.py's
-    equity-market-hours gate — so a memecoin position can sit unguarded
-    from Friday ~5pm ET, when the last active_window run happens, until
-    Monday's pre-market review picks it up again. This exists to run
-    independently of that gate (see weekend_crypto_backstop.yml) so the
-    per-position stop-loss cap still fires over the weekend.
+    No-AI, crypto-only sweep of _apply_stop_loss_backstop(). Independent,
+    faster-cadence (every 3h, see weekend_crypto_backstop.yml) safety net
+    that sits alongside run_crypto_afterhours() above rather than
+    replacing it: if a real off-hours decision cycle is ever delayed or
+    fails outright (a bad Gemini/Alpaca API day, a workflow bug like the
+    one this repo already hit once — see git history), a position that's
+    blown through the loss cap still doesn't have to wait for the next
+    successful decision run to get closed.
 
     Deliberately does not call the model or build the full decision
     context — this is purely the disaster brake, not a trading run.

@@ -1,0 +1,66 @@
+name: Crypto After-Hours Trading (Eris)
+
+# Crypto trades 24/7 on Alpaca, but Eris' regular decision cycle
+# (trade_eris.yml) is only ever invoked by a Supabase pg_cron job scoped to
+# equity-market hours — main.py's phase dispatch was never actually reached
+# outside that window, so nights, weekends, and holidays got nothing but
+# the stop-loss disaster brake (weekend_crypto_backstop.yml). This workflow
+# closes that gap the simple way: fire main.py itself, 24/7, on a schedule
+# independent of the Supabase trigger, and let main.py's own zoneinfo-aware
+# market_phase()/is_market_open() checks (not brittle fixed-UTC cron-time
+# math — see schedule.py) decide what to actually do:
+#
+#   - active_window / pre_market_review: main.py runs its normal path,
+#     which should_throttle_cadence() already dedupes against whatever the
+#     Supabase-triggered run just did — worst case this adds one cheap,
+#     throttled-away Alpaca clock check during market hours, no extra
+#     Gemini calls or duplicate orders.
+#   - quiet (nights, weekends, holidays): main.py now runs
+#     ai_agent.run_crypto_afterhours() — a real AI decision cycle
+#     restricted in code to crypto-only symbols — instead of doing
+#     nothing, which is the actual point of this workflow.
+#
+# Uses GitHub's native `schedule:` trigger. trade.yml moved away from this
+# for the equities cadence after it never once fired reliably on this repo,
+# but weekend_crypto_backstop.yml's `schedule:` cron has since fired
+# reliably on its own 3-hourly weekend schedule (see its run history), so
+# the same mechanism is used here rather than adding a second Supabase cron
+# job for a schedule this irregular.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Internal: leave blank for a manual test run (bypasses cadence throttling)."
+        required: false
+
+concurrency:
+  # Same group as trade_eris.yml on purpose — both ultimately invoke
+  # main.py for the same Eris account, and should_throttle_cadence's own
+  # Supabase read-then-write is racy under real overlap (see trade_eris.yml's
+  # comment on this). Sharing the group lets GitHub itself serialize the two
+  # instead of relying on the throttle alone.
+  group: trade-eris
+  cancel-in-progress: false
+
+jobs:
+  trade:
+    uses: ./.github/workflows/_reusable-trade.yml
+    with:
+      agent_id: eris
+      run_trigger: ${{ github.event.inputs.source || github.event_name }}
+    secrets:
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY_ERIS }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY_ERIS }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_ERIS }}
+      GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_ERIS_2 }}
+      # No dedicated Groq key for Eris — same fallback pairing as
+      # trade_eris.yml (shares Hermes's key).
+      GROQ_API_KEY: ${{ secrets.GROK_API_KEY_2 }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      NOTIFY_SECRET: ${{ secrets.NOTIFY_SECRET }}
+      REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+      REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
