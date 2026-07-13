@@ -115,13 +115,20 @@ _FILL_PRICE_BUFFER = 1.02  # budget 2% above last_close for actual market fill p
 
 def _enforce_caps(decisions: list, context: dict, pending_buy_info: dict,
                    pending_short_info: dict | None = None,
-                   block_new_reason: str | None = None) -> list:
+                   block_new_reason: str | None = None,
+                   restrict_to_crypto: bool = False) -> list:
     """Returns the list of decisions actually allowed to execute, each
     annotated with an 'allowed' bool and a 'cap_note' if rejected/clipped.
 
     block_new_reason, when set (the daily loss circuit breaker — see
     _check_daily_loss_breaker), rejects every buy/short with that reason
-    while leaving sells/covers/cancels untouched."""
+    while leaving sells/covers/cancels untouched.
+
+    restrict_to_crypto, when set (the off-hours/weekend run — see
+    ai_agent.run_crypto_afterhours), rejects every action on a non-crypto
+    symbol regardless of type (buy/sell/short/cover/cancel) since equity
+    markets are actually closed at that point and any equity order would be
+    premature. "hold" is exempt since it's not really an order."""
     held = context["held_positions"]
     held_symbols = set(held.keys())
     watchlist = context["watchlist"]
@@ -200,6 +207,10 @@ def _enforce_caps(decisions: list, context: dict, pending_buy_info: dict,
         if symbol not in config.AGENT["universe"]:
             d["allowed"] = False
             d["cap_note"] = "symbol not in approved universe"
+
+        elif restrict_to_crypto and action != "hold" and not ac.is_crypto(symbol):
+            d["allowed"] = False
+            d["cap_note"] = "off-hours run — only crypto symbols execute here (equity markets are closed)"
 
         elif action == "sell":
             if symbol not in held_symbols or held[symbol]["side"] != "long":

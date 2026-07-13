@@ -1,15 +1,21 @@
 """
 Entry point. Run on a schedule by .github/workflows/trade.yml (and the
-analogous trade_helios.yml).
+analogous trade_helios.yml/trade_eris.yml/crypto_afterhours_trade.yml).
 
-Stocks & ETFs only, Alpaca PAPER trading only (no real money, ever — see
-alpaca_client.py). The day is split into three phases (see
-ai_agent.market_phase(), boundaries fixed in ET so they're correct across
-the EST/EDT switch with no manual adjustment):
+Stocks & ETFs trade equity-market hours only, but an agent can also hold
+crypto (24/7 on Alpaca — see alpaca_client.is_crypto()); paper trading only
+(no real money, ever — see alpaca_client.py). The day is split into three
+phases (see schedule.market_phase(), boundaries fixed in ET so they're
+correct across the EST/EDT switch with no manual adjustment):
 
-  - "quiet" (roughly 5pm-8:30am ET): does nothing at all. No Gemini call,
-    no Alpaca call, no Supabase write — a deliberate overnight pause, not
-    just "checked and found nothing to do."
+  - "quiet" (roughly 5pm-8:30am ET, plus all weekend): no equity activity —
+    no Gemini call, no Alpaca call, no Supabase write for an agent with no
+    crypto in its universe. An agent that does hold crypto (currently only
+    Eris) instead runs ai_agent.run_crypto_afterhours() here: a real,
+    crypto-only decision cycle, not just a check-in. The Supabase-triggered
+    dispatch that drives trade_*.yml is itself scoped to market hours, so in
+    practice this branch is reached on a real cadence via
+    crypto_afterhours_trade.yml's own independent schedule, not that one.
   - "pre_market_review" (8:30-8:45am ET, once a day): reviews yesterday's
     activity and current portfolio, gets one chance to queue a buy ahead
     of the open. Guarded by a real trading-day check (minutes_until_next_
@@ -32,7 +38,14 @@ def main():
     print(f"Phase: {phase}")
 
     if phase == "quiet":
-        print("Overnight pause — doing nothing this tick.")
+        if not any(ac.is_crypto(s) for s in config.AGENT["universe"]):
+            print("Overnight pause — doing nothing this tick.")
+            return
+        if ai_agent.should_throttle_cadence():
+            print("A crypto off-hours decision run already happened within the intended cadence — skipping duplicate cron tick.")
+            return
+        print("Equity markets are closed, but this agent trades crypto 24/7 — running the off-hours crypto-only cycle.")
+        ai_agent.run_crypto_afterhours()
         return
 
     if phase == "pre_market_review":

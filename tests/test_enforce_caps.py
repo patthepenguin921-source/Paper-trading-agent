@@ -241,3 +241,47 @@ def test_symbol_gets_canonicalized_before_universe_check(monkeypatch):
     out = ai_agent._enforce_caps(decisions, context, {})
     assert out[0]["symbol"] == "BTC/USD"
     assert out[0]["allowed"] is True
+
+
+def test_restrict_to_crypto_rejects_equity_buy(monkeypatch):
+    _apply_agent(monkeypatch)
+    context = _context(watchlist={"AAPL": {"last_price": 100.0}})
+    decisions = [{"symbol": "AAPL", "action": "buy"}]
+    out = ai_agent._enforce_caps(decisions, context, {}, restrict_to_crypto=True)
+    assert out[0]["allowed"] is False
+    assert out[0]["cap_note"] == "off-hours run — only crypto symbols execute here (equity markets are closed)"
+
+
+def test_restrict_to_crypto_rejects_equity_sell_of_held_position(monkeypatch):
+    _apply_agent(monkeypatch)
+    context = _context(
+        held={"AAPL": {"side": "long", "qty": 10, "current_price": 100.0, "unrealized_pl_pct": 5.0}},
+    )
+    decisions = [{"symbol": "AAPL", "action": "sell"}]
+    out = ai_agent._enforce_caps(decisions, context, {}, restrict_to_crypto=True)
+    assert out[0]["allowed"] is False
+    assert out[0]["cap_note"] == "off-hours run — only crypto symbols execute here (equity markets are closed)"
+
+
+def test_restrict_to_crypto_allows_crypto_buy(monkeypatch):
+    _apply_agent(monkeypatch)
+    context = _context(watchlist={"BTC/USD": {"last_price": 50_000.0}})
+    decisions = [{"symbol": "BTC/USD", "action": "buy", "size_pct": 0.05}]
+    out = ai_agent._enforce_caps(decisions, context, {}, restrict_to_crypto=True)
+    assert out[0]["allowed"] is True
+
+
+def test_restrict_to_crypto_does_not_override_hold(monkeypatch):
+    _apply_agent(monkeypatch)
+    decisions = [{"symbol": "AAPL", "action": "hold"}]
+    out = ai_agent._enforce_caps(decisions, _context(), {}, restrict_to_crypto=True)
+    assert out[0]["allowed"] is False
+    assert out[0]["cap_note"] == "hold (no action taken)"
+
+
+def test_restrict_to_crypto_false_by_default_allows_equities(monkeypatch):
+    _apply_agent(monkeypatch)
+    context = _context(watchlist={"AAPL": {"last_price": 100.0}})
+    decisions = [{"symbol": "AAPL", "action": "buy"}]
+    out = ai_agent._enforce_caps(decisions, context, {})
+    assert out[0]["allowed"] is True
