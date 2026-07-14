@@ -1,6 +1,11 @@
 name: Plutus Account Snapshot (no AI, Alpaca-only)
 
 on:
+  # Dispatched by the life-dashboard Supabase pg_cron jobs, which call
+  # trigger_github_workflow() to POST to this repo's workflow_dispatch
+  # API. As of the patthepenguin921-source migration the caller targets
+  # workflows by filename (e.g. this file's name) rather than a numeric
+  # workflow ID, so the wiring survives repo re-imports that renumber IDs.
   workflow_dispatch:
     inputs:
       source:
