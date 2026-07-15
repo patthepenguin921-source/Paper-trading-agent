@@ -24,12 +24,14 @@ from alpaca.trading.requests import MarketOrderRequest, LimitOrderRequest, GetOr
 from alpaca.trading.enums import OrderSide, TimeInForce, QueryOrderStatus, OrderType
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.historical.crypto import CryptoHistoricalDataClient
+from alpaca.data.historical.screener import ScreenerClient
 from alpaca.data.requests import (
     StockBarsRequest, StockLatestTradeRequest, StockLatestQuoteRequest,
     CryptoBarsRequest, CryptoLatestTradeRequest, CryptoLatestQuoteRequest,
+    MostActivesRequest, MarketMoversRequest,
 )
 from alpaca.data.timeframe import TimeFrame
-from alpaca.data.enums import DataFeed
+from alpaca.data.enums import DataFeed, MostActivesBy, MarketType
 
 API_KEY = os.environ["ALPACA_API_KEY"]
 SECRET_KEY = os.environ["ALPACA_SECRET_KEY"]
@@ -41,6 +43,7 @@ data_client = StockHistoricalDataClient(API_KEY, SECRET_KEY)
 # keys costs nothing and keeps request attribution consistent with the
 # equity client above.
 crypto_data_client = CryptoHistoricalDataClient(API_KEY, SECRET_KEY)
+screener_client = ScreenerClient(API_KEY, SECRET_KEY)
 
 
 def is_crypto(symbol: str) -> bool:
@@ -333,6 +336,39 @@ def get_recent_bars(symbols: list[str], lookback_days: int = 60) -> dict:
         )
         result.update(crypto_data_client.get_crypto_bars(request).data)
     return result
+
+
+def get_market_screen(top_n: int = 40) -> list[str]:
+    """
+    Samples today's most-active-by-volume and biggest-moving US equities
+    market-wide via Alpaca's screener endpoints — a couple of cheap, single-
+    shot calls rather than pulling bars for every listed symbol, so an
+    agent's watchlist isn't limited to its hand-picked core list (see
+    config.py's *_UNIVERSE lists) and actually samples the whole market each
+    run. Movers are included alongside most-actives because a low-float
+    stock can be the day's biggest mover on modest volume and never crack a
+    volume-ranked list, and vice versa.
+
+    Best-effort: returns [] on any failure (rate limit, endpoint hiccup) so
+    a screener outage degrades an agent back to its static core universe
+    for that run rather than crashing it — same philosophy as
+    _missed_opportunities and the other best-effort blocks in this
+    codebase.
+    """
+    try:
+        actives = screener_client.get_most_actives(
+            MostActivesRequest(top=top_n, by=MostActivesBy.VOLUME)
+        )
+        movers = screener_client.get_market_movers(
+            MarketMoversRequest(top=max(top_n // 4, 5), market_type=MarketType.STOCKS)
+        )
+        symbols = {a.symbol for a in actives.most_actives}
+        symbols.update(g.symbol for g in movers.gainers)
+        symbols.update(l.symbol for l in movers.losers)
+        return sorted(symbols)
+    except Exception as e:
+        print(f"Could not fetch market screen ({e}), falling back to each agent's static core universe only.")
+        return []
 
 
 def get_latest_prices(symbols: list[str]) -> dict[str, dict]:

@@ -24,9 +24,16 @@ crypto API — see `alpaca_client.is_crypto()` and `instructions_eris.md`.
 3. **`ai_agent.py`** gathers account state, open positions, and recent
    price stats for the universe in `config.py` (crypto and equity symbols
    both, for Eris — merged transparently by `alpaca_client.get_recent_bars`/
-   `get_latest_prices`), and cancels any open orders that never resolved
-   (see `alpaca_client.cancel_stale_open_orders`) so they stop tying up cash
-   indefinitely. It also builds a news/politics/society briefing — a Gemini
+   `get_latest_prices`), plus each agent's own slice of today's market-wide
+   most-active/biggest-mover US equities (`alpaca_client.get_market_screen`,
+   sized per agent by `dynamic_universe_top_n` in `config.py`) so the
+   watchlist isn't limited to each agent's hand-picked core list — see
+   `_build_context`'s `effective_universe`. Held positions are always
+   included in that fetch too, even if they've since fallen out of both the
+   core list and today's screen. It also cancels any open orders that never
+   resolved (see `alpaca_client.cancel_stale_open_orders`) so they stop
+   tying up cash indefinitely, and builds a news/politics/society
+   briefing — a Gemini
    call that synthesizes real Alpaca News API headlines plus, for the
    sentiment-driven agents (Hermes/Eris), live keyless retail-sentiment
    aggregators: ApeWisdom's Reddit ticker-mention leaderboards (stocks and

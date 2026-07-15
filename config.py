@@ -103,6 +103,12 @@ AGENTS = {
     "plutus": {
         "label": "Plutus",
         "universe": PLUTUS_UNIVERSE,
+        # On top of the hand-picked core list above, each run also samples
+        # this many of today's most-active/biggest-moving US equities
+        # market-wide (see alpaca_client.get_market_screen) — so Plutus
+        # isn't blind to a real opportunity just because it isn't one of
+        # the ~40 names hardcoded here.
+        "dynamic_universe_top_n": 40,
         # Switched from gemini-2.5-flash: that model's free-tier allocation on
         # this project turned out to be a hard 20 requests/day (confirmed via
         # the actual 429 response body — "limit: 20, model: gemini-2.5-flash"
@@ -186,6 +192,14 @@ AGENTS = {
     "helios": {
         "label": "Helios",
         "universe": HELIOS_UNIVERSE,
+        # Smaller slice than the other three — most-active/biggest-mover
+        # screens skew toward the high-beta names Helios' capital-
+        # preservation mandate deliberately avoids (see HELIOS_UNIVERSE's
+        # comment above), so this is a light peek at the broader market
+        # rather than a wholesale expansion. instructions_helios.md is
+        # still the thing actually keeping it from chasing what shows up
+        # here — same as every other symbol-selection judgment call.
+        "dynamic_universe_top_n": 15,
         "gemini_model": "gemini-3.1-flash-lite",
         "ai_backend": "gemini",
         "instructions_file": "instructions_helios.md",
@@ -221,6 +235,11 @@ AGENTS = {
     "hermes": {
         "label": "Hermes",
         "universe": HERMES_UNIVERSE,
+        # Widest slice of the four — a day trader hunting for news
+        # catalysts benefits most from seeing whatever the whole market is
+        # actually moving on right now, not just the ~43 names hardcoded
+        # above.
+        "dynamic_universe_top_n": 60,
         # Uses Gemini on its own isolated Google AI Studio project so its
         # quota is completely separate from Plutus/Helios. Groq
         # (GROQ_API_KEY in the workflow) is the fallback if Gemini quota is
@@ -296,6 +315,15 @@ AGENTS = {
     "eris": {
         "label": "Eris",
         "universe": ERIS_UNIVERSE,
+        # Equities-only (Alpaca's screener endpoints don't cover crypto) —
+        # widens the meme-stock leg with whatever's actually moving today,
+        # on top of the hand-picked ERIS_MEME_STOCKS list. The memecoin leg
+        # doesn't need this: ERIS_MEMECOINS already keeps effectively all of
+        # Alpaca's tradable, non-redundant, non-stablecoin crypto pairs
+        # (see its comment above) — that's already close to "whole market"
+        # for crypto without a screener, since the whole list is only ~70
+        # pairs to begin with.
+        "dynamic_universe_top_n": 30,
         "ai_backend": "gemini",
         "gemini_model": "gemini-3.1-flash-lite",
         "instructions_file": "instructions_eris.md",
@@ -410,6 +438,7 @@ def _load_dynamic_agent(agent_id: str) -> dict:
     return {
         "label": row["label"],
         "universe": row["universe"],
+        "dynamic_universe_top_n": int(row.get("dynamic_universe_top_n", 25)),
         "ai_backend": row.get("ai_backend") or "gemini",
         "gemini_model": row.get("gemini_model") or "gemini-3.1-flash-lite",
         "groq_model": row.get("groq_model") or "llama-3.3-70b-versatile",
