@@ -172,11 +172,28 @@ def _symbol_stats(symbol: str, bars) -> dict | None:
     }
 
 
+def _effective_universe(held_symbols: set) -> list[str]:
+    """
+    The static core universe (config.py's *_UNIVERSE lists) plus today's
+    market-wide most-active/biggest-mover sample (see
+    alpaca_client.get_market_screen) — so the watchlist isn't limited to
+    the hand-picked core list. `held_symbols` is always included too, even
+    if a position has since fallen out of both, so a symbol bought on a
+    past dynamic slice never loses its price history/exit-management stats
+    just because today's screen looks different.
+    """
+    dynamic_top_n = config.AGENT.get("dynamic_universe_top_n", 0)
+    dynamic_symbols = ac.get_market_screen(dynamic_top_n) if dynamic_top_n else []
+    return sorted(set(config.AGENT["universe"]) | set(dynamic_symbols) | set(held_symbols))
+
+
 def _build_context():
     account = ac.get_account()
     positions = ac.get_open_positions()
-    bars_by_symbol = ac.get_recent_bars(config.AGENT["universe"], lookback_days=config.LOOKBACK_DAYS + 5)
-    live_prices = ac.get_latest_prices(config.AGENT["universe"]) if config.AGENT.get("use_live_quotes") else {}
+    effective_universe = _effective_universe(set(positions.keys()))
+
+    bars_by_symbol = ac.get_recent_bars(effective_universe, lookback_days=config.LOOKBACK_DAYS + 5)
+    live_prices = ac.get_latest_prices(effective_universe) if config.AGENT.get("use_live_quotes") else {}
 
     entry_dates = _position_entry_dates(set(positions.keys()))
     now = datetime.now(timezone.utc)
@@ -209,7 +226,7 @@ def _build_context():
         }
 
     watchlist = {}
-    for symbol in config.AGENT["universe"]:
+    for symbol in effective_universe:
         if symbol in held:
             continue
         stats = _symbol_stats(symbol, bars_by_symbol.get(symbol))
