@@ -372,7 +372,7 @@ few closed trades to draw a real conclusion), return an empty list. Respond
 with ONLY a JSON array of strings, e.g. ["...", "..."]."""
 
     resp = requests.post(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+        f"https://generativelanguage.googleapis.com/v1beta/models/{config.AGENT['gemini_model']}:generateContent",
         params={"key": GEMINI_API_KEY},
         headers={"content-type": "application/json"},
         json={

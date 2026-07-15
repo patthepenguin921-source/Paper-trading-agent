@@ -8,6 +8,7 @@ on:
 jobs:
   lessons-learned:
     strategy:
+      fail-fast: false
       matrix:
         agent: [plutus, helios, hermes, eris]
     runs-on: ubuntu-latest
@@ -54,6 +55,7 @@ jobs:
 
   weekly-digest:
     needs: lessons-learned
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
