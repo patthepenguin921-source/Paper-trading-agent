@@ -21,6 +21,7 @@ import requests
 
 import alpaca_client as ac
 import config
+from util import request_with_retry
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame, TimeFrameUnit
 from alpaca.data.enums import DataFeed
@@ -95,13 +96,14 @@ def _snapshot_benchmarks() -> None:
                 for bar in bars_by_symbol.get(symbol, [])
             ]
             if rows:
-                requests.post(
+                request_with_retry(
+                    requests.post,
                     f"{SUPABASE_URL}/rest/v1/benchmark_prices",
                     headers={**_headers(), "Prefer": "resolution=merge-duplicates,return=minimal"},
                     params={"on_conflict": "symbol,price_time"},
                     json=rows,
                     timeout=15,
-                ).raise_for_status()
+                )
                 print(f"Benchmark 5-min bars upserted: {len(rows)}")
         except Exception as exc:
             print(f"Benchmark 5-min snapshot failed (non-fatal): {exc}")
@@ -122,13 +124,14 @@ def _snapshot_benchmarks() -> None:
                 for bar in daily_bars_by_symbol.get(symbol, [])
             ]
             if rows:
-                requests.post(
+                request_with_retry(
+                    requests.post,
                     f"{SUPABASE_URL}/rest/v1/benchmark_prices",
                     headers={**_headers(), "Prefer": "resolution=merge-duplicates,return=minimal"},
                     params={"on_conflict": "symbol,price_time"},
                     json=rows,
                     timeout=15,
-                ).raise_for_status()
+                )
                 print(f"Benchmark daily history refreshed: {len(rows)} bars")
         except Exception as exc:
             print(f"Benchmark daily history failed (non-fatal): {exc}")
@@ -156,34 +159,37 @@ def main():
         "num_open_positions": len(held),
         "updated_at": datetime.now(timezone.utc).isoformat(),
     }
-    requests.post(
+    request_with_retry(
+        requests.post,
         f"{SUPABASE_URL}/rest/v1/agent_account_state",
         headers=_headers("resolution=merge-duplicates,return=minimal"),
         json=state_payload,
         timeout=15,
-    ).raise_for_status()
+    )
 
     if held:
         rows = [
             {"agent_id": config.AGENT_ID, "symbol": symbol, **pos}
             for symbol, pos in held.items()
         ]
-        requests.post(
+        request_with_retry(
+            requests.post,
             f"{SUPABASE_URL}/rest/v1/trading_agent_positions",
             headers={**_headers(), "Prefer": "resolution=merge-duplicates,return=minimal"},
             params={"on_conflict": "agent_id,symbol"},
             json=rows,
             timeout=30,
-        ).raise_for_status()
+        )
 
     held_list = ",".join(held.keys()) if held else ""
     symbol_filter = f"not.in.({held_list})" if held_list else "not.is.null"
-    requests.delete(
+    request_with_retry(
+        requests.delete,
         f"{SUPABASE_URL}/rest/v1/trading_agent_positions",
         headers=_headers(),
         params={"agent_id": f"eq.{config.AGENT_ID}", "symbol": symbol_filter},
         timeout=15,
-    ).raise_for_status()
+    )
 
     print(
         f"Snapshot logged for {config.AGENT_ID}: equity={state_payload['equity']} "

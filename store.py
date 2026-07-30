@@ -13,6 +13,7 @@ import requests
 import config
 import alpaca_client as ac
 from backends import _active_model_name
+from util import request_with_retry
 
 SUPABASE_URL = os.environ["SUPABASE_URL"]
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
@@ -304,13 +305,13 @@ def _log_run(market_open: bool, context: dict | None, overall_reasoning: str,
         "error": error,
         "news_context": news_context,
     }
-    resp = requests.post(
+    resp = request_with_retry(
+        requests.post,
         f"{SUPABASE_URL}/rest/v1/trading_agent_runs",
         headers=_supabase_headers(),
         json=payload,
         timeout=30,
     )
-    resp.raise_for_status()
     rows = resp.json()
     return rows[0]["id"] if rows else None
 
@@ -335,13 +336,13 @@ def _log_decisions(run_id: int, decisions: list):
         }
         for d in decisions
     ]
-    resp = requests.post(
+    request_with_retry(
+        requests.post,
         f"{SUPABASE_URL}/rest/v1/trading_agent_decisions",
         headers=_supabase_headers(),
         json=rows,
         timeout=30,
     )
-    resp.raise_for_status()
 
 
 def _refresh_account_state() -> dict:
