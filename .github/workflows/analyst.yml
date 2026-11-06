@@ -16,9 +16,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "trade = normal run, review = weekly study session (no trading)"
+        description: "trade = normal run, review = weekly review, study = training session (review/study never trade)"
         type: choice
-        options: [trade, review]
+        options: [trade, review, study]
         default: trade
       dry_run:
         description: "Plan orders but don't submit them"
@@ -60,12 +60,12 @@ jobs:
         env:
           ALPACA_ANALYST_KEY: ${{ secrets.ALPACA_ANALYST_KEY }}
           ALPACA_ANALYST_SECRET: ${{ secrets.ALPACA_ANALYST_SECRET }}
-        run: python -m trader.brief analyst ${{ env.MODE == 'review' && '--allow-closed' || '' }}
+        run: python -m trader.brief analyst ${{ env.MODE != 'trade' && '--allow-closed' || '' }}
 
       - name: Decide whether to run Claude
         id: gate
         run: |
-          if [ "$MODE" = "review" ] || [ "${{ steps.brief.outputs.market_open }}" = "true" ]; then
+          if [ "$MODE" != "trade" ] || [ "${{ steps.brief.outputs.market_open }}" = "true" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "Market closed; not spending Claude usage."
@@ -90,7 +90,7 @@ jobs:
           python -m trader.prompt "$MODE" > workspace/prompt.md
           claude -p "$(cat workspace/prompt.md)" \
             --model sonnet \
-            --max-turns 60 \
+            --max-turns ${{ env.MODE == 'study' && 100 || 60 }} \
             --permission-mode acceptEdits \
             --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch" \
             --disallowedTools "Bash"

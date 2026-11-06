@@ -12,6 +12,6 @@ def test_indicators_basic():
 
 
 def test_prompt_renders_all_placeholders():
-    for mode in ("trade", "review"):
+    for mode in ("trade", "review", "study"):
         text = prompt.render(mode, datetime(2026, 11, 9, 15, 0, tzinfo=timezone.utc))
         assert "{{" not in text and "2026-11-09" in text
