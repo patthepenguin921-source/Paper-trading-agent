@@ -34,11 +34,11 @@ Reference briefs for 28 large-cap US financials and health care names. Facts are
 
 #### Regime behavior
 
-- **Rising rates, strong growth (reflation):** banks and brokers outperform (XLF and KRE up), AXP and COF are fine, and defensive pharma and managed care lag. Biotech (XBI) and long-duration growth medtech (ISRG) lose on valuation.
-- **Falling rates, slowing growth (soft landing or easing):** XBI and tools rally hard on funding hopes. SCHW and BAC NII is pressured at the margin, but capital markets names gain if the economy holds. Payments are steady.
-- **Recession or risk-off:** credit-sensitive names (COF, KRE, C) lead down, while managed care, JNJ, MRK, ABBV, GILD and BRK.B act as defensives. V and MA dip less than banks. XLV historically has a low beta (~0.6-0.8).
-- **Stagflation:** this is the hardest regime. Insurers fight cost inflation, banks face credit stress, and pharma with pricing power holds best.
-- **Policy shocks** (drug pricing, MA rates, bank regulation) are sector-wide and often fade. Distinguish permanent earnings damage from headline noise.
+- **Reflation (rising rates, strong growth):** banks and brokers lead (XLF, KRE). Defensive pharma and managed care lag. XBI and long-duration medtech (ISRG) lose on valuation.
+- **Easing (falling rates, soft landing):** XBI and tools rally on funding hopes. SCHW and BAC NII is pressured at the margin, but capital markets names gain if growth holds. Payments are steady.
+- **Recession or risk-off:** credit names (COF, KRE, C) lead down. Managed care, JNJ, MRK, ABBV, GILD and BRK.B defend, and V and MA dip less than banks. XLV beta is historically ~0.6-0.8.
+- **Stagflation:** the hardest regime. Insurers fight cost inflation, banks face credit stress, and pharma with pricing power holds best.
+- **Policy shocks** (drug pricing, MA rates, bank rules) hit whole groups and often fade. Separate lasting earnings damage from headline noise.
 
 Proxy ETFs: **XLF** (large financials; BRK.B, JPM, V and MA are its largest holdings), **KRE** (equal-weight regional banks; the purest credit and deposit-stress gauge), **XLV** (large health care; LLY-heavy) and **XBI** (equal-weight small and mid biotech; risk appetite and rates).
 
