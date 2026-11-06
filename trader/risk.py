@@ -156,8 +156,13 @@ def plan_orders(
         notional = min(notional, risk["max_gross_exposure_pct"] / 100 * equity - (long_mv + short_mv))
         if not is_long:
             notional = min(notional, risk["max_short_exposure_pct"] / 100 * equity - short_mv)
-        qty = math.floor(max(0.0, notional) / price)
-        if qty < 1 or qty * price < risk["min_position_pct"] / 100 * equity * 0.5:
+        # Longs in fractionable assets can buy fractional shares (matters for
+        # small accounts and high-priced stocks); shorts must be whole shares.
+        if is_long and asset.get("fractionable"):
+            qty = math.floor(max(0.0, notional) / price * 10_000) / 10_000
+        else:
+            qty = math.floor(max(0.0, notional) / price)
+        if qty <= 0 or qty * price < risk["min_position_pct"] / 100 * equity * 0.5:
             results.append(_result(d, "rejected", "No room left under position/exposure limits"))
             continue
 

@@ -96,3 +96,15 @@ def test_normalize_positions():
     p = risk.normalize_positions([{"symbol": "A", "qty": "-5", "market_value": "-500",
                                    "unrealized_plpc": "-0.031", "avg_entry_price": "97", "current_price": "100"}])
     assert p["A"]["qty"] == -5 and round(p["A"]["unrealized_plpc"], 2) == -3.1
+
+
+def test_fractional_longs_for_small_accounts():
+    frac = {**OK, "fractionable": True}
+    # $10k account, 3% = $300, stock at $737: whole shares would be 0
+    r = plan([{"symbol": "SPY", "action": "buy", "size_pct": 3}], prices={"SPY": 737.0},
+             assets={"SPY": frac}, equity=10_000)["SPY"]
+    assert r["status"] == "planned" and 0.40 < r["qty"] < 0.41
+    # shorts stay whole shares, so the same trade is rejected
+    r = plan([{"symbol": "SPY", "action": "short", "size_pct": 3}], prices={"SPY": 737.0},
+             assets={"SPY": frac}, equity=10_000)["SPY"]
+    assert r["status"] == "rejected"
