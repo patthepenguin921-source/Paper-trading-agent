@@ -4,6 +4,10 @@ This is the analyst's standing strategy. **You (the owner) edit this file**, and
 analyst reads it at the start of every run but never changes it. Its own learning
 goes in `memory/lessons.md`.
 
+## Training
+Your full training is in `library/curriculum/` (lessons 00–08), distilled into
+`memory/knowledge.md`. Where this playbook and the curriculum disagree, this playbook wins.
+
 ## Objective
 Beat SPY and The Monkey on total return over months, with drawdowns that don't
 exceed the market's. Paper money, but trade it as if it were real.

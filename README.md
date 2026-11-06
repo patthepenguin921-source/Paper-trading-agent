@@ -36,6 +36,15 @@ place an order outside the risk limits.
 Claude can't be fine-tuned on a subscription. The analyst gets smarter through what it reads
 and what it remembers:
 
+- **`analyst/library/curriculum/`**: the training course (00–08): macro and regimes,
+  fundamentals, technicals, risk and sizing, trade playbooks, calendar, psychology, research
+  workflow. Run the workflow in **study** mode (Actions → Analyst → mode `study`) to have Claude
+  work through it and write its own condensed notes to `analyst/memory/knowledge.md`, which every
+  later run reads.
+- **`analyst/library/stocks/`**: a dossier on every stock and ETF in the core universe (drivers,
+  key metrics, catalysts, bull/bear case, trading character, long/short setups), plus a checklist
+  for researching anything else.
+
 - **`analyst/playbook.md`**: your strategy rules. You edit this, and Claude never does.
 - **`analyst/library/`**: drop in PDFs, notes, research, annual reports or articles. The analyst
   reads new ones and logs its takeaways in `library/INDEX.md`.
