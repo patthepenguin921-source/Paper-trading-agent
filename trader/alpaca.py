@@ -67,8 +67,9 @@ class Alpaca:
             return None
 
     # -- orders ------------------------------------------------------------
-    def market_order(self, symbol: str, qty: int, side: str, client_order_id: str | None = None) -> dict:
-        body = {"symbol": symbol, "qty": str(int(qty)), "side": side,
+    def market_order(self, symbol: str, qty: float, side: str, client_order_id: str | None = None) -> dict:
+        qty_str = str(int(qty)) if float(qty).is_integer() else f"{qty:.4f}"
+        body = {"symbol": symbol, "qty": qty_str, "side": side,
                 "type": "market", "time_in_force": "day"}
         if client_order_id:
             body["client_order_id"] = client_order_id[:48]
