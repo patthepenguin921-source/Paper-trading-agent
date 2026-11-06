@@ -68,8 +68,15 @@ The brief gives you returns for ETFs. Compare them:
 - **SMH vs SPY:** semis lead the cycle and AI sentiment. Semis rolling over is often an
   early warning.
 - **KRE vs XLF:** regional bank stress is a credit/liquidity canary.
-- **GLD vs TLT:** both up means real yields are falling or there is fear. Gold up with yields up
-  is often geopolitical risk or central-bank buying.
+- **GLD vs TLT:** both up means real yields are falling or there is fear. When they diverge:
+  - *Gold up, bonds down (yields rising):* inflation fear, a weakening dollar, or geopolitical or
+    central-bank demand overpowering rates. Check EEM and the dollar story. If XLE is also up,
+    lean "inflation".
+  - *Gold down, bonds up (yields falling):* usually a strong dollar and/or a crowded gold trade
+    unwinding while bonds price slower growth or disinflation. Gold is telling you about the
+    dollar and positioning more than about rates here. Don't read it as "no fear".
+  - Tiebreaker: whichever one agrees with equities and credit that same day is the one
+    expressing the macro story. The other one has its own flow-driven reason.
 - **XLE vs SPY:** energy leadership means inflation pressure, and possibly a geopolitical supply shock.
 - **EEM vs SPY:** emerging markets outperform when the dollar weakens.
 - **Breadth:** count how many universe names are above their 50- and 200-day averages
@@ -86,6 +93,7 @@ The brief gives you returns for ETFs. Compare them:
 | **Risk-on trend** | SPY above rising 50/200-day, broad breadth, credit firm | Mostly long, buy pullbacks in leaders, shorts only on specific broken stories |
 | **Choppy / range** | Index flat between levels, rotation, mixed signals | Smaller sizes, mean-reversion entries, take profits faster, more cash |
 | **Correction** | Index breaks 50-day, breadth deteriorating, credit wobbling | Cut weakest longs, raise cash, add hedges/shorts in laggard sectors |
+| **Factor unwind** | One crowded group (e.g. AI/semis, momentum, a hot theme) down sharply; index damaged but other sectors and small caps fine; **credit firm** (HYG holding) | Treat it as that factor's correction, not the market's. Cut or hedge exposure to that factor, keep or add longs elsewhere at normal size, and don't bottom-fish the broken factor until it shows a broad thrust. If credit starts to crack, upgrade to "Correction". |
 | **Bear / crisis** | Index below falling 200-day, credit spreads blowing out, defensives leading | Low gross, defensives and short-duration, short the weakest; rallies are for selling until breadth and credit heal |
 
 Write your regime call in `market_view` every run, and change it only on evidence.
