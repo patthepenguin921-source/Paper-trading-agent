@@ -8,104 +8,104 @@
 
 ### Broad US equity
 
-**SPY: SPDR S&P 500 ETF Trust**
+#### SPY: SPDR S&P 500 ETF Trust
 Tracks the S&P 500, which is cap-weighted and heavily concentrated: the top 10 names (mega-cap tech plus a few others) have made up roughly a third or more of the index in recent years. It expresses US large-cap equity beta, which today is largely a bet on mega-cap tech and AI earnings. It is the most liquid ETF in the world, with the deepest options market, and is the default hedge for any long-equity book: short SPY against a basket of longs to isolate stock selection. Quirks: it is structured as a unit investment trust, so it cannot lend securities or reinvest dividends internally, which creates slight tracking drag vs IVV/VOO. Use those for long holds; use SPY for trading and hedging liquidity.
 
-**QQQ: Invesco QQQ Trust**
+#### QQQ: Invesco QQQ Trust
 Tracks the Nasdaq-100: the 100 largest non-financial Nasdaq-listed companies. It is even more concentrated than SPY, with the top names (NVDA, MSFT, AAPL, AMZN, AVGO, META, GOOGL) dominating. It expresses growth/tech beta and behaves like a long-duration asset: it is sensitive to real yields and to AI-capex sentiment. Beta to SPY is typically 1.1-1.3. Use it as a hedge for tech-heavy longs, as a growth-vs-value signal (QQQ/SPY), or as a directional trade on rates and AI headlines. Quirk: Nasdaq applies concentration caps through special rebalances when large weights breach limits.
 
-**DIA: SPDR Dow Jones Industrial Average ETF**
+#### DIA: SPDR Dow Jones Industrial Average ETF
 Tracks the 30-stock Dow, which is **price-weighted**: high-priced shares (e.g., GS, MSFT, HD, CAT, UNH historically) carry outsized weight regardless of company size. It expresses old-economy blue-chip exposure with more industrials, financials and healthcare and less mega-cap tech than SPY. It is rarely the best trading instrument; it is mostly useful as a read on "value/blue-chip vs tech" (DIA vs QQQ) and because single-stock moves in high-priced members (a UNH or GS shock) distort it. Pays monthly dividends.
 
-**IWM: iShares Russell 2000 ETF**
+#### IWM: iShares Russell 2000 ETF
 Tracks ~2,000 US small caps. A large share of constituents are unprofitable, and the index has heavy regional bank, biotech and industrial weights. It expresses **domestic growth, credit conditions and interest-rate sensitivity**: small caps carry more floating-rate and short-maturity debt, so falling rates and tight credit spreads help, while rising rates and widening spreads hurt. Use it as a risk-appetite gauge (IWM/SPY), a reflation/rate-cut trade, or a short hedge in credit-stress scenarios. Quirks: high beta, prone to sharp short-covering squeezes and false breakouts; Russell reconstitution (historically late June; FTSE Russell has moved toward semiannual reconstitution, verify schedule) causes big closing-auction volume.
 
-**VTI: Vanguard Total Stock Market ETF**
+#### VTI: Vanguard Total Stock Market ETF
 Tracks the CRSP US Total Market Index (~3,500+ stocks across large, mid, small and micro caps). Correlation with SPY is extremely high (~0.99), since large caps dominate cap weights. It expresses total US equity beta with a sliver of small/mid-cap tilt. It is a core long-term holding, not a trading tool; SPY/IVV are more liquid hedges. Use VTI vs SPY divergence only as a (weak) breadth signal.
 
 ### International equity
 
-**EFA: iShares MSCI EAFE ETF**
+#### EFA: iShares MSCI EAFE ETF
 Tracks developed markets ex-US and Canada: Japan, UK, France, Switzerland and Germany are the largest country weights. It is heavier in financials, industrials, healthcare and consumer staples and lighter in tech than the US. It expresses non-US developed equity plus **currency exposure** (unhedged: a falling dollar boosts returns). Use it for "rest of world catch-up" trades, dollar-weakness trades, or Europe value/rotation. Quirk: foreign market hours mean much of the price discovery happens overnight; US trading-session moves reflect futures and FX.
 
-**EEM: iShares MSCI Emerging Markets ETF**
+#### EEM: iShares MSCI Emerging Markets ETF
 Tracks large- and mid-cap EM: China, Taiwan (TSMC is a top holding), India and Korea dominate. It expresses EM growth, China policy, the semiconductor cycle (via Taiwan/Korea) and, critically, the **US dollar**: a strong dollar and rising US yields generally hurt EM. Use it as a China/stimulus play, a dollar-direction trade, or a global risk-appetite gauge. Quirk: higher expense ratio than IEMG (the cheaper core alternative), but EEM has the deeper options market. China-specific ETFs (FXI, KWEB) are better for China-only views.
 
 ### Treasuries and credit
 
-**TLT: iShares 20+ Year Treasury Bond ETF**
+#### TLT: iShares 20+ Year Treasury Bond ETF
 Holds long-dated Treasuries; duration ~16-17 years, so a 1 percentage-point move in long yields moves the price ~16-17% in the opposite direction. It expresses long-term rate expectations, term premium, fiscal/deficit worries and flight-to-quality. Use it to trade rate views, to hedge rate-sensitive equities (utilities, REITs, long-duration tech), or as a deflation/recession hedge. Quirk: in inflationary regimes (2022) stocks and bonds fall together, so TLT is not a reliable equity hedge then. Term-premium-driven sell-offs (supply/deficit fears) can hit TLT even while the Fed is cutting.
 
-**IEF: iShares 7-10 Year Treasury Bond ETF**
+#### IEF: iShares 7-10 Year Treasury Bond ETF
 Holds intermediate Treasuries; duration ~7 years. It expresses the "belly" of the curve, closest to the 10Y yield that drives mortgage rates and equity valuations. Use it as a cleaner rate proxy than TLT with about half the volatility, or in curve trades (long IEF / short TLT is a steepener; the reverse is a flattener). A better hedge for broad equity valuation than TLT, with less term-premium noise.
 
-**SHY: iShares 1-3 Year Treasury Bond ETF**
+#### SHY: iShares 1-3 Year Treasury Bond ETF
 Holds short Treasuries; duration ~2 years. It tracks **Fed policy expectations** (2Y yield) and acts as a cash proxy. Price moves are small; most of the return is yield. Use it as a parking place, or watch it as a signal: SHY rallying sharply means the market is pricing faster/deeper Fed cuts (often a growth scare). Pairs: SHY vs TLT shows curve shape.
 
-**HYG: iShares iBoxx $ High Yield Corporate Bond ETF**
+#### HYG: iShares iBoxx $ High Yield Corporate Bond ETF
 Holds US high-yield (junk) corporate bonds; spread duration ~3-4 years. It expresses **credit risk appetite**: it correlates with equities, especially small caps, and widening spreads show up here quickly. Use it as a risk gauge (HYG falling while stocks rise is a warning divergence) or as a hedge for credit-sensitive longs. Quirk: in stress, HYG can trade at a large discount to NAV because the underlying bonds are illiquid (March 2020), so the ETF price leads the bond market. JNK is the alternative.
 
-**LQD: iShares iBoxx $ Investment Grade Corporate Bond ETF**
+#### LQD: iShares iBoxx $ Investment Grade Corporate Bond ETF
 Holds US investment-grade corporate bonds; duration ~8 years. It expresses a mix of **Treasury rates (the dominant factor) and IG spreads**. Use it alongside HYG and IEF to separate rate moves from credit moves: LQD down with IEF flat = spreads widening; LQD down with IEF down = rates. Like HYG, it can trade at a discount to NAV in crises.
 
 ### Commodities
 
-**GLD: SPDR Gold Shares**
+#### GLD: SPDR Gold Shares
 Holds physical gold bullion in London vaults; one of the largest commodity ETFs. It expresses inverse real rates, inverse dollar, central-bank demand, geopolitical and fiscal-debasement hedging. Use it as a portfolio hedge against tail risks and currency debasement, a real-rate trade, or a regime signal (GLD vs TLT). Quirks: taxed as a collectible for US investors (not relevant for paper trading). GLDM/IAU have lower fees for long holds. Gold has a history of parabolic moves followed by sharp corrections.
 
-**SLV: iShares Silver Trust**
+#### SLV: iShares Silver Trust
 Holds physical silver. Silver is both a monetary metal and an industrial input (solar panels, electronics), so it acts as **high-beta gold with a cyclical kicker**: it typically rises faster than gold in bull runs and falls harder in risk-off. Use it for a leveraged gold view or a reflation/industrial demand play. Quirks: very volatile, prone to squeezes and spikes; watch the gold/silver ratio for relative value.
 
-**USO: United States Oil Fund**
+#### USO: United States Oil Fund
 Holds WTI crude oil **futures**, not physical oil. When the curve is in **contango** (later months more expensive), rolling contracts loses money over time (negative roll yield); in **backwardation** the roll adds return. So USO is a trading vehicle, not a buy-and-hold proxy for oil. After the April 2020 negative-price episode, USO changed its methodology to spread exposure across several contract months and did a reverse split. Use it for short-term crude views; for longer views energy equities (XLE) or the curve shape matter more. Quirk: structured as a commodity pool (K-1 tax form).
 
 ### Select Sector SPDRs (S&P 500 sectors)
 
-**XLK: Technology Select Sector SPDR**
+#### XLK: Technology Select Sector SPDR
 S&P 500 information-technology stocks. Extremely concentrated in NVDA, MSFT, AAPL and AVGO (capping rules limit single-name weights, which can force rebalancing flows). It expresses AI/semiconductor and software spending, plus long-duration growth sensitivity to real yields. Note: since the 2018 GICS change, GOOGL and META sit in XLC, and since 2023 Visa/Mastercard moved to XLF, so XLK is now mostly hardware, semis and software. Use it as a tech hedge or AI-cycle trade.
 
-**XLF: Financial Select Sector SPDR**
+#### XLF: Financial Select Sector SPDR
 S&P 500 financials: BRK.B, JPM, V, MA, BAC, WFC, GS and others; payments (V/MA) added in 2023 diluted the bank weighting. It expresses the yield curve (steeper helps net interest margins), credit quality, capital markets activity and deregulation. Use it as a cyclical/reflation trade, a rate-curve view, or (vs KRE) a big-bank vs regional-bank stress gauge.
 
-**XLE: Energy Select Sector SPDR**
+#### XLE: Energy Select Sector SPDR
 S&P 500 energy: XOM and CVX combined are a large share (often ~40%), then COP, EOG, SLB, WMB, KMI, MPC, PSX, OXY and others. It expresses oil prices (with a lag and damped by the curve), inflation/value rotation and capital-return themes. Use it as the cleanest oil-equity hedge, an inflation trade, or the short leg against energy-stock longs. It has historically been one of the few sectors to rally during inflationary sell-offs (2022).
 
-**XLV: Health Care Select Sector SPDR**
+#### XLV: Health Care Select Sector SPDR
 S&P 500 healthcare: LLY, UNH, JNJ, ABBV, MRK, TMO, ABT, ISRG and others; LLY has become a dominant weight on GLP-1 obesity drugs. It expresses defensive growth plus policy risk (drug pricing, Medicare, tariffs on pharma). Use it as a defensive rotation trade or to hedge pharma longs. Quirk: single-name shocks (UNH, LLY) can drive the whole ETF.
 
-**XLY: Consumer Discretionary Select Sector SPDR**
+#### XLY: Consumer Discretionary Select Sector SPDR
 S&P 500 discretionary, dominated by AMZN and TSLA (together often near or over 40%), plus HD, MCD, BKNG, LOW, TJX, NKE, SBUX. It expresses consumer spending, but behaves partly like a two-stock tech fund. Use it vs XLP as a consumer risk-appetite gauge, keeping in mind AMZN/TSLA distortion. For a purer consumer read use equal-weight (RSPD) or retail (XRT).
 
-**XLP: Consumer Staples Select Sector SPDR**
+#### XLP: Consumer Staples Select Sector SPDR
 S&P 500 staples: COST, WMT, PG, KO, PEP, PM, MDLZ, MO, CL and others. It expresses defensiveness and dividend stability; low beta. Sensitive to rates (bond proxy) and to input-cost inflation and GLP-1 demand fears. Use it as a defensive rotation trade, a hedge in risk-off, or the denominator in the XLY/XLP risk ratio.
 
-**XLI: Industrial Select Sector SPDR**
+#### XLI: Industrial Select Sector SPDR
 S&P 500 industrials: GE Aerospace, CAT, RTX, UBER, HON, UNP, ETN, BA, DE, LMT, GEV and others, spanning aerospace/defense, machinery, transports, electrical equipment. It expresses the capex cycle, ISM manufacturing, infrastructure and defense spending, and (increasingly) electrification/data-center build-out. Use it as a cyclical/reflation trade; transports (IYT) are a classic Dow Theory confirmation.
 
-**XLU: Utilities Select Sector SPDR**
+#### XLU: Utilities Select Sector SPDR
 S&P 500 utilities: NEE, SO, DUK, CEG, VST, AEP, SRE, D and others. Traditionally a **bond proxy** (moves inverse to long yields, defensive), but since 2024 it has also carried an **AI power-demand** factor via CEG, VST and NRG, which trade like growth stocks. Use it as a defensive/rate trade, and read it carefully: XLU outperforming because of independent power producers is a risk-on AI signal, not a defensive one.
 
-**XLB: Materials Select Sector SPDR**
+#### XLB: Materials Select Sector SPDR
 S&P 500 materials: LIN is the largest weight, plus SHW, ECL, APD, FCX, NEM, NUE, DOW, DD, VMC, MLM. It expresses global industrial demand, the dollar (weak dollar helps), China, and commodities. It's small and concentrated in LIN. Use it as a reflation trade, or in tandem with copper/gold ratios. Metals-specific ETFs (COPX, GDX) give purer exposure.
 
-**XLRE: Real Estate Select Sector SPDR**
+#### XLRE: Real Estate Select Sector SPDR
 S&P 500 real estate: PLD, AMT, WELL, EQIX, SPG, O, PSA, DLR, CCI, CBRE and others. Heavy in towers, data centers, logistics, healthcare REITs. It expresses long-term interest rates (cap rates) plus specialty secular themes. Use it as a rate-sensitive trade (pair vs TLT) or to hedge REIT longs. It does not have much office exposure.
 
-**XLC: Communication Services Select Sector SPDR**
+#### XLC: Communication Services Select Sector SPDR
 S&P 500 communications: META and GOOGL/GOOG dominate (together often near half), plus NFLX, TMUS, T, VZ, DIS, CMCSA, CHTR, EA, TTWO. It expresses digital advertising and AI platform plays, with a telecom/media defensive tail. Use it as a hedge for internet/ad longs or a digital-ad cycle trade. Quirk: in practice it's a two-stock fund on most days.
 
 ### Thematic and industry
 
-**SMH: VanEck Semiconductor ETF**
+#### SMH: VanEck Semiconductor ETF
 Holds ~25 large semiconductor companies, cap-weighted with caps: NVDA is the largest (often ~20%), with TSM, AVGO, AMD, ASML, QCOM, MU, AMAT, LRCX, KLAC, INTC. Includes foreign ADRs (TSM, ASML), unlike the domestic-only SOXX. It expresses the AI data-center buildout and the global semiconductor cycle, with high beta (~1.4-1.7 to SPY). Use it as the main AI-cycle trade or hedge for semi longs. SMH vs SPY is the market's AI-leadership gauge. Export controls (China) and hyperscaler capex guidance move it.
 
-**XBI: SPDR S&P Biotech ETF**
+#### XBI: SPDR S&P Biotech ETF
 **Modified equal-weighted** basket of US biotech, so small and mid-cap clinical-stage names carry as much weight as profitable large caps. It expresses risk appetite, funding conditions (rates, IPO/follow-on windows), M&A activity and FDA/regulatory climate. Very sensitive to rates and the speculative cycle. Use it as a speculative-appetite gauge or a rate-cut beneficiary trade; compare with IBB (cap-weighted, larger profitable names). Quirk: binary clinical/regulatory events in individual names make it noisy.
 
-**KRE: SPDR S&P Regional Banking ETF**
+#### KRE: SPDR S&P Regional Banking ETF
 Modified equal-weighted basket of US regional and community banks. It expresses net interest margins, the yield-curve shape, deposit stability, credit quality (especially commercial real estate), and deregulation/M&A. It collapsed in the March 2023 SVB/Signature/First Republic episode; it is the go-to gauge of US banking stress. Use it for curve-steepener or deregulation trades, or short it as a hedge against credit/CRE stress. Quirk: heavy short interest at times, so squeezes can be violent.
 
-**ARKK: ARK Innovation ETF**
+#### ARKK: ARK Innovation ETF
 Actively managed, concentrated (~30-50 names) "disruptive innovation" fund: historically TSLA, COIN, ROKU, HOOD, PLTR, CRSP, SHOP and other high-growth, mostly unprofitable or high-multiple names. It expresses **long-duration, high-beta speculative growth**: very sensitive to real yields, liquidity and retail sentiment. Use it as a speculative-froth gauge (ARKK rallying hard = risk appetite at extremes) or a short-side hedge for speculative longs. Quirks: the manager publishes holdings daily (front-running possible), fund flows drive the underlying names, and returns depend on manager discretion, not an index.
 
 ---
