@@ -1,0 +1,36 @@
+name: Snapshot (equity + positions)
+
+# No AI, no trading. Records both accounts' equity/positions for the
+# dashboard. Triggered every 15 minutes on weekdays by Supabase pg_cron; the
+# script skips itself outside about 9:00-16:30 ET.
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        type: string
+        default: manual
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: true
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - env:
+          ALPACA_ANALYST_KEY: ${{ secrets.ALPACA_ANALYST_KEY }}
+          ALPACA_ANALYST_SECRET: ${{ secrets.ALPACA_ANALYST_SECRET }}
+          ALPACA_MONKEY_KEY: ${{ secrets.ALPACA_MONKEY_KEY }}
+          ALPACA_MONKEY_SECRET: ${{ secrets.ALPACA_MONKEY_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python -m trader.snapshot ${{ inputs.source == 'manual' && '--force' || '' }}

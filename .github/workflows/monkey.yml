@@ -1,0 +1,38 @@
+name: Monkey (random)
+
+# No AI. Once per trading day, triggered by Supabase pg_cron (see
+# supabase/schema.sql) or by hand from the Actions tab.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        type: boolean
+        default: false
+      source:
+        type: string
+        default: manual
+
+concurrency:
+  group: monkey
+  cancel-in-progress: false
+
+jobs:
+  monkey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Throw darts
+        env:
+          ALPACA_MONKEY_KEY: ${{ secrets.ALPACA_MONKEY_KEY }}
+          ALPACA_MONKEY_SECRET: ${{ secrets.ALPACA_MONKEY_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          RUN_TRIGGER: ${{ inputs.source || github.event_name }}
+        run: python -m trader.monkey ${{ inputs.dry_run && '--dry-run' || '' }}

@@ -1,0 +1,133 @@
+name: Analyst (Claude)
+
+# Runs Claude Code on your Claude subscription (CLAUDE_CODE_OAUTH_TOKEN, made
+# with `claude setup-token`). There's no Anthropic API key and no per-token
+# billing, but it does use your plan's usage limits.
+#
+# Triggered twice per trading day by Supabase pg_cron (see
+# supabase/schema.sql), plus a weekly review every Saturday via the
+# schedule below. You can also run it by hand from the Actions tab.
+#
+# Safety design: Claude's step never receives the Alpaca keys and has no
+# shell. It can only read/write files and search the web. Orders are placed
+# by trader/execute.py afterwards, which enforces the risk limits in code.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "trade = normal run, review = weekly study session (no trading)"
+        type: choice
+        options: [trade, review]
+        default: trade
+      dry_run:
+        description: "Plan orders but don't submit them"
+        type: boolean
+        default: false
+      source:
+        description: "Who triggered this (set by pg_cron)"
+        type: string
+        default: manual
+  schedule:
+    - cron: "0 15 * * 6" # Saturday weekly review
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analyst
+  cancel-in-progress: false
+
+env:
+  MODE: ${{ github.event_name == 'schedule' && 'review' || inputs.mode || 'trade' }}
+
+jobs:
+  analyst:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build market brief
+        id: brief
+        env:
+          ALPACA_ANALYST_KEY: ${{ secrets.ALPACA_ANALYST_KEY }}
+          ALPACA_ANALYST_SECRET: ${{ secrets.ALPACA_ANALYST_SECRET }}
+        run: python -m trader.brief analyst ${{ env.MODE == 'review' && '--allow-closed' || '' }}
+
+      - name: Decide whether to run Claude
+        id: gate
+        run: |
+          if [ "$MODE" = "review" ] || [ "${{ steps.brief.outputs.market_open }}" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Market closed; not spending Claude usage."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        if: steps.gate.outputs.run == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Claude researches and decides
+        if: steps.gate.outputs.run == 'true'
+        timeout-minutes: 30
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          python -m trader.prompt "$MODE" > workspace/prompt.md
+          claude -p "$(cat workspace/prompt.md)" \
+            --model sonnet \
+            --max-turns 60 \
+            --permission-mode acceptEdits \
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch" \
+            --disallowedTools "Bash"
+          test -f workspace/decisions.json || { echo "Claude did not write workspace/decisions.json"; exit 1; }
+          cat workspace/decisions.json
+
+      - name: Execute decisions (risk-checked)
+        if: always() && steps.gate.outputs.run == 'true'
+        env:
+          ALPACA_ANALYST_KEY: ${{ secrets.ALPACA_ANALYST_KEY }}
+          ALPACA_ANALYST_SECRET: ${{ secrets.ALPACA_ANALYST_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          RUN_TRIGGER: ${{ inputs.source || github.event_name }}/${{ env.MODE }}
+          AGENT_MODEL: claude-code/sonnet
+        run: python -m trader.execute analyst workspace/decisions.json ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Save Claude's memory
+        if: always() && steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+          git add analyst/memory analyst/library/INDEX.md
+          if git diff --cached --quiet; then echo "No memory changes."; exit 0; fi
+          git commit -m "Analyst memory: $MODE run $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1
+
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.gate.outputs.run == 'true'
+        with:
+          name: analyst-workspace-${{ github.run_id }}
+          path: |
+            workspace/brief.md
+            workspace/decisions.json
+            workspace/prompt.md
+          retention-days: 14
