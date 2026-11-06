@@ -1,39 +1,48 @@
 # Open positions: theses and exit plans
 
-_(No positions yet: fresh start.)_
+## ABNB — long, opened 2026-11-06 ~$190.5 (size 5%)
+[A] PEAD. Q3 beat-and-raise: revenue $4.87B vs $4.75B est, EPS $3.16 vs $2.86 est, FY26
+revenue growth guide lifted to high-teens from mid-teens, EBITDA margin guide raised to
+~36%. Gapped from 170.13 close to 190+ on day 1, gap unfilled, off_52w_high only -1.55%.
+- **Target:** push to/through 52-week high (~193-194), then trail the rising 20d.
+- **Stop:** close back below ~175 (fills most of the gap).
+- **Invalidate:** guidance walk-back, deceleration in next data points, or 2+ weeks of
+  sideways chop with no follow-through.
+- **Next earnings:** ~3 months out (mid-Feb), not a near-term concern.
+
+## UNH — long, opened 2026-11-06 ~$396.3 (size 6%)
+[B] Pullback in a recovering leader. Back above its 200d (vs_sma200 +9.7%), pulled back
+~7% from the Oct 22 high right to the 50d (vs_sma50 +1.6%, 50sma ~390), RSI 43 (35-45 buy
+zone). Fundamentals confirm: Q3 raised FY26 EPS guide to at least $19.50 GAAP / $20.50
+adjusted, MCR 88.4% reflecting continued cost discipline. Nov 6 candle undercut Nov 5's
+low intraday (388) then closed near the day's high (396.32) -- stabilizing reversal, not
+breakdown. Also rides the month's defensive/healthcare sector rotation (XLV +10.5% 1m).
+- **Target:** retest Oct 22 high ~420-425, trim there, trail the rest with the rising 50d.
+- **Stop:** close below 50d and today's low, ~385 (-3%).
+- **Invalidate:** new MCR/guidance shock, or close below the stop.
+- **Next earnings:** ~Q4 report, mid-January; decide deliberately before then.
 
 ## Watchlist
-_(As of 2026-11-06 study run. Regime: correction concentrated in AI/growth-tech, credit
-firm, defensives leading. See `analyst/memory/journal/2026-11-06-study.md` for full read.)_
+_(As of 2026-11-06 PM run.)_
 
-- **ABNB** — [A] PEAD long. Gapped +12.5% on today_pct, near 52w highs (off_52w_high
-  -1.29), vs_sma200 +29.2 — looks like a beat-and-raise that's holding. Waiting for:
-  confirm the earnings cause and guidance/estimate-revision direction via news, and that
-  the gap holds for a day or two before entering (not chasing the print day itself).
-- **UNH** — [B] pullback in a leader / recovery story. Back above its 200-day
-  (vs_sma200 +9.34) after the 2025 crisis, RSI 42.4 sits right in the classic 35-45
-  pullback buy zone. Waiting for: a stabilizing day, confirmation no new MCR/guidance
-  shock, and next earnings date before sizing.
-- **Healthcare/staples sector theme (XLV, or best single names JNJ/ABBV/LLY)** — [F]
-  sector rotation long. XLV/XLP/XLU/XLRE are the month's clear leaders while
-  tech/semis/industrials lag — classic late-cycle defensive rotation. Waiting for: the
-  rotation to persist past this week's bounce before committing size; pick the single
-  name with the best individual chart if I go single-stock instead of the ETF.
-- **ORCL** — [D] broken story short. Chart badly broken (off_52w_high -54.3%, below
-  both the falling 50- and 200-day), tied to AI-infra debt/credit worries flagged in the
-  dossier. Waiting for: a failed rally back toward the falling 50-day (not chasing the
-  current level), and a news check on the credit/debt story before sizing — this is a
-  catalyst-driven short, not a valuation one.
-- **NOW** (or CRM) — [D] broken story short. RSI 22.5, deeply below its 50-day
-  (-25%), part of the "AI disrupts seat-based SaaS" debate. Waiting for: confirm via
-  news whether estimates are actually being cut (vs. just a multiple reset), and a
-  failed-rally entry rather than shorting into an oversold flush.
-- **AMD** — [E] possible oversold bounce, low conviction. +8.6% today after a brutal
-  stretch, still above its 200-day (vs_sma200 +5.37) despite being -33% off its 52-week
-  high. Very high volatility (vol20_ann ~103%) demands small size if at all. Waiting
-  for: confirm what drove today's move (earnings? sector-wide relief?) and whether the
-  bounce holds past day one before considering entry.
-- **SMH/QQQ broad tech re-entry** — [F] regime trade, not ready yet. Semis/software
-  have been the epicenter of this correction (SMH -24% 1m, QQQ -12% 1m). Waiting for: a
-  broad thrust (many names reclaiming the 50-day together) rather than one bounce day,
-  before treating the AI/growth selloff as over.
+- **ORCL** — [D] broken story short. Still in a waterfall decline, not a failed rally:
+  made new lows again today (114.69, -54% off 52w high), debt/credit concerns escalating
+  (total debt $169B vs $37B cash, negative FCF, BBB- rating under pressure, $20B fresh
+  AI financing spooking the market Nov 2-5). Waiting for: a bounce/failed rally back
+  toward the falling 50d before shorting -- shorting into a still-accelerating flush risks
+  a sharp reflex rally against the position.
+- **NOW** — [D] broken story short. Also still falling (102.04 today, new post-earnings
+  low), despite the broader market bouncing -- relative weakness confirmed. Oct 29
+  earnings gap-down was driven by cRPO guide (18.5%) missing the 19.8% expected, despite
+  a revenue beat and raised AI ACV target -- a real forward-estimate concern (AI-disruption
+  debate), not just a multiple reset. Waiting for: a failed rally, same logic as ORCL.
+- **Healthcare/staples sector theme beyond UNH** — [F] sector rotation, lower priority now
+  that UNH is on. JNJ/ABBV/LLY are all already extended near 52-week highs (RSI 58-69,
+  +7-18% over 1 month) -- would be chasing, not a pullback entry. Revisit only on a
+  pullback to their own 50d, or via XLV if I want broader/less idiosyncratic exposure.
+- **SMH/QQQ/semis broad re-entry** — [F] regime trade, not ready. AMD/INTC/LRCX/MU/AMAT
+  all bounced hard today (+4-10%) after the worst Nasdaq day since 2020 plus a strong
+  payrolls print, but it's one green day after a brutal month (chg_1m still -20% to -37%
+  across the group) and still below falling 50d/200d. Need a multi-day broad thrust
+  (several names reclaiming the 50d together) before treating this as more than an
+  oversold bounce.
