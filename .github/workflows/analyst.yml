@@ -11,6 +11,9 @@ name: Analyst (Claude)
 # Safety design: Claude's step never receives the Alpaca keys and has no
 # shell. It can only read/write files and search the web. Orders are placed
 # by trader/execute.py afterwards, which enforces the risk limits in code.
+#
+# Sub-agents (Task/Agent tools) are blocked outside study runs: each one is a
+# separate Claude session, so they multiply subscription usage.
 
 on:
   workflow_dispatch:
@@ -93,7 +96,7 @@ jobs:
             --max-turns ${{ env.MODE == 'study' && 100 || 60 }} \
             --permission-mode acceptEdits \
             --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch" \
-            --disallowedTools "Bash"
+            --disallowedTools "Bash" ${{ env.MODE != 'study' && '"Task" "Agent"' || '' }}
           test -f workspace/decisions.json || { echo "Claude did not write workspace/decisions.json"; exit 1; }
           cat workspace/decisions.json
 
