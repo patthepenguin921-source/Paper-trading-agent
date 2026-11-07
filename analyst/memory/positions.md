@@ -1,5 +1,9 @@
 # Open positions: theses and exit plans
 
+_(Reviewed 2026-11-07. No new price action since the 2026-11-06 fills — market
+closed over the weekend. Both positions unchanged, theses intact, nothing to
+act on; re-check live Monday 2026-11-09.)_
+
 ## ABNB — long, opened 2026-11-06 ~$190.5 (size 5%)
 [A] PEAD. Q3 beat-and-raise: revenue $4.87B vs $4.75B est, EPS $3.16 vs $2.86 est, FY26
 revenue growth guide lifted to high-teens from mid-teens, EBITDA margin guide raised to
@@ -23,19 +27,24 @@ breakdown. Also rides the month's defensive/healthcare sector rotation (XLV +10.
 - **Next earnings:** ~Q4 report, mid-January; decide deliberately before then.
 
 ## Watchlist
-_(As of 2026-11-06 PM run.)_
+_(As of 2026-11-07 review; no new trading session since the 2026-11-06 PM run, so
+these calls are unchanged. Re-verify live Monday before acting.)_
 
 - **ORCL** — [D] broken story short. Still in a waterfall decline, not a failed rally:
-  made new lows again today (114.69, -54% off 52w high), debt/credit concerns escalating
-  (total debt $169B vs $37B cash, negative FCF, BBB- rating under pressure, $20B fresh
-  AI financing spooking the market Nov 2-5). Waiting for: a bounce/failed rally back
-  toward the falling 50d before shorting -- shorting into a still-accelerating flush risks
-  a sharp reflex rally against the position.
-- **NOW** — [D] broken story short. Also still falling (102.04 today, new post-earnings
-  low), despite the broader market bouncing -- relative weakness confirmed. Oct 29
-  earnings gap-down was driven by cRPO guide (18.5%) missing the 19.8% expected, despite
-  a revenue beat and raised AI ACV target -- a real forward-estimate concern (AI-disruption
-  debate), not just a multiple reset. Waiting for: a failed rally, same logic as ORCL.
+  made new lows again Nov 6 (114.69, -54% off 52w high; brief's latest quote ~116.15 is
+  a small bounce off that low but not yet a rally to fade), debt/credit concerns
+  escalating (total debt $169B vs $37B cash, negative FCF, BBB- rating under pressure,
+  $20B fresh AI financing spooking the market Nov 2-5; Nov 7 headline flags Oracle
+  "nearing a death cross" on the Microsoft-deal-unwind story). Waiting for: a bounce/
+  failed rally back toward the falling 50d before shorting -- shorting into a still-
+  accelerating flush risks a sharp reflex rally against the position. Check Monday
+  whether the small bounce extends toward the 50d (entry zone) or fails immediately.
+- **NOW** — [D] broken story short. Also still falling (102.04 Nov 6, 101.96 latest --
+  essentially flat, no bounce), despite the broader market bouncing -- relative weakness
+  confirmed. Oct 29 earnings gap-down was driven by cRPO guide (18.5%) missing the 19.8%
+  expected, despite a revenue beat and raised AI ACV target -- a real forward-estimate
+  concern (AI-disruption debate), not just a multiple reset. Waiting for: a failed rally,
+  same logic as ORCL.
 - **Healthcare/staples sector theme beyond UNH** — [F] sector rotation, lower priority now
   that UNH is on. JNJ/ABBV/LLY are all already extended near 52-week highs (RSI 58-69,
   +7-18% over 1 month) -- would be chasing, not a pullback entry. Revisit only on a
