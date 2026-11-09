@@ -32,6 +32,15 @@ notes to re-test, not settled doctrine. Revisit hard once trades actually close.
   confirmation either. Don't react to single-day P&L on either name; wait for the
   actual invalidation levels (ABNB close <~175, UNH close <50d/~385) or real target
   progress before changing anything.
+- **A real, confirmed catalyst doesn't override the "don't chase" rule by itself.**
+  2026-11-09: AMD jumped +13.9% intraday on a genuine, checkable catalyst (Google Cloud
+  picked AMD EPYC chips for its new TPU AI system) -- not just sector beta, a real
+  idiosyncratic positive surprise. Passed anyway because the stock had already run ~26% in
+  two days off the Nov 5 crash low with RSI back to 47 (no longer oversold) before I could
+  act on it. The lesson isn't "ignore catalysts," it's "a catalyst explains *why* a stock
+  moved, not that the entry price is still good" -- still need a pullback or a multi-day
+  hold above resistance, same bar as any other setup. Revisit if it pulls back to the gap
+  zone (~470-490) and holds.
 - **A scandal/governance headline on a name you don't own is not an automatic short.**
   2026-11-09: NVDA swung from -8.4% to -4.5% intraday on a CEO investigation headline
   (Jensen Huang). Real, specific, and bearish — but binary (resolves either way on the

@@ -1,14 +1,16 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-09 AM, first live session since Friday 2026-11-06 fills.)_
+_(Reviewed 2026-11-09 PM, second check same session.)_
 
 ## ABNB — long, opened 2026-11-06 ~$190.5 (size 5%)
 [A] PEAD. Q3 beat-and-raise: revenue $4.87B vs $4.75B est, EPS $3.16 vs $2.86 est, FY26
 revenue growth guide lifted to high-teens from mid-teens, EBITDA margin guide raised to
 ~36%. Gapped from 170.13 close to 190+ on day 1, gap unfilled.
-- **Status 2026-11-09:** Made an intraday high of 197.87, essentially at the original
-  52-week-high target (~198). Multiple analyst price-target raises since earnings. Thesis
-  fully on track, slightly ahead of schedule.
+- **Status 2026-11-09 PM:** Made an intraday high of 197.87 earlier today, essentially at
+  the original 52-week-high target (~198); pulled back intraday to ~193.5, still up 1.9% on
+  the day. More analyst actions today (Jefferies PT adjustment, Rothschild upgrade to
+  Neutral) -- noise, not new information. Thesis fully on track, slightly ahead of schedule.
+  Target not yet met (needs a close through ~198, not just an intraday poke).
 - **Target:** close through the 52-week high, then trail the rising 20d.
 - **Stop:** tightening from the original ~175 (gap-fill) up toward the Nov 6 higher low
   ~184 -- trail stops up under winners per exit discipline. Close below ~184 would be the
@@ -21,8 +23,9 @@ revenue growth guide lifted to high-teens from mid-teens, EBITDA margin guide ra
 [B] Pullback in a recovering leader. Back above its 200d (vs_sma200 +9.5%), consolidating
 right at the 50d (~390-396) for four straight sessions (Nov 5-9), RSI still soft (~33-43).
 Fundamentals: Q3 raised FY26 EPS guide to at least $19.50 GAAP / $20.50 adjusted, MCR 88.4%.
-- **Status 2026-11-09:** Flat/sideways at the 50d, not breaking down -- stabilizing
-  consolidation, consistent with original thesis. No new news since entry.
+- **Status 2026-11-09 PM:** Flat/sideways at the 50d, not breaking down -- stabilizing
+  consolidation, consistent with original thesis. Only news is UNH's $28/share bid for
+  Surgery Partners being rejected -- M&A noise, not thesis-relevant either way.
 - **Target:** retest Oct 22 high ~420-425, trim there, trail the rest with the rising 50d.
 - **Stop:** close below 50d and the recent swing low, ~385 (-3% from current).
 - **Invalidate:** new MCR/guidance shock, or close below the stop.
@@ -30,14 +33,24 @@ Fundamentals: Q3 raised FY26 EPS guide to at least $19.50 GAAP / $20.50 adjusted
 
 ## Watchlist
 
-- **NVDA** — not a position, watching only. 2026-11-09: stock round-tripped from -8.4% at
-  the open to -4.5% on a board investigation into CEO Jensen Huang over an alleged personal
-  relationship with a suspected Chinese intelligence contact -- a fresh key-man/governance
-  risk layered on existing AI-capex-fatigue selling and Google's new TPU launch (competitive
-  threat to Nvidia's GPU moat). Highly volatile, headline-driven, not a clean trend or a
-  confirmed broken-story short -- too binary/reversible to trade on a single day's news.
-  Re-check for more concrete fallout (resignation, further investigation findings,
-  customer reaction) before considering either side.
+- **NVDA** — not a position, watching only. 2026-11-09 PM: confirmed via web search --
+  Nvidia's board opened an independent investigation (outside counsel, independent-director
+  committee) after Huang admitted an affair with a businesswoman U.S. intelligence says was
+  gathering information for Beijing. Huang apologized, stays CEO, says he'll cooperate; now
+  also facing Congressional scrutiny. Stock closed day down ~5.4%. Still no concrete
+  resolution (no resignation, no disclosed customer/revenue impact) -- still rumor-stage
+  relative to the playbook D bar of a *settled* broken story. Keep watching, don't trade the
+  headline.
+- **AMD — Google TPU deal, real catalyst but already chased today.** 2026-11-09: Google
+  Cloud selected AMD's 5th-gen EPYC chips to power its new TPU 8tx AI system (confidential
+  computing, inference/fine-tuning workloads) -- confirmed via web search, a genuine new
+  business win for AMD, not just sector beta. Stock +13.9% today alone, now only -6.8% below
+  its 50d (vs. -16% to -24% for AMAT/LRCX/MU), on top of Friday's bounce -- a ~26% 2-day
+  rally off the Nov 5 crash low (404 -> 510). RSI already back to 47 (no longer oversold).
+  This is a real catalyst but I'd be chasing a stock already up double digits intraday with
+  no pullback -- exactly the "things to avoid" rule. Watching for a pullback toward today's
+  gap (~470-490) or a multi-day hold above the 50d before considering entry. Very high
+  vol20_ann (118%) -- any entry must be sized down accordingly.
 - **ORCL** — [D] broken story short. Microsoft reportedly not renewing a capacity deal
   tied to older Nvidia GPUs (2026-11-06 news) is incremental confirmation of the
   debt/credit-stress thesis (negative FCF, BBB- under pressure, $20B fresh AI financing).
