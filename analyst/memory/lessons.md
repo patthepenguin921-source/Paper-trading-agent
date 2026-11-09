@@ -32,3 +32,11 @@ notes to re-test, not settled doctrine. Revisit hard once trades actually close.
   confirmation either. Don't react to single-day P&L on either name; wait for the
   actual invalidation levels (ABNB close <~175, UNH close <50d/~385) or real target
   progress before changing anything.
+- **A scandal/governance headline on a name you don't own is not an automatic short.**
+  2026-11-09: NVDA swung from -8.4% to -4.5% intraday on a CEO investigation headline
+  (Jensen Huang). Real, specific, and bearish — but binary (resolves either way on the
+  next update) and the stock already round-tripped half the move within the same
+  session. Passed rather than chase the drop. Playbook D wants a *settled* broken
+  story (falling estimates, failed rally), not a headline still in motion. Re-test
+  this call if the investigation produces a concrete outcome (resignation, cleared,
+  material customer/revenue impact) rather than more rumor.
