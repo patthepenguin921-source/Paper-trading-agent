@@ -1,16 +1,16 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-10 AM.)_
+_(Reviewed 2026-11-10 PM.)_
 
 ## ABNB — long, opened 2026-11-06 ~$190.5 (size 5%)
 [A] PEAD. Q3 beat-and-raise: revenue $4.87B vs $4.75B est, EPS $3.16 vs $2.86 est, FY26
 revenue growth guide lifted to high-teens from mid-teens, EBITDA margin guide raised to
 ~36%. Gapped from 170.13 close to 190+ on day 1, gap unfilled.
-- **Status 2026-11-10 AM:** Pulled back from the 197.87 intraday high (Nov 9) to ~187.8,
-  down ~1.3% today -- a normal pullback after testing the 52w-high target without closing
-  through it, not a break. Still well above the ~184 trailing stop. Hot CPI print today
-  (see market view) is a mild macro headwind but not ABNB-specific; no company news changes
-  the thesis.
+- **Status 2026-11-10 PM:** Down ~2.1% today to ~186.5, continuing the pullback from the
+  197.87 intraday high (Nov 9) -- still a normal pullback after testing the 52w-high target
+  without closing through it, not a break. Still ~2.5pts above the ~184 trailing stop.
+  Broader tape weak today (SPY -0.53%, QQQ -0.98%) on CPI follow-through plus NVDA-driven
+  semis derating -- neither is ABNB-specific; no company news changes the thesis.
 - **Target:** close through the 52-week high (~198), then trail the rising 20d.
 - **Stop:** ~184 (Nov 6 higher low) -- close below would be the first sign of trouble;
   close below ~175 (gap-fill) is the hard invalidation.
@@ -23,11 +23,12 @@ revenue growth guide lifted to high-teens from mid-teens, EBITDA margin guide ra
 back above its 50d (+2.3%) after four sessions consolidating right at it (Nov 5-9), RSI
 still soft (~37). Fundamentals: Q3 raised FY26 EPS guide to at least $19.50 GAAP / $20.50
 adjusted, MCR 88.4%.
-- **Status 2026-11-10 AM:** Reclaimed the 50d, +0.45% today -- thesis slightly ahead of
-  plan. News flow is noise: Senate Democrats opened an inquiry into insurer coverage
-  terminations (industry-wide, not UNH-specific), some states extending ACA subsidies
-  (mixed/uncertain impact), a new independent director appointed (routine), and the
-  rejected $28/share Surgery Partners bid (already known, M&A noise either way).
+- **Status 2026-11-10 PM:** Extended further above the 50d, +1.15% today to ~402 while the
+  broader tape was red -- thesis ahead of plan, relative strength is a good sign. News flow
+  still noise: Senate Democrats' inquiry into insurer coverage terminations (industry-wide,
+  not UNH-specific), states extending ACA subsidies (mixed/uncertain impact), a new
+  independent director (routine), rejected $28/share Surgery Partners bid (already known),
+  and a Wyoming supplemental Medicare plan discontinuation (routine, immaterial).
 - **Target:** retest Oct 22 high ~420-425, trim there, trail the rest with the rising 50d.
 - **Stop:** close below 50d and the recent swing low, ~385 (-3.5% from current).
 - **Invalidate:** new MCR/guidance shock, concrete adverse regulatory action (not just an
@@ -36,37 +37,38 @@ adjusted, MCR 88.4%.
 
 ## Watchlist
 
-- **NVDA** — not a position, watching only. 2026-11-10: re-confirmed via web search, still
-  same stage as Nov 8-9 -- independent board investigation ongoing (outside counsel,
-  independent-director committee) into the Jensen Huang affair/alleged-Chinese-intelligence
-  matter, Huang stays CEO and cooperating, no resignation, no disclosed customer/revenue
-  impact. Stock -3.2% today (also CPI-driven semis derating, not just the headline). Still
-  rumor/process-stage relative to the playbook D bar of a *settled* broken story. Keep
-  watching, don't trade the headline.
-- **AMD — Google TPU catalyst, now closing in on the 50d but still extended, not a pullback
-  entry.** Third straight green day 2026-11-10 (+5.0%, closed as high as 535), now only
-  -2.7% below its 50d (vs. -14% to -23% for AMAT/LRCX/MU) -- but it ran straight through the
-  470-490 gap zone I was watching for a pullback into, rather than pulling back. Entering now
-  would still be chasing. Watching for either a real pullback or 2+ closes confirmed above
-  the 50d before considering entry. Very high vol20_ann (119%) -- any entry must be sized
-  down accordingly.
-- **ORCL** — [D] broken story short. Still bouncing off last week's low, no failed rally yet
-  (today flat, -0.16%). Still ~13% below its falling 50d (~138). Keep waiting for a bounce
-  toward the 50d that rolls over -- do not short into a still-rising bounce.
-- **NOW** — [D] broken story short. Continuing relative weakness (-0.82% today while broader
-  tape only mildly red) but still no failed-rally entry (needs a bounce toward the falling
-  50d that rolls over, not just flatness/underperformance).
+- **NVDA** — not a position, watching only. 2026-11-10 PM update: story escalated --
+  reporting now alleges the Chinese contact linked to Jensen Huang helped facilitate $7.5B
+  in chip shipments to China, a more concrete/business-relevant claim than the affair alone
+  (implies possible export-control exposure). Stock -6.6% today, -11% over two sessions,
+  RSI 18.86, -31.4% off 52w high, -23.4% below falling 50d, -18.3% below its 200d -- a real,
+  accelerating flush. Still passing: below the 200d disqualifies playbook E's oversold-
+  bounce bar, and it's in the flush itself, not a failed rally, which disqualifies playbook
+  D's short entry (same discipline as CAT below). No resignation, no confirmed business
+  impact yet -- allegations, not a settled outcome. Watch for either a failed-rally short
+  setup or a genuine resolution (cleared, or confirmed material impact).
+- **AMD — Google TPU catalyst, now showing a possible first crack after a huge run, still
+  not a pullback entry.** 2026-11-10 PM: sharp intraday reversal -- opened 502.8, ran to a
+  539.25 high, closed 512.56 (+0.83%, off ~5% from the intraday high). After +27% in four
+  sessions off the Nov 5 low (404.4), this looks like the first real selling pressure near
+  highs, but it's still only -6.6% below the 50d and hasn't actually pulled back to a moving
+  average or formed a base. Entering now would still be chasing. Watch for a real pullback
+  (ideally toward the 50d) or a multi-day consolidation before considering entry. Very high
+  vol20_ann (117%) -- any entry must be sized down accordingly.
+- **ORCL** — [D] broken story short. Resumed falling today (-2.36%), now -15% below its
+  falling 50d. No bounce/failed-rally setup -- still falling, not rallying. Keep waiting.
+- **NOW** — [D] broken story short. Accelerating weakness (-4.73% today), now -27.2% below
+  its falling 50d, RSI 13.93 (extreme). Deep in a flush like NVDA/CAT -- same discipline:
+  wait for a bounce toward the 50d that rolls over, not a short into the flush itself.
 - **Semis broad re-entry (AMD/AMAT/LRCX/MU/SMH)** — [F] regime trade, still not ready and
   now more fragmented: AMD/AVGO up 4-5% on idiosyncratic catalysts 2026-11-10 while
   NVDA/MU/INTC fell on CPI-driven derating -- a split tape, not group confirmation.
   AMAT/LRCX/MU remain 13-23% below their own falling 50d. Needs several names actually
   reclaiming their 50d together, not just a couple of names running on their own news.
 - **CAT / "AI picks-and-shovels" unwind** — [D] possible broken story short, not yet
-  actionable. 2026-11-10 headline ("Corning to Caterpillar: The AI picks-and-shovels trade
-  caves in") flags a real factor-unwind story; CAT -2.4% today, -31.6% over 3mo, RSI 26,
-  -22% below its falling 50d. But this is already deep into an extended flush -- playbook D
-  wants entry on a failed rally, not into the flush itself. Watch for a bounce toward the
-  50d that then rolls over.
+  actionable. Continuing lower 2026-11-10 PM (-2.79% today, -27% 1mo, RSI 25.8, -22.5% below
+  its falling 50d) -- still deep into an extended flush, not a failed rally. Watch for a
+  bounce toward the 50d that then rolls over.
 - **GOOGL/META mega-cap tech bounce** — not yet a setup. GOOGL still below its 200d, one
   green week off a month-long downtrend. Revisit only on a pullback to a rising average or a
   multi-day confirmed reversal.
