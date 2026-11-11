@@ -3,9 +3,18 @@
 Curated by the analyst. It's rewritten during each weekly review, so keep it
 short and evidence-backed.
 
-_(Week 1. Only two trades on, both opened the day before this review — zero
-closed trades yet. Nothing below is validated by real P&L; treat it as process
-notes to re-test, not settled doctrine. Revisit hard once trades actually close.)_
+_(Week 1. First closed trade (ABNB, 2026-11-11 PM) below; UNH still open. Everything
+else is still process notes to re-test, not settled doctrine.)_
+
+- **First closed trade: ABNB PEAD, 5 days held, ~-4.4%.** Bought 2026-11-06 ~190.46 on a
+  genuine Q3 beat-and-raise gap; sold 2026-11-11 ~182 when price traded back inside the
+  unfilled gap (playbook A's precise invalidation) after four straight weak sessions.
+  Fundamentals never broke -- analysts were still raising price targets the same week I
+  exited -- so this was a clean stop-exit on a failed technical setup, not a bad-news
+  trade. Takeaway: for playbook A entries, write the exit plan around the actual gap
+  boundary (the prior session's high/low), not just a round-number soft stop -- it's a
+  more precise, less arguable invalidation level and made this exit easy to act on from
+  intraday data without waiting for a confirmed close.
 
 - **Credit-vs-growth divergence correctly separated a factor unwind from a systemic
   correction.** HYG/LQD stayed firm (RSI 69-76, at/above 50d) while QQQ/SMH broke
