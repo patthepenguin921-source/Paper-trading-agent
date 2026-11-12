@@ -1,16 +1,16 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-12 AM.)_
+_(Reviewed 2026-11-12 PM.)_
 
 ## UNH — long, opened 2026-11-06 ~$396.3 (size 6%)
 [B] Pullback in a recovering leader. Back above its 200d (vs_sma200 +10.4%), now cleanly
 back above its 50d (+2.3%) after four sessions consolidating right at it (Nov 5-9), RSI
 still soft (~37). Fundamentals: Q3 raised FY26 EPS guide to at least $19.50 GAAP / $20.50
 adjusted, MCR 88.4%.
-- **Status 2026-11-12 AM:** +1.45% P/L, price ~401, vs_sma50 +2.71%, RSI 37.06. No new
-  UNH-specific news since 11-10 (Senate Dem inquiry into insurer coverage terminations
-  already noted, no update). Market-wide weakness today is NVDA-scandal-driven tech/semis
-  selling, not healthcare-related -- XLV roughly in line with SPY. Thesis intact, holding.
+- **Status 2026-11-12 PM:** +2.37% P/L, price ~404.9, vs_sma50 +3.57%, RSI 39.8. Still no
+  new UNH-specific news since 11-10. Today's market weakness is NVDA-resignation-driven
+  tech/semis selling plus a cyclicals-over-defensives rotation (energy/industrials up,
+  XLV in line with SPY) -- unrelated to the thesis. Thesis intact, holding, same as AM.
 - **Target:** retest Oct 22 high ~420-425, trim there, trail the rest with the rising 50d.
 - **Stop:** close below 50d and the recent swing low, ~385 (-3% from current).
 - **Invalidate:** new MCR/guidance shock, concrete adverse regulatory action (not just an
@@ -27,8 +27,9 @@ adjusted, MCR 88.4%.
 - **NVDA** — not a position, watching only. 2026-11-12 update: the binary resolved --
   Jensen Huang resigned as CEO (board accepted it effective immediately) amid an affair/
   alleged-espionage scandal; CFO Colette Kress named interim CEO, board searching for a
-  permanent replacement. Stock -6.6% to ~$162 today, RSI 23.5, vs_sma50 -24.6%, vs_sma200
-  -20.3% -- an accelerating flush (multi-week slide plus today's drop), not a failed rally.
+  permanent replacement. Stock -5.7% to ~$164 as of the PM check, RSI 23.9, vs_sma50 -24%,
+  vs_sma200 -19.6% -- an accelerating flush (multi-week slide plus today's drop), not a
+  failed rally. No bounce yet intraday.
   Playbook D needs entry on a failed rally, not into a flush -- passed again, same discipline
   as ORCL/NOW. Earnings still land 2026-11-17 -- leadership-transition uncertainty now
   stacks on top of the earnings binary, so even a bounce before then would be a thin setup.
@@ -51,15 +52,15 @@ adjusted, MCR 88.4%.
   (AMAT -2.3%, LRCX -1.1%, MU -4.3%, INTC -3.0%, SMH -2.0%) on the NVDA CEO-resignation
   shock -- still 9-35% below their own 50d. Needs to show it can hold a bounce through a
   negative sector headline before this is actionable again.
-- **AVGO/QCOM/AMD/TXN — reclaimed 50d, relative strength on 2026-11-12, still passed.**
-  All four held up or extended today despite NVDA/AMAT/LRCX/MU/INTC selling off --
-  genuine divergence, not noise. But AVGO is +24% in 5 days (new local high, already past
-  any pullback entry) and AMD +40% in 5 days (same problem, still on watchlist above) --
-  both too extended to chase. QCOM (+1.4% today, vs_sma50 only +0.8%, RSI 52, fresh reclaim)
-  and TXN (flattish, vs_sma50 +9.8%, least damaged of the group) look like the cleaner
-  entries, but passed on same-day-as-a-major-negative-headline timing risk -- want to see
-  the reclaim hold a second session through the NVDA-news noise before treating it as
-  playbook F confirmation.
+- **AVGO/QCOM/AMD/TXN — reclaimed 50d, relative strength holding through 2026-11-12.**
+  All four held up or extended both this morning and into the afternoon despite
+  NVDA/AMAT/LRCX/MU/INTC selling off -- genuine divergence, not noise, but still only one
+  calendar session so far (AM and PM reviews same day don't count as two days). AVGO is
+  +24.9% in 5 days (new local high, already past any pullback entry) and AMD +44.5% in 5
+  days (same problem, still on watchlist above) -- both too extended to chase. QCOM
+  (vs_sma50 -0.9%, RSI 50.7, fresh reclaim) and TXN (vs_sma50 +10.5%, least damaged of the
+  group) still look like the cleaner entries -- need the reclaim to hold into tomorrow (a
+  genuine second session) before treating it as playbook F confirmation.
 - **CAT / "AI picks-and-shovels" unwind** — [D] possible broken story short, not yet
   actionable. Bounced +3.2% today on top of yesterday's bounce -- still -19% below its
   falling 50d. Watch for the bounce to roll over before considering a short.
@@ -69,9 +70,13 @@ adjusted, MCR 88.4%.
 - **Healthcare/staples sector theme beyond UNH** — [F] sector rotation, lower priority.
   JNJ/ABBV/LLY all extended near 52-week highs. Revisit only on a pullback to their own 50d,
   or via XLV for broader exposure.
-- **Energy weakness (USO -8.45% 5d, OXY RSI 22.68)** — noted but not researched enough to
-  act. Could be a pullback within a still-positive 1y trend (USO +102.6% 1y) rather than a
-  broken story. Needs a proper look at oil fundamentals/OPEC before treating as a short.
+- **Energy bounce, 2026-11-12 PM** — XLE +2.2%, XOM/CVX/COP/OXY all +2-3% today, USO +3.4%,
+  OXY RSI still only ~31.5 (oversold). Checked for an oil-specific catalyst; web search
+  returned noisy/contradictory WTI price reports and a headline that crude was actually
+  *slipping* on rising OPEC+ supply -- doesn't support a clean oil-driven story. Reads more
+  like a broad cyclicals-over-defensives rotation day (industrials/materials also green,
+  XLU/XLP/XLY laggards) than an energy-specific catalyst. Not actionable yet; would need
+  either a real oil catalyst or the bounce to hold beyond a rotation day.
 - **Rate-sensitive sectors (XLU, XLRE, TLT, GLD) — new macro input, not yet a trade.**
   2026-11-10: hot October CPI (core +0.3% vs +0.2% est) pushed 10y yield to ~4.95% (+8bp)
   and 2y to ~4.69% (+15bp), reviving December hike debate. XLU/XLRE underperformed the
