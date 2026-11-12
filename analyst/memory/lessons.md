@@ -50,11 +50,15 @@ else is still process notes to re-test, not settled doctrine.)_
   moved, not that the entry price is still good" -- still need a pullback or a multi-day
   hold above resistance, same bar as any other setup. Revisit if it pulls back to the gap
   zone (~470-490) and holds.
-- **A scandal/governance headline on a name you don't own is not an automatic short.**
-  2026-11-09: NVDA swung from -8.4% to -4.5% intraday on a CEO investigation headline
-  (Jensen Huang). Real, specific, and bearish — but binary (resolves either way on the
-  next update) and the stock already round-tripped half the move within the same
-  session. Passed rather than chase the drop. Playbook D wants a *settled* broken
-  story (falling estimates, failed rally), not a headline still in motion. Re-test
-  this call if the investigation produces a concrete outcome (resignation, cleared,
-  material customer/revenue impact) rather than more rumor.
+- **A scandal/governance headline on a name you don't own is not an automatic short --
+  and even after it resolves, a settled story still isn't a short until the price
+  action confirms it.** 2026-11-09: NVDA swung from -8.4% to -4.5% intraday on a CEO
+  investigation headline (Jensen Huang); passed since the binary was still unresolved.
+  2026-11-12: it resolved -- Huang resigned amid an affair/espionage scandal, CFO
+  named interim CEO -- but the stock was in an accelerating flush that day (-6.6%,
+  RSI 23.5, multi-week slide), not a failed rally, so playbook D's entry condition
+  (failed rally, not a flush) still wasn't met. Passed again. Two separate
+  disqualifiers caught at two different times: an unresolved binary, then later a
+  flush instead of a failed rally. The playbook's entry rules are doing real work --
+  keep checking both conditions independently rather than treating "the news finally
+  happened" as itself a green light.

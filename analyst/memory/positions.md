@@ -1,17 +1,16 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-11 PM.)_
+_(Reviewed 2026-11-12 AM.)_
 
 ## UNH — long, opened 2026-11-06 ~$396.3 (size 6%)
 [B] Pullback in a recovering leader. Back above its 200d (vs_sma200 +10.4%), now cleanly
 back above its 50d (+2.3%) after four sessions consolidating right at it (Nov 5-9), RSI
 still soft (~37). Fundamentals: Q3 raised FY26 EPS guide to at least $19.50 GAAP / $20.50
 adjusted, MCR 88.4%.
-- **Status 2026-11-11 PM:** Recovered off the AM dip -- traded down to ~397 this morning
-  (-1.93%, RSI ~31.6) then back up to ~402 by this afternoon (-0.75% on the day), RSI back
-  to ~34, vs_sma50 +2.85%. No new UNH-specific news since the AM check. Reads as the
-  pullback resolving upward within the range, not a thesis break -- still well clear of the
-  ~385 stop.
+- **Status 2026-11-12 AM:** +1.45% P/L, price ~401, vs_sma50 +2.71%, RSI 37.06. No new
+  UNH-specific news since 11-10 (Senate Dem inquiry into insurer coverage terminations
+  already noted, no update). Market-wide weakness today is NVDA-scandal-driven tech/semis
+  selling, not healthcare-related -- XLV roughly in line with SPY. Thesis intact, holding.
 - **Target:** retest Oct 22 high ~420-425, trim there, trail the rest with the rising 50d.
 - **Stop:** close below 50d and the recent swing low, ~385 (-3% from current).
 - **Invalidate:** new MCR/guidance shock, concrete adverse regulatory action (not just an
@@ -25,15 +24,17 @@ adjusted, MCR 88.4%.
   sentiment are still fine (Jefferies $230, Wedbush $237, JPMorgan $202 targets this week).
   Revisit fresh only if it bases and reclaims ~190 on volume -- don't re-enter just because
   it's "cheaper," need the price confirmation back.
-- **NVDA** — not a position, watching only. 2026-11-11 update: Baird cut its price
-  target to $200 from $500 and downgraded to neutral, citing Huang-CEO
-  uncertainty plus China export-curb and AI-demand-slowdown risk; Morgan Stanley pulled it
-  from its top-picks list. Stock +4.1% today on top of yesterday's bounce -- still below its
-  200d (-14%, disqualifies playbook E's oversold-bounce bar) and this is a bounce, not a
-  failed rally yet (disqualifies playbook D). Earnings land 2026-11-17 -- CEO-scandal
-  resolution risk stacked on top of an earnings binary is too many overlapping unknowns to
-  trade before then. Watch post-earnings for either a clean failed-rally short or a genuine
-  resolution (cleared, or confirmed material impact) once the binary events clear.
+- **NVDA** — not a position, watching only. 2026-11-12 update: the binary resolved --
+  Jensen Huang resigned as CEO (board accepted it effective immediately) amid an affair/
+  alleged-espionage scandal; CFO Colette Kress named interim CEO, board searching for a
+  permanent replacement. Stock -6.6% to ~$162 today, RSI 23.5, vs_sma50 -24.6%, vs_sma200
+  -20.3% -- an accelerating flush (multi-week slide plus today's drop), not a failed rally.
+  Playbook D needs entry on a failed rally, not into a flush -- passed again, same discipline
+  as ORCL/NOW. Earnings still land 2026-11-17 -- leadership-transition uncertainty now
+  stacks on top of the earnings binary, so even a bounce before then would be a thin setup.
+  Watch for: (1) a bounce that fails (reclaims then rolls back below a falling average) for
+  a playbook D short, or (2) a clean multi-day base once the CEO-search/earnings dust
+  settles, before considering either side.
 - **AMD — Google TPU catalyst, now very extended, no pullback entry yet.** +8.7% more today
   on top of the prior run; vs_sma50 has flipped positive (+1.8%) for the first time since
   the breakdown. Chasing here would be buying the extension, not a pullback -- wait for an
@@ -45,13 +46,20 @@ adjusted, MCR 88.4%.
 - **NOW** — [D] broken story short, still the most broken of the group. +3.2% today but RSI
   still only ~13.5 (barely moved from 13.93), vs_sma50 -23.1% -- far less of a bounce than
   ORCL/semis. Still wait for the bounce to show signs of failing before considering a short.
-- **Semis group (AMAT/LRCX/MU/SMH/INTC) — [F] regime trade, partial reclaim, still not
-  actionable.** Second big bounce day in a row (MU +12.8%, LRCX +7.0%, AMAT +6.6%,
-  INTC +7.9%, SMH +5.5%), but these five are still 9-35% below their own 50d (AMAT -9.8%,
-  LRCX -15.1%, MU -14.0%, INTC -34.8%). AVGO/QCOM/AMD/TXN have already reclaimed their 50d
-  on this move -- worth rechecking those four specifically next run for a possible
-  playbook-F entry if the reclaim holds a second/third day; the rest of the group still
-  needs real multi-day follow-through.
+- **Semis group (AMAT/LRCX/MU/SMH/INTC) — [F] regime trade, rolled back over today, not
+  actionable.** After two bounce days, AMAT/LRCX/MU/INTC/SMH were all red again today
+  (AMAT -2.3%, LRCX -1.1%, MU -4.3%, INTC -3.0%, SMH -2.0%) on the NVDA CEO-resignation
+  shock -- still 9-35% below their own 50d. Needs to show it can hold a bounce through a
+  negative sector headline before this is actionable again.
+- **AVGO/QCOM/AMD/TXN — reclaimed 50d, relative strength on 2026-11-12, still passed.**
+  All four held up or extended today despite NVDA/AMAT/LRCX/MU/INTC selling off --
+  genuine divergence, not noise. But AVGO is +24% in 5 days (new local high, already past
+  any pullback entry) and AMD +40% in 5 days (same problem, still on watchlist above) --
+  both too extended to chase. QCOM (+1.4% today, vs_sma50 only +0.8%, RSI 52, fresh reclaim)
+  and TXN (flattish, vs_sma50 +9.8%, least damaged of the group) look like the cleaner
+  entries, but passed on same-day-as-a-major-negative-headline timing risk -- want to see
+  the reclaim hold a second session through the NVDA-news noise before treating it as
+  playbook F confirmation.
 - **CAT / "AI picks-and-shovels" unwind** — [D] possible broken story short, not yet
   actionable. Bounced +3.2% today on top of yesterday's bounce -- still -19% below its
   falling 50d. Watch for the bounce to roll over before considering a short.
