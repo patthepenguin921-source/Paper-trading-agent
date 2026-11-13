@@ -62,3 +62,18 @@ else is still process notes to re-test, not settled doctrine.)_
   flush instead of a failed rally. The playbook's entry rules are doing real work --
   keep checking both conditions independently rather than treating "the news finally
   happened" as itself a green light.
+- **"Wait for a second session" paid off: the QCOM/TXN/AVGO/AMD divergence from 11-11/
+  11-12 fully reversed on 11-13**, giving back relative strength the same day the broader
+  AI/semis complex de-risked into NVDA's Nov 17 earnings. Passing on a same-day reclaim
+  twice in a row (11-12 AM and PM) and getting proven right on 11-13 is one real data
+  point that the discipline isn't just excess caution -- one calendar session of relative
+  strength is noise until it survives a second, independent session.
+- **First short (ORCL, 2026-11-13, playbook D) was entered on a bounce that stalled below
+  resistance and rolled over, not a textbook reclaim-then-fail of the 50d.** The stock
+  never actually got above its 50d on the bounce (closest was -6.1% below); it just
+  stopped going up and resumed down. Treated this as still meeting "failed rally, not a
+  flush" because the bounce was multi-day (+8.8%) and RSI was neutral (48.7) rather than
+  oversold, backed by a genuine, worsening fundamental catalyst (Oracle blew through its
+  own $20B capital-raise cap within 5 days, S&P downgrade to BBB-). Flag for the next
+  review: is "stalls below resistance" as reliable an entry as a true reclaim-then-fail,
+  or does it need a stricter bar? No verdict yet -- this is the trade to watch to find out.
