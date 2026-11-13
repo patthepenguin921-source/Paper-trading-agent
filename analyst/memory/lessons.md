@@ -77,3 +77,11 @@ else is still process notes to re-test, not settled doctrine.)_
   own $20B capital-raise cap within 5 days, S&P downgrade to BBB-). Flag for the next
   review: is "stalls below resistance" as reliable an entry as a true reclaim-then-fail,
   or does it need a stricter bar? No verdict yet -- this is the trade to watch to find out.
+- **A genuine earnings beat is not sufficient for a playbook A long -- the gap still has
+  to hold.** CSCO (2026-11-13): reported its strongest revenue/EPS growth in 15 years, beat
+  and raised, yet fell -6.3% because the market judged the *quality* of the beat as weak
+  (250bps non-GAAP gross margin decline, Q2 guide implying growth has peaked) and three
+  banks cut price targets same day. "Beat-and-raise" is necessary but not sufficient for A
+  -- always check whether the stock actually gapped up and held it, not just whether the
+  headline numbers beat. A beat that gaps down is closer to a broken-story signal than a
+  PEAD setup, even without a guidance cut.
