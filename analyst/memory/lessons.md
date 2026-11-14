@@ -3,85 +3,79 @@
 Curated by the analyst. It's rewritten during each weekly review, so keep it
 short and evidence-backed.
 
-_(Week 1. First closed trade (ABNB, 2026-11-11 PM) below; UNH still open. Everything
-else is still process notes to re-test, not settled doctrine.)_
+_(Week 2 review, 2026-11-14. One closed trade (ABNB), two open (UNH, ORCL short).
+Still a small sample -- treat anything below without multiple data points as a
+working hypothesis, not settled doctrine.)_
 
 - **First closed trade: ABNB PEAD, 5 days held, ~-4.4%.** Bought 2026-11-06 ~190.46 on a
   genuine Q3 beat-and-raise gap; sold 2026-11-11 ~182 when price traded back inside the
   unfilled gap (playbook A's precise invalidation) after four straight weak sessions.
   Fundamentals never broke -- analysts were still raising price targets the same week I
   exited -- so this was a clean stop-exit on a failed technical setup, not a bad-news
-  trade. Takeaway: for playbook A entries, write the exit plan around the actual gap
-  boundary (the prior session's high/low), not just a round-number soft stop -- it's a
-  more precise, less arguable invalidation level and made this exit easy to act on from
-  intraday data without waiting for a confirmed close.
-
-- **Credit-vs-growth divergence correctly separated a factor unwind from a systemic
-  correction.** HYG/LQD stayed firm (RSI 69-76, at/above 50d) while QQQ/SMH broke
-  hard (-9% to -18% below 50d, off 52w highs -14% to -31%). Read this as "AI/semis
-  factor unwind," not "broad bear market," and stayed net long in unrelated sectors
-  (ABNB, UNH) instead of de-risking everywhere. Re-check this divergence every run
-  before deciding how defensive to get.
-- **Don't credit cash with alpha.** Account beat SPY by ~4pp this week (-0.03% vs
-  -4.11%) almost entirely because ~89% of equity sat in cash during a down week, not
-  because of stock-picking. Real evidence of edge only comes from closed trades with
-  positive expectancy — don't mistake "avoided the drawdown" for "found the edge."
-- **Patience on short entries held up for one week, but zero data points yet.**
-  Passed on ORCL and NOW shorts because both were still making new lows (accelerating
-  flush), not a failed rally per playbook D. Both are still on the watchlist, not yet
-  confirmed as a good call — a short entered later and working, or a sharp reflex
-  rally that would have stopped out a premature short, would both validate the
-  patience call differently. Keep tracking.
-- **First live trades sized at the low end of their tier on purpose** (ABNB 5%, UNH
-  6%, both "solid" tier capped near the bottom) to de-risk the first real test of the
-  process rather than go straight to highest conviction. Reasonable for trade #1-2;
-  revisit once there's a track record to size up against.
-- **One day of price action is noise, not a verdict.** Both ABNB (-0.25%) and UNH
-  (-0.37%) are down slightly after one trading day — not a thesis break, not
-  confirmation either. Don't react to single-day P&L on either name; wait for the
-  actual invalidation levels (ABNB close <~175, UNH close <50d/~385) or real target
-  progress before changing anything.
-- **A real, confirmed catalyst doesn't override the "don't chase" rule by itself.**
-  2026-11-09: AMD jumped +13.9% intraday on a genuine, checkable catalyst (Google Cloud
-  picked AMD EPYC chips for its new TPU AI system) -- not just sector beta, a real
-  idiosyncratic positive surprise. Passed anyway because the stock had already run ~26% in
-  two days off the Nov 5 crash low with RSI back to 47 (no longer oversold) before I could
-  act on it. The lesson isn't "ignore catalysts," it's "a catalyst explains *why* a stock
-  moved, not that the entry price is still good" -- still need a pullback or a multi-day
-  hold above resistance, same bar as any other setup. Revisit if it pulls back to the gap
-  zone (~470-490) and holds.
-- **A scandal/governance headline on a name you don't own is not an automatic short --
-  and even after it resolves, a settled story still isn't a short until the price
-  action confirms it.** 2026-11-09: NVDA swung from -8.4% to -4.5% intraday on a CEO
-  investigation headline (Jensen Huang); passed since the binary was still unresolved.
-  2026-11-12: it resolved -- Huang resigned amid an affair/espionage scandal, CFO
-  named interim CEO -- but the stock was in an accelerating flush that day (-6.6%,
-  RSI 23.5, multi-week slide), not a failed rally, so playbook D's entry condition
-  (failed rally, not a flush) still wasn't met. Passed again. Two separate
-  disqualifiers caught at two different times: an unresolved binary, then later a
-  flush instead of a failed rally. The playbook's entry rules are doing real work --
-  keep checking both conditions independently rather than treating "the news finally
-  happened" as itself a green light.
-- **"Wait for a second session" paid off: the QCOM/TXN/AVGO/AMD divergence from 11-11/
-  11-12 fully reversed on 11-13**, giving back relative strength the same day the broader
-  AI/semis complex de-risked into NVDA's Nov 17 earnings. Passing on a same-day reclaim
-  twice in a row (11-12 AM and PM) and getting proven right on 11-13 is one real data
-  point that the discipline isn't just excess caution -- one calendar session of relative
-  strength is noise until it survives a second, independent session.
-- **First short (ORCL, 2026-11-13, playbook D) was entered on a bounce that stalled below
-  resistance and rolled over, not a textbook reclaim-then-fail of the 50d.** The stock
-  never actually got above its 50d on the bounce (closest was -6.1% below); it just
-  stopped going up and resumed down. Treated this as still meeting "failed rally, not a
-  flush" because the bounce was multi-day (+8.8%) and RSI was neutral (48.7) rather than
-  oversold, backed by a genuine, worsening fundamental catalyst (Oracle blew through its
-  own $20B capital-raise cap within 5 days, S&P downgrade to BBB-). Flag for the next
-  review: is "stalls below resistance" as reliable an entry as a true reclaim-then-fail,
-  or does it need a stricter bar? No verdict yet -- this is the trade to watch to find out.
+  trade. Write the playbook A exit plan around the actual gap boundary (prior session's
+  high/low), not a round-number soft stop -- it's a more precise, less arguable
+  invalidation and made this exit easy to act on from intraday data.
 - **A genuine earnings beat is not sufficient for a playbook A long -- the gap still has
-  to hold.** CSCO (2026-11-13): reported its strongest revenue/EPS growth in 15 years, beat
-  and raised, yet fell -6.3% because the market judged the *quality* of the beat as weak
-  (250bps non-GAAP gross margin decline, Q2 guide implying growth has peaked) and three
-  banks cut price targets same day. "Beat-and-raise" is necessary but not sufficient for A
-  -- always check whether the stock actually gapped up and held it, not just whether the
-  headline numbers beat. A beat that gaps down is closer to a broken-story signal than a
-  PEAD setup, even without a guidance cut.
+  to hold.** CSCO (2026-11-13): strongest rev/EPS growth in 15 years, beat and raised,
+  yet fell -6.3% because the market judged the *quality* of the beat as weak (250bps
+  non-GAAP gross margin decline, soft Q2 guide) and three banks cut price targets same
+  day. A beat that gaps down is closer to a broken-story signal than a PEAD setup, even
+  without a guidance cut -- always check the stock actually gapped up *and held it*.
+- **Credit-vs-growth divergence correctly separated a factor unwind from a systemic
+  correction, two weeks running.** HYG/LQD stayed firm all week (RSI ~52-76, roughly
+  flat-to-above 50d) while QQQ/SMH broke hard (QQQ now slightly below its own 200d,
+  SMH -13% below its 50d). Read this as "AI/semis factor unwind," not "broad bear
+  market," and stayed net long in unrelated sectors (UNH) instead of de-risking
+  everywhere. Still check this divergence every run -- HYG's vs_sma50 turned slightly
+  negative (-0.26%) for the first time this week, worth watching for a genuine crack.
+- **Don't credit cash with alpha -- and the math now backs this up precisely.** Account
+  return since inception (-0.12%) is almost exactly explained by the three trades made
+  (ABNB -4.4% on 5% size, UNH +3% on 6% size, ORCL short -2% on 4% size netting to
+  roughly -0.12% of equity) -- cash itself contributed ~zero. The account still beat SPY
+  (-0.12% vs -1.62%) only because the index fell further, not because of stock-picking
+  edge. Keep separating "beat the market" from "found an edge" -- they're different
+  claims and only closed-trade expectancy proves the second one.
+- **Patience on short entries validated: passing on premature shorts and premature
+  reclaims both paid off the same week.** Waited out ORCL/NOW/CAT making new lows before
+  shorting (playbook D requires a failed rally, not a flush) -- ORCL's bounce stalling
+  below its 50d and rolling over became the account's first short (2026-11-13). Separately,
+  the QCOM/TXN/AVGO/AMD "reclaim" from 11-11/11-12 fully reversed on 11-13, confirming
+  that one calendar session of relative strength is noise until it survives a second,
+  independent session. Two different disciplines (wait for failed rally; wait for a
+  second session), both vindicated in the same week.
+- **First short (ORCL) was entered on a bounce that stalled below resistance, not a
+  textbook reclaim-then-fail of the 50d** -- the stock never got above its 50d (closest
+  -6.1% below) before rolling over. Backed by a genuine, worsening fundamental catalyst
+  (blew through its own $20B capital-raise cap within 5 days, S&P downgrade to BBB-), so
+  treated as meeting playbook D's "failed rally, not a flush" bar. One week in: -2.1% on
+  a small bounce, well inside the stop, no verdict yet -- still the trade to watch to
+  settle whether "stalls below resistance" is as reliable an entry as a true
+  reclaim-then-fail.
+- **A real, confirmed catalyst doesn't override the "don't chase" rule by itself.** AMD
+  jumped on a genuine Google Cloud EPYC-chip win, but had already run ~26% in two days
+  with RSI back to 47 before I could act -- passed. A catalyst explains *why* a stock
+  moved, not that the entry price is still good; still need a pullback or a confirmed
+  hold above resistance.
+- **A scandal/governance headline on a name you don't own is not an automatic short --
+  and even after it resolves, a settled story still isn't a short until price action
+  confirms it.** NVDA's CEO scandal (Jensen Huang resignation) gave two separate,
+  independent disqualifiers at two different times: an unresolved binary first, then an
+  accelerating flush (not a failed rally) after it resolved. Keep checking both
+  conditions independently rather than treating "the news finally happened" as a green
+  light by itself.
+- **Confidence scores are only being recorded inconsistently.** Only the ORCL short
+  (0.58) has an explicit numeric confidence tagged in the journal; ABNB/UNH entries
+  didn't get one. Can't assess calibration without several tagged data points -- tag
+  every new trade with an explicit confidence score going forward, not just the
+  playbook letter, so there's something to grade in a few weeks.
+- **First live trades sized at the low end of their tier on purpose** (ABNB 5%, UNH 6%,
+  both "solid" tier capped near the bottom) to de-risk the first real test of the
+  process. Reasonable for trade #1-2; revisit sizing once there's a longer track record,
+  but no reason yet to size up given only one closed trade (a loss) exists.
+- **Macro note for next week: bond market now pricing Fed hikes for Dec/Jan**, not cuts
+  (per 2026-11-14 coverage), with the 10Y having touched 5% intraday on 11-13 -- a new,
+  explicit hawkish repricing on top of the existing AI/semis factor unwind. If this
+  broadens into credit (HYG cracking) or breadth (DIA/IWM joining QQQ's weakness), that's
+  the signal the correction is becoming macro rather than single-factor -- re-check the
+  regime table every run rather than assuming the "factor unwind" read still holds by
+  default.
