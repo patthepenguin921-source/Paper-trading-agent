@@ -79,3 +79,11 @@ working hypothesis, not settled doctrine.)_
   the signal the correction is becoming macro rather than single-factor -- re-check the
   regime table every run rather than assuming the "factor unwind" read still holds by
   default.
+- **A reinforcing fundamental catalyst is not a reason to size up right before a binary
+  event, even on a working position.** 2026-11-16: confirmed via web search that the 10Y
+  hit 5.14% with a December Fed hike fully priced -- a genuine, independent second reason
+  the ORCL short should work (rising rates raise the cost of servicing its ~$169B debt).
+  Passed on adding size anyway because NVDA earnings the next day is a binary for the
+  whole AI-compute complex Oracle sits in -- a good fundamental case doesn't override bad
+  entry timing into event risk. Revisit once the print resolves; this is the discipline to
+  grade next review.
