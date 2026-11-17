@@ -87,3 +87,24 @@ working hypothesis, not settled doctrine.)_
   whole AI-compute complex Oracle sits in -- a good fundamental case doesn't override bad
   entry timing into event risk. Revisit once the print resolves; this is the discipline to
   grade next review.
+- **Second closed trade: UNH, 11 days held, roughly flat-to-small-loss.** Bought 2026-11-06
+  ~395.63 on a genuine fundamentals-plus-defensive-rotation thesis; closed 2026-11-17
+  ~390 after a sector-wide Sen. Warren healthcare-breakup headline (named UnitedHealth/
+  CVS/Cigna explicitly) drove a -5.2% gap that broke the trailing stop. Fundamentals never
+  broke -- this is a clean stop-exit, not a thesis failure, same pattern as the ABNB loss.
+  New wrinkle: the identical political headline first hit the stock 2026-11-02 for only
+  -1.7% and I correctly read it as already-priced-in noise on 11-15/16 -- the same story
+  can stay immaterial for two weeks and then suddenly become the dominant driver with no
+  new substantive development, just louder repetition plus a sector read-through (CVS
+  also fell hard same day). Don't anchor on "I already checked this headline and it didn't
+  matter" -- re-weigh magnitude and breadth (is the whole group moving, not just one name)
+  each time it resurfaces, not just whether the content is new.
+- **Acted on an intraday stop breach instead of waiting for a close-below-stop
+  confirmation for the first time (UNH, 2026-11-17).** The written rule says "close below
+  the stop," but price was already ~5% through it mid-morning on a fresh, sector-
+  corroborated catalyst, and the next check wasn't until the PM run. Flagged as a specific
+  discipline to grade next review: did acting early avoid further downside, or was it
+  premature relative to how the stock closed that day? If early exits on intraday
+  breaches keep getting proven right, make the rule explicitly intraday for large,
+  catalyst-driven gaps; if they get proven wrong (price recovers and closes back above the
+  stop), tighten back to requiring an actual close.

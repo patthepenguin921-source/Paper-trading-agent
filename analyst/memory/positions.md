@@ -1,26 +1,6 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-16 PM -- intraday, data as of ~2:45pm ET, close at 4pm.)_
-
-## UNH — long, opened 2026-11-06 ~$396.3 (size 6.2%)
-[B] Pullback in a recovering leader. Back above its 200d (vs_sma200 +11.5%) and 50d
-(+3.6%) after a Nov 5-9 consolidation. Fundamentals: Q3 raised FY26 EPS guide to at least
-$19.50 GAAP / $20.50 adjusted, MCR 88.4%; sector tailwind from easing medical-cost
-inflation reported industry-wide this week (UnitedHealthcare/Aetna/Humana).
-- **Status (Mon 2026-11-16, ~2:45pm ET):** +3.50% P/L, price ~409.5-409.6, up only
-  +0.52% today now (gave back some of the morning's +1.3% as the broader tape stayed
-  weak into the afternoon) -- still green on a day SPY/QQQ are down 2.1%/2.8%, so the
-  defensive-rotation beneficiary read still holds. No new UNH-specific news beyond the
-  known ongoing Senate prior-auth inquiry (unchanged since this morning). Thesis intact,
-  held unchanged.
-- **Target:** retest Oct 22 high ~420-425 (actual intraday high was 426.55), trim there,
-  trail the rest with the rising 50d.
-- **Stop:** trailed up to track the rising 50d -- now ~392 (50d implied by vs_sma50 +5.35%
-  at 412.6), roughly -5% from current. Was fixed at ~385 last week; raising it as the
-  playbook requires trailing stops up under winners.
-- **Invalidate:** new MCR/guidance shock, concrete adverse regulatory action (not just an
-  inquiry), or close below the stop.
-- **Next earnings:** ~Q4 report, mid-January; decide deliberately before then.
+_(Reviewed 2026-11-17 AM -- intraday, data as of ~10:00am ET.)_
 
 ## ORCL — short, opened 2026-11-13 ~$123.5 (size 3.8%), confidence 0.58
 [D] Broken story short. Genuinely deteriorating fundamentals: promised Oct 28 to cap new
@@ -28,78 +8,61 @@ capital raises at $20B through FY2030, blew through the entire cap in one filing
 later (Nov 2: $10B stock + $10B debt), total debt/lease obligations ~$169B, S&P downgraded
 to BBB-, FY26 FCF was -$23.7B against a guided $90-95B of FY capex. Crashed on the Nov 2/5
 financing news, bounced +8.8% Nov 9-11 with the broader oversold AI/semis complex but never
-reclaimed the 50d (closest was -6.1% below it), then rolled over three straight sessions now
-(Nov 12, 13, 16). Entered on a bounce that stalled below resistance, not a textbook
-reclaim-then-fail -- still the open question to settle: is this as reliable an entry as a
-true reclaim-then-fail?
-- **Status (Mon 2026-11-16, ~2:45pm ET):** working well, price ~118.4 vs. ~122.75 avg
-  entry (+3.53% on the short), vs_sma50 -12.6%, vs_sma200 -22.5%, RSI ~43. Down -5.5%
-  today alone, now the best single day since entry (beating this morning's -3.9% read).
-  Found a fresh, specific, independent catalyst via web search: Applied Digital (a data
-  center developer/counterparty) is demanding multi-billion-dollar financial guarantees
-  before signing new leases with Oracle, driven by new state-level grid-cost legislation
-  after the Democratic midterm sweep shifted power-infrastructure cost risk onto Big Tech.
-  This is a genuine structural/regulatory risk layered on the existing debt-load and
-  rate-sensitivity thesis -- counterparties themselves now pricing in Oracle-specific
-  financing risk, not just the market. Also confirmed: Oracle holds a stockholder meeting
-  tomorrow (2026-11-18) and reports earnings 2026-12-14 (date now firm, was an estimate).
-  Considered scaling up again on this second reinforcement in one day but passed for the
-  same reason as this morning: NVDA earnings tomorrow after close is a binary for the whole
-  AI-compute complex Oracle sits in; adding size the night before event risk is poor risk
-  management regardless of how good the fundamental case looks. Revisit sizing after the
-  print resolves.
+reclaimed the 50d (closest was -6.1% below it), then rolled over four straight sessions
+(Nov 12, 13, 16, and still down slightly on 11-17). Reinforced by a second, independent
+catalyst found 11-16: Applied Digital (a data-center counterparty) demanding multi-billion
+financial guarantees before signing new Oracle leases, driven by state-level grid-cost
+legislation -- counterparties themselves now pricing Oracle-specific financing risk.
+- **Status (Tue 2026-11-17, ~10am ET):** price ~118.0 vs. ~122.75 avg entry (+3.9% on the
+  short), vs_sma50 -12.5%, vs_sma200 -22.8%, RSI 31.2. Down another ~0.9% today. Oracle
+  holds its annual stockholder meeting today (2026-11-18 per last check -- confirm date).
+  NVDA reports after today's close -- the dominant swing factor for ORCL and the whole
+  AI-compute complex; no sizing change until that resolves. Thesis intact, held unchanged.
 - **Target:** retest/break the Nov 5 low (~111-115); trail down on continuation.
 - **Stop:** close back above the Nov 11 swing high (~130.8, ~+6.5% from entry) -- unchanged.
 - **Invalidate:** credit-positive resolution (rating affirmed/upgraded), a capex guide-down,
   or a major new non-OpenAI RPO win with real cash backing it.
-- **Next earnings:** 2026-12-14, after close (date now confirmed). Decide deliberately
-  whether to hold through it as the date nears -- binary risk this size argues for
-  covering/trimming beforehand unless
-  clearly working by then.
+- **Next earnings:** 2026-12-14, after close (confirmed). Decide deliberately whether to
+  hold through it as the date nears -- binary risk this size argues for covering/trimming
+  beforehand unless clearly working by then.
 
-## Watchlist (for Tuesday 2026-11-17)
+## Watchlist (for Tuesday PM 2026-11-17 / Wednesday)
 
 - **NVDA earnings, 2026-11-17 after close (~4:20pm ET) — still top priority.** Consensus
   ~$109B revenue, ~$2.47-2.49 adjusted EPS (~91% YoY growth), first report under interim
-  CEO Colette Kress since Jensen Huang's resignation. RSI 15.9, -27.1%/-23.7% vs 50d/200d,
-  stock down >30% from its October peak -- a lot priced in already both ways. No entry on
-  either side before the print. Key swing factor for ORCL (AI-compute complex correlation)
-  and the broader semis group -- decide deliberately after both the leadership-transition
-  uncertainty and the binary print resolve.
-
-- **Macro: hawkish Fed repricing unchanged from this morning** (10Y ~5.14%, Dec hike fully
-  priced, four more hikes anticipated by next September) -- still an independent, confirmed
-  second factor (not just AI/semis) behind tech/growth weakness, still pressuring GLD.
-  HYG/LQD ticked slightly more negative again today (HYG -0.41%/-0.9% vs 50d/200d, LQD
-  -0.19%/-2.24%) -- still small, not a real credit crack, keep checking every run.
-- **ORCL short — thesis gained a second, independent catalyst today (Applied Digital
-  guarantee demand / grid-cost legislation risk).** See positions above; now four straight
-  down sessions (11-12, 13, 16), -5.5% today alone, the best day yet. Keep checking the
-  stop (~130.8) and the invalidation triggers each run. Reassess adding size only after
-  NVDA earnings resolve.
-- **Semis group (AMD/AVGO/QCOM/TXN/AMAT/LRCX/MU/SMH/INTC) — still broadly broken and
-  worse today,** down again across the board (AVGO -4.9%, MU -6.4%, LRCX -5.9%, AMD -4.3%,
-  SMH -4.2%), 7-40% below their own 50d. Not actionable; NVDA earnings tomorrow dominates
-  the group.
-- **CSCO — beat-and-raise that didn't hold, not actionable.** Unchanged thesis from last
-  week; revisit only if it bases and a clean setup emerges.
-- **NOW** — [D] broken story short, still disqualified. RSI 12.9, vs_sma50 -24.2%, -2.8%
-  today -- still an accelerating flush, not a failed rally. Keep waiting.
+  CEO Colette Kress since Jensen Huang's resignation. Key swing factor for ORCL and the
+  broader semis group -- decide deliberately after the print resolves, no entry on either
+  side beforehand.
+- **UNH — closed today (see lessons.md).** Gapped down ~5% on a renewed, sector-wide
+  Sen. Warren healthcare-conglomerate breakup push (named UnitedHealth/CVS/Cigna
+  explicitly), trading through the ~392 trailing stop. Fundamentals (Q3 beat-and-raise,
+  improving MCR) never broke -- this was a stop-exit on a fresh political catalyst, not a
+  thesis failure. Revisit only if it bases well below here and the political overhang
+  fades; don't re-enter on the fundamentals thesis alone while Warren/Senate pressure is
+  actively escalating.
+- **CRM — credit downgrade/leverage story, not yet actionable.** -6.5% today (S&P cut
+  A+ to A on debt-financed M&A/buybacks), RSI 17.5, vs_sma50 -13.75%, off 52w high -24.8%.
+  Mid-flush, not a playbook D failed-rally short (too late to chase down) or playbook E
+  bounce (vs_sma200 only +1.98%, marginal "quality" case, no exhaustion day yet -- watch
+  for a high-vol down day followed by an inside/up day before considering either side).
+- **Macro: hawkish Fed repricing unchanged** (10Y ~5.1%, Dec hike priced) -- still pressuring
+  long-duration/high-debt names (reinforces ORCL). HYG/LQD still only mildly negative vs
+  50d/200d, not a real credit crack -- keep checking every run.
+- **Semis group (AMD/AVGO/QCOM/TXN/AMAT/LRCX/MU/SMH/INTC) — still broadly broken,**
+  7-26% below their own 50d. Not actionable; NVDA earnings tonight dominates the group.
+- **NOW** — [D] broken story short, still disqualified. RSI 13, vs_sma50 -26.7%,
+  still an accelerating flush, not a failed rally. Keep waiting.
 - **CAT / "AI picks-and-shovels" unwind** — [D] possible broken story short, still not
-  actionable. -20.1% below its falling 50d, RSI 27.4, -2.4% today -- deepening flush, not
-  yet the failed-rally rejection ORCL gave. Needs a fresh catalyst check before acting.
-- **GOOGL/META mega-cap tech** — not a setup; both down today (GOOGL -2.6%, META -2.0%)
-  with the broader tech selloff. Revisit only on a pullback to a rising average or a
-  multi-day confirmed reversal, not a chase.
-- **Healthcare/staples/financials — defensive rotation still running, still extended.**
-  XLV/XLP/XLF and most components green again today (JNJ/ABBV/LLY/KO/PEP all up), RSI
-  59-89, well above their 50d -- no pullback entry anywhere in the group. UNH is the one
-  name here we already own.
-- **Energy — oversold, no clean catalyst, selling off again today.** XLE -1.5%, XOM/CVX/COP
-  all down 1-2%; IEA's oil-surplus call from last week still the overhang. Not actionable.
-- **Rate-sensitive sectors (XLU, XLRE, TLT, GLD) — now a live macro trade given the
-  confirmed hawkish repricing above.** GLD flat today after a brutal 5-day/1-month slide
-  (-6.4%/-7.0%), RSI 39 -- stretched to the downside already, passed on shorting it (see
-  journal). TLT RSI 36, down again. XLU/XLRE still green/flat, acting as bond-proxy
-  beneficiaries of the "fear" side even as actual rates rise -- a bit of a contradiction
-  worth watching, not yet a clean trade.
+  actionable. -21% below its falling 50d, RSI 27.3, deepening flush. Needs a fresh catalyst
+  check before acting.
+- **Healthcare/managed care group — political overhang now hitting the whole group,**
+  not just UNH (CVS -3.8% today too). Treat as a sector risk, not a UNH-specific one, for
+  any future re-entry consideration.
+- **Healthcare/staples/financials (ex-managed-care) — defensive rotation still running,
+  still extended.** XLV/XLP/XLF components (JNJ/ABBV/LLY/KO/PEP) still RSI 55-85, well
+  above their 50d -- no pullback entry anywhere in the group.
+- **Energy — oversold, no clean catalyst.** XLE/XOM/CVX mixed today (XLE +1.1%, oil bid),
+  not actionable yet.
+- **Rate-sensitive sectors (XLU, XLRE, TLT, GLD) — live macro trade given the confirmed
+  hawkish repricing, still not a clean entry.** GLD RSI ~38, stretched to the downside
+  already; TLT RSI 37. XLU/XLRE still green, a bit of a contradiction worth watching.
