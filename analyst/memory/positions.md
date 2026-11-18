@@ -1,34 +1,28 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-18 AM -- ~10:00am ET. NVDA earnings resolved after Tuesday's close.)_
+_(Reviewed 2026-11-18 PM -- ~14:45pm ET.)_
 
-## ORCL — short, opened 2026-11-13 ~$122.75 (size ~3.5% as of today's price), confidence 0.58
+## ORCL — short, opened 2026-11-13 ~$122.75 (size ~3.4% as of today's price), confidence 0.58
 [D] Broken story short. Genuinely deteriorating fundamentals: promised Oct 28 to cap new
 capital raises at $20B through FY2030, blew through the entire cap in one filing five days
 later (Nov 2: $10B stock + $10B debt), total debt/lease obligations ~$169B, S&P downgraded
 to BBB-, FY26 FCF was -$23.7B against a guided $90-95B of FY capex. Crashed on the Nov 2/5
 financing news, bounced +8.8% Nov 9-11 with the broader oversold AI/semis complex but never
-reclaimed the 50d (closest was -6.1% below it), then rolled over six straight sessions (Nov
-12, 13, 16, 17, and holding lower again today).
-- **Status (Wed 2026-11-18, ~10am ET):** price ~116 vs. 122.75 avg entry (+5.5-6.7% on the
-  short depending on the minute), vs_sma50 ~-13%, RSI last read 29.7 and likely lower.
-  **New overnight catalysts, independently confirmed by web search:** (1) Oracle issued a
-  force-majeure notice on its Project Jupiter (Stargate/OpenAI/SoftBank) data-center loan,
-  seeking to delay payments -- a project-specific financing-distress signal; (2) HSBC sold
-  its $300M slice of that project's $18B construction loan at a 15% discount (mid-80s price)
-  -- a real market-priced credit-stress data point, not just rating-agency opinion; (3)
-  ORCL's 5Y CDS widened to 295bps, up 287% in a year, now trading like a BB/B credit despite
-  a BBB- rating. **Two genuine counter-signals:** the $20B capital raise is now fully priced
-  and closed (removes the "financing overhang" pillar of the original thesis, though it's
-  been replaced by project-specific stress, arguably more concrete); and Tepper's Appaloosa
-  opened a $172M ORCL stake this week while cutting GOOGL -- one credible contrarian buyer,
-  not yet confirmed by price action. Net: thesis intact and on balance still deepening.
-  Held full size, no new catalyst justifies covering.
-- **Target:** reached/sitting at the top of the initial 111-115 zone (~116); next target is
-  a continuation break below ~111, trail down on further weakness.
-- **Stop:** tightened today to a close back above the Nov 17 high (~121, from the prior
-  ~123.5 Nov 16 high) -- four straight lower highs now (130.8 -> 123.5 -> 120.9 -> and
-  today's high so far only 117.44), trailing the stop down to lock in more of the gain.
+reclaimed the 50d (closest was -6.1% below it), then rolled over seven straight sessions
+(Nov 12, 13, 16, 17, 18).
+- **Status (Wed 2026-11-18, PM):** price 114.44 vs. 122.75 avg entry (+6.8% on the short),
+  today's range 113.27-117.44, a quiet, low-news day for ORCL itself (just routine AI-product
+  announcements and a CISA advisory on a Java CVE, nothing material) after yesterday's wave
+  of project-specific credit stress (Project Jupiter force-majeure, HSBC loan sold at a
+  discount, CDS blowout). One new valuation counter-signal via search: Bernstein reiterated
+  that ORCL is "cheap" even in a bear case where the AI data-center business disappears
+  (fair value ~$133), but a bull-case valuation call is not a price- or rating-confirmed
+  invalidation -- cheap can get cheaper, per the playbook's own rule on valuation timing.
+  No invalidation condition has fired. Held full size.
+- **Target:** reached/sitting at the top of the initial 111-115 zone; next target is a
+  continuation break below ~111, trail down on further weakness.
+- **Stop:** close back above the Nov 17 high (~121). Today's high (117.44) stayed well below
+  it -- lower-high sequence (130.8 -> 123.5 -> 120.9 -> 117.44) still intact.
 - **Invalidate:** credit-positive resolution (rating affirmed/upgraded), a capex guide-down,
   or a major new non-OpenAI RPO win with real cash backing it. Tepper-style buying becoming
   a broader trend plus a reclaim of the 50d would also argue for covering even without one
@@ -36,50 +30,49 @@ reclaimed the 50d (closest was -6.1% below it), then rolled over six straight se
 - **Next earnings:** 2026-12-14, after close (confirmed). Decide deliberately whether to
   hold through it as the date nears -- binary risk this size argues for covering/trimming
   beforehand unless clearly working by then.
-- **Next decision point:** watch whether today's modest market-wide relief bounce (post-NVDA)
-  broadens into ORCL/the AI-capex complex -- if ORCL reclaims the new 121 stop, that's a real
-  signal to act on, not just noise.
+- **Next decision point:** watch whether ORCL participates if the cybersecurity-led software
+  rally (see watchlist) broadens into enterprise software generally -- a reclaim of the 121
+  stop on volume would be the real signal, not just a quiet day like today.
 
 ## Watchlist
 
-- **NVDA earnings resolved 2026-11-17 after close: a genuine beat-and-raise that didn't
-  hold.** Revenue $115.8B vs ~$109B consensus, Q4 guide raised to $130B, Vera Rubin shipping
-  -- yet the stock popped to ~159.70 intraday Wednesday and fully round-tripped back to
-  ~155, roughly flat/slightly below Tuesday's close. RSI still ~16-17, deeply oversold with
-  no bounce holding. Second data point (after CSCO) that a real beat-and-raise can still
-  fail to hold when sentiment/positioning dominates -- watch whether this graduates to a
-  lesson if it recurs a third time. Not actionable on its own (fundamentals aren't broken,
-  no clean short setup; too oversold and battered to chase long).
-- **Regime: modest relief bounce today (SPY +0.21%, QQQ +0.69%, IWM +0.84%), first green-ish
-  day in a while, likely NVDA-relief.** Still below 50d (SPY -3.76%), barely above 200d
-  (+0.5%), RSI mid-30s -- not a regime change yet, just a bounce attempt. HYG/LQD still only
-  mildly negative (-0.45%/-1.02% vs 50d/200d), credit still not cracking. Keep checking every
-  run rather than assuming either "still correction" or "healed" by default.
-- **TGT — genuine beat-and-raise (Non-GAAP EPS $2.65 vs ~$2.07 ex-tariff-refund, FY guide
-  raised), +5.4% today, but already +97% over the past year with RSI 68 after today's pop.**
-  A day-1 chase, not a pullback entry -- playbook A says entry day 1-3 post-print *if the gap
-  holds*, so watch whether it holds into Thursday/Friday before considering, don't buy the
-  spike itself.
-- **Energy majors (COP/CVX/XOM/OXY) — still in the RSI 24-39 pullback zone of a real 1y
-  uptrend, but disqualified today: confirmed via search that oil itself is in a genuine
-  supply-glut downtrend** (IEA sees Q4 supply exceeding demand by ~1.7M b/d, WTI at 2-month
-  lows, OPEC+ holding production flat). This isn't a clean technical pullback in an intact
-  uptrend (playbook B) while the commodity driver itself has turned bearish -- need oil to
-  stabilize before treating this as a buyable dip.
-- **CRM — still in the flush, not yet actionable.** -2.8% today on top of Tuesday's -8.55%,
-  RSI ~17, no inside/up day yet (today made a lower low, not an inside day) -- keep checking
-  for a playbook E exhaustion signature.
-- **Semis group (AMD/AVGO/QCOM/TXN/AMAT/LRCX/MU/SMH/INTC) — mixed today: AMD +2.46%, AVGO
-  +2.23% (both rallying on NVDA's strong capex-guide read-through) while NVDA itself is flat.
-  Still broadly oversold (RSI 16-44, 7-26% below 50d) -- watch whether this breadth divergence
-  (picks-and-shovels up, NVDA itself flat) persists or reverses.
-- **NOW** — [D] broken story short, still disqualified. RSI ~26, vs_sma50 -29.25%, still an
+- **Cybersecurity sector rally, 2026-11-18: PANW +6.5%, CRWD +8.5%, Fortinet/Zscaler also
+  up 4%+.** Drivers confirmed via search: broad NVDA-relief tech rally, a DHS Secretary
+  warning to Congress about AI-powered cyberattacks on US infrastructure (bullish read-through
+  for security vendors), and CRWD-specific news (acquiring two AI-security startups for
+  $495M, named a Frost Radar Visionary Leader). **PANW reports Q1 earnings after today's
+  close** -- a binary event, so no position regardless of the chart; wait for the print to
+  resolve. CRWD is not reporting but is up 8.5% in a single session closing near its high
+  (238.04, range 218.5-240.18) -- a one-day pop, not a confirmed breakout (volume ~7.6M, not
+  a clean 1.5-2x surge over its recent range) and still below its 50d (-3.2%). Per the AMD
+  lesson (a catalyst explains the move, not that the entry is still good) and the
+  QCOM/TXN/AVGO reclaim lesson (one session isn't enough, wait for a second independent
+  session to hold), watch whether CRWD holds today's gain into a second session before
+  considering a playbook C/E entry -- don't chase the first green day.
+- **Managed care (UNH/CVS) — thesis for exiting UNH (2026-11-17) confirmed hard the very
+  next day.** CMS proposed a new Medicare Advantage audit/anti-fraud rule 2026-11-16 (up to
+  $90B of industry clawbacks 2027-2036, UNH as the largest MA carrier most exposed) --
+  UNH fell another -11.5% today (CVS -5.2%, Humana similarly hit), a second, independent,
+  purely fundamental catalyst layered on top of the Warren political headline. Confirms the
+  11-17 stop-exit was the right call, not just a lucky one -- don't re-enter on valuation
+  alone while both a political and a regulatory story are live simultaneously.
+- **Energy majors (COP/CVX/XOM/OXY) — still disqualified, and the oil downtrend deepened
+  further today** (XLE -3.1%, XOM -3.7%, CVX -4.6%, COP -3.4%, OXY -4.6%, USO -2.3%). The
+  IEA supply-glut thesis from 2026-11-17 is still playing out -- need oil to actually
+  stabilize before treating any energy dip as a playbook B pullback rather than a falling
+  knife.
+- **Gold/silver/copper miners — a sharp, broadening commodity unwind, not just gold/silver.**
+  GLD -3.27%, SLV -4.96%, FCX -7.45%, NEM -6.61% today; TLT still diverged (+0.8%), so this
+  isn't a simple "real yields up" read -- looks like continued de-grossing after a long prior
+  rally. Not actionable, just tracking per the regime checklist.
+- **CRM — still in the flush, not yet actionable.** -3.2% today (RSI 17.1) on top of two
+  prior down days -- no inside/up day yet, keep checking for a playbook E exhaustion
+  signature.
+- **NOW** — [D] broken story short, still disqualified. RSI ~24.7, vs_sma50 -30.5%, still an
   accelerating flush, not a failed rally. Keep waiting.
 - **CAT / "AI picks-and-shovels" unwind** — [D] possible broken story short, still not
-  actionable. RSI 32.4, vs_sma50 -22.1%, still deepening. Needs a fresh catalyst check.
-- **Managed care (UNH/CVS)** — closed UNH 2026-11-17 on the Warren breakup-political headline.
-  Don't re-enter on the fundamentals thesis alone while the political story is still live.
-- **Gold/silver (GLD/SLV) — sharp selloff today (GLD -2.04%, SLV -4.09%), gold now -7.1%
-  over 1y and -32% off its 52-week high.** Likely de-grossing/unwind after a long prior rally;
-  TLT diverged (+0.5% today) so this isn't a simple "real yields up" read. Not actionable,
-  just noting the divergence per the regime checklist.
+  actionable. RSI 31.6, vs_sma50 -23%, still deepening, no failed-rally bounce yet.
+- **Regime: a rotation day, not a clean trend day.** SPY -0.34%, QQQ +0.23%, IWM +0.43%
+  (narrow software/semis strength) vs. DIA -1.2% (dragged by UNH and other blue chips).
+  SPY still below its 50d (-4.2%), just above its 200d (+0.04%). HYG/LQD still only mildly
+  negative, credit not cracking. Not a regime change -- a mixed, factor-rotation tape.

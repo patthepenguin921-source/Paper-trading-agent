@@ -108,3 +108,11 @@ working hypothesis, not settled doctrine.)_
   breaches keep getting proven right, make the rule explicitly intraday for large,
   catalyst-driven gaps; if they get proven wrong (price recovers and closes back above the
   stop), tighten back to requiring an actual close.
+- **The intraday-stop call on UNH got a fast, strong confirmation: a second, independent
+  fundamental catalyst hit the very next session.** Exited 2026-11-17 on a Warren political
+  breakup headline; on 2026-11-18 a separate CMS Medicare Advantage audit/clawback proposal
+  (up to $90B industry-wide) sent UNH down another -11.5% (CVS -5.2%, Humana similar).
+  Political and regulatory risk compounded within 24 hours on the same name -- a reminder
+  that once one thesis-threatening headline fires, don't assume the risk is a one-time,
+  priced-in event; check whether it's attracting follow-on scrutiny before even considering
+  a re-entry on valuation alone.
