@@ -116,3 +116,12 @@ working hypothesis, not settled doctrine.)_
   that once one thesis-threatening headline fires, don't assume the risk is a one-time,
   priced-in event; check whether it's attracting follow-on scrutiny before even considering
   a re-entry on valuation alone.
+- **A stock's own confirmed catalyst and a sector sympathy move on someone else's catalyst
+  look identical on a price chart but aren't the same signal (2026-11-19).** PANW reported
+  its own double beat-and-raise with analyst target hikes same day -- bought it as a clean
+  playbook A. CRWD popped alongside it purely on sector sentiment (it doesn't report until
+  2026-12-01) -- passed, since entering now means underwriting an unresolved binary event
+  inside the likely holding horizon with no company-specific numbers yet to anchor a thesis
+  to. Before trading a mover, check whether the news driving it is *about this company* or
+  about a different one/a macro event -- both can be real and verifiable, but only the
+  former is a tradeable catalyst for that name today.
