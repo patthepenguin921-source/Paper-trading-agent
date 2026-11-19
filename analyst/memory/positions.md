@@ -1,6 +1,6 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-19 AM -- ~10:00am ET.)_
+_(Reviewed 2026-11-19 PM -- ~2:45pm ET.)_
 
 ## ORCL — short, opened 2026-11-13 ~$122.75 (size ~3.5%), confidence 0.58
 [D] Broken story short. Genuinely deteriorating fundamentals: promised Oct 28 to cap new
@@ -10,20 +10,23 @@ to BBB-, FY26 FCF was -$23.7B against a guided $90-95B of FY capex. Crashed on t
 financing news, bounced +8.8% Nov 9-11 with the broader oversold AI/semis complex but never
 reclaimed the 50d (closest was -6.1% below it), then rolled over seven straight sessions
 (Nov 12 through 18).
-- **Status (Thu 2026-11-19, AM):** price ~116.35 vs. 122.75 avg entry (+5.2% on the short),
-  today's range so far 115.92-118.5. A broad AI-sentiment rally is underway today (Anthropic's
-  record IPO, Broadcom/AMD AI-capex deal headlines, SMH +3.5%, QQQ +1.8%) and ORCL is bouncing
-  with it (+1.9%) but meaningfully underperforming the software/semis complex -- a mild
-  confirming signal that the market still isn't rewarding Oracle's own AI-capex buildout the
-  way it's rewarding others. Today's high (118.5) is higher than yesterday's (117.44) but still
-  below the Nov 17 high (120.9) and well below the ~121 stop -- lower-high sequence intact.
-  Checked for fresh ORCL-specific news: nothing new since the Nov 18 wave (project-specific
-  credit stress); Bernstein's "cheap even in the bear case" call is unchanged, still a
-  valuation opinion, not a confirmed invalidation. No invalidation condition has fired. Held
-  full size.
-- **Target:** sitting at the top of the initial 111-115 zone; next target is a continuation
-  break below ~111, trail down on further weakness.
-- **Stop:** close back above the Nov 17 high (~121).
+- **Status (Thu 2026-11-19, PM):** price ~111.8-112 vs. 122.75 avg entry (+8.9% on the short).
+  This morning's AI-sentiment bounce (+1.9% to ~116.35, high 118.5) fully reversed intraday --
+  a broad-market short-seller shock (Hunterbrook's AMD China-export-firmware allegation, AMD
+  denies it) erased the entire Anthropic-IPO rally same-session (SPY/QQQ/SMH all flipped from
+  +0.8%/+1.8%/+3.5% to -1.4%/-1.4%/-1.4%, Dow -1000, VIX ~28) and ORCL rolled over hard with it,
+  printing a fresh low (110.81) below even the summer low (114.33, Jul 24) with no nearby
+  historical support. No ORCL-specific news (Bernstein $325 PT, Guggenheim $400 PT both
+  unchanged, still valuation opinions). The move is market-wide, not a confirming ORCL-specific
+  divergence today, but no invalidation condition fired either. **Trailed the stop down** from
+  the Nov 17 high (~121) to today's high (~118.5) now that it's a new, lower lower-high and the
+  position has already breached its first target zone -- locks in more of the gain without
+  giving back the thesis. Held full size (small position, not worth trimming for the dollar
+  amount involved).
+- **Target:** initial 111-115 zone has been breached (low 110.81); no nearby support in the
+  price history before this, so continue trailing the stop down as it extends rather than
+  pre-committing to a number.
+- **Stop:** close back above ~118.5 (today's high, a new lower high in the sequence).
 - **Invalidate:** credit-positive resolution (rating affirmed/upgraded), a capex guide-down,
   or a major new non-OpenAI RPO win with real cash backing it. Tepper-style buying becoming
   a broader trend plus a reclaim of the 50d would also argue for covering even without one
@@ -31,9 +34,9 @@ reclaimed the 50d (closest was -6.1% below it), then rolled over seven straight 
 - **Next earnings:** 2026-12-14, after close (confirmed). Decide deliberately whether to
   hold through it as the date nears -- binary risk this size argues for covering/trimming
   beforehand unless clearly working by then.
-- **Next decision point:** watch whether ORCL starts participating if today's AI-sentiment
-  rally broadens/persists into a second session -- a reclaim of the 121 stop on volume would
-  be the real signal, not just a single bounce day.
+- **Next decision point:** does today's broad risk-off stabilize or extend tomorrow -- if ORCL
+  gets a relief bounce, check whether it's confined to the stock or the whole tape before
+  reading anything into it (same lesson as the AM-rally-that-reversed).
 
 ## PANW — long, opened 2026-11-19 ~$364.65 (size ~6%), confidence 0.62
 [A] PEAD. Q1 FY26 reported 2026-11-18 after close: double beat (EPS $1.05 vs ~$0.97 est,
@@ -46,6 +49,13 @@ a 355.81 open and held well above the gap through the morning (range 354.2-370, 
 ~364.65), day 1, RSI 49.6 -- not yet overbought despite the move. No near-term earnings binary
 (next report ~3 months out).
 - **Entry day 2026-11-19, ~364.65, size ~6%.**
+- **Status (Thu 2026-11-19, PM):** price ~360.2-360.5, still +6% on the day even after the
+  broad-market reversal (SPY/QQQ/SMH all flipped negative this afternoon on the AMD
+  short-seller shock). PANW gave back some of its intraday high but held well above the
+  342.36 gap-invalidation line and didn't get dragged into the semis/software selloff the way
+  ORCL and the broader AI complex did -- a good early sign the market is still pricing its own
+  beat-and-raise rather than treating it as generic AI-complex beta. Still day 0/1, nothing to
+  act on yet.
 - **Target:** trail the rising 20d/50d as it extends; take partial profits into further
   strength rather than holding for a fixed number.
 - **Stop/invalidate:** closes back inside the gap -- i.e. below Nov 18's high of 342.36 (the
@@ -64,11 +74,19 @@ a 355.81 open and held well above the gap through the morning (range 354.2-370, 
   enough to a realistic holding horizon that entering now on someone else's catalyst isn't a
   clean playbook C/E setup. Watch whether it holds its gain through the Dec 1 print before
   considering a position on CRWD's own numbers.
-- **AMD/AVGO AI-capex-deal pops (Meta AI partnership, Anthropic chip financing) — passed,
-  not disqualified, just not the cleanest entry today.** Real catalysts, but both names have
-  already run hard over the past year (AMD +136% 1y, AVGO off -26% from 52w high but up big
-  multi-year) without a fresh company-specific beat like PANW's today. Revisit if either
-  pulls back to a clean playbook B level or posts its own beat-and-raise.
+- **AMD — flipped from an AM capex-deal pop to a PM short-seller flush on the same day;
+  passed on both, not yet actionable either way.** Hunterbrook (short-seller) published an
+  afternoon report alleging AMD firmware kept shipping to IEIT, a blacklisted Chinese server
+  maker, via shell-like affiliates (Aivres/Kaytus/Maginfra) -- AMD denies it, Commerce hasn't
+  acted. Stock round-tripped from the AM Meta-partnership pop straight to -7.8% on the day.
+  This is a flush, not a failed rally -- playbook D needs the latter -- and the allegation is
+  disputed/unconfirmed, not a company-confirmed structural break. Watch for (a) any
+  regulatory/customer confirmation that makes it a real structural catalyst, and (b) a bounce
+  that fails below resistance, before treating this as a short candidate.
+- **AVGO AI-capex-deal pop (Anthropic chip financing) — passed, not disqualified, just not
+  the cleanest entry today.** Real catalyst, but the stock has already run hard multi-year
+  without a fresh company-specific beat like PANW's today. Revisit on a pullback to a clean
+  playbook B level or its own beat-and-raise.
 - **Managed care (UNH/CVS) — thesis for exiting UNH (2026-11-17) confirmed hard the very
   next day** by the CMS Medicare Advantage audit/clawback proposal. Still not a re-entry
   candidate while both the political and regulatory stories are live.
@@ -79,10 +97,13 @@ a 355.81 open and held well above the gap through the morning (range 354.2-370, 
 - **CRM — still in the flush.** RSI still depressed, no inside/up day yet.
 - **NOW / CAT — [D] possible broken-story shorts, still not actionable.** Both still
   deepening, no failed-rally bounce yet.
-- **Regime: a broad bounce day, not a confirmed trend change.** SPY +0.78%, QQQ +1.76%, SMH
-  +3.47% on Anthropic's record IPO reviving AI-trade sentiment plus AI-capex deal headlines
-  (Broadcom/Anthropic financing, AMD/Meta partnership). SPY still -3.4% below its 50d, though
-  back above its 200d (+0.82%). QQQ still below both its 50d (-5.9%) and 200d (-1.6%). HYG
-  still only mildly negative (vs_sma50 -0.4%) -- credit not cracking. One strong day; check
-  next run whether it's a second confirming session or fades like prior false starts
-  (QCOM/TXN/AVGO reclaim that reversed on 11-13).
+- **Regime: the AM bounce fully reversed intraday -- still a correction, breadth broadening,
+  credit still firm.** SPY/QQQ/SMH went from +0.78%/+1.76%/+3.47% (AM, on Anthropic's IPO) to
+  -1.39%/-1.35%/-1.39% (PM close) same session, on the AMD short-seller shock (Dow -1000,
+  VIX ~28). SPY round-tripped from above its 200d back below it (-1.3%) within the day. Unlike
+  prior weeks, DIA (-1.65%) and IWM (-1.65%) joined QQQ's weakness today -- the breadth-
+  broadening condition flagged in lessons as a "correction going macro" signal has now
+  partially fired. But HYG stayed only mildly negative (vs_sma50 -0.49%) -- credit still not
+  cracking -- so this reads as a volatility/sentiment-driven broad risk-off day, not (yet) a
+  credit-confirmed macro break. Keep checking both breadth and credit every run; don't let one
+  without the other force a full defensive posture.

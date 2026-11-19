@@ -125,3 +125,14 @@ working hypothesis, not settled doctrine.)_
   to. Before trading a mover, check whether the news driving it is *about this company* or
   about a different one/a macro event -- both can be real and verifiable, but only the
   former is a tradeable catalyst for that name today.
+- **A broad rally can fully reverse within the same session, not just fade over the following
+  days (2026-11-19).** The AM read ("strong AI-sentiment bounce," SPY/QQQ/SMH all solidly
+  green) was fully round-tripped to negative by the PM run, triggered by one disputed,
+  company-denied short-seller report on a single name (AMD) cascading through the crowded
+  AI/semis factor -- Dow -1000, VIX ~28. Sharper version of the QCOM/TXN/AVGO
+  reclaim-that-reversed lesson: don't treat a same-day AM regime read as settled by the next
+  check a few hours later on a volatile day: re-check, don't assume. Separately, this was the
+  first session where breadth broadened (DIA/IWM joined QQQ's weakness) without credit
+  cracking (HYG stayed only mildly negative) -- a real but partial version of the macro-vs-
+  factor warning flagged the week before; treat breadth and credit as two independent checks,
+  not a package deal.
