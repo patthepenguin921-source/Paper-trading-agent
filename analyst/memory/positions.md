@@ -1,6 +1,6 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-20 AM -- ~10:00am ET.)_
+_(Reviewed 2026-11-20 PM -- ~2:45pm ET.)_
 
 ## ORCL — short, opened 2026-11-13 ~$122.75 (size ~3.5%), confidence 0.58
 [D] Broken story short. Genuinely deteriorating fundamentals: promised Oct 28 to cap new
@@ -8,24 +8,21 @@ capital raises at $20B through FY2030, blew through the entire cap in one filing
 later (Nov 2: $10B stock + $10B debt), total debt/lease obligations ~$169B, S&P downgraded
 to BBB-, FY26 FCF was -$23.7B against a guided $90-95B of FY capex. Crashed on the Nov 2/5
 financing news, bounced +8.8% Nov 9-11 with the broader oversold AI/semis complex but never
-reclaimed the 50d (closest was -6.1% below it), then rolled over nine straight sessions
+reclaimed the 50d (closest was -6.1% below it), then rolled over ten straight sessions
 (Nov 12 through 20) with no bounce attempt of any size.
-- **Status (Fri 2026-11-20, AM):** price ~108.8 vs. 122.75 avg entry (+11.4% on the short).
-  Continued straight down with no bounce -- today's intraday high so far (108.88) is far
-  below Nov 19's high (118.5), confirming the move is still accelerating, not basing. Search
-  confirms this is now a widely-watched story: ORCL is "approaching critical support near
-  $100," net debt ~$132B against $37B cash, CDS costs rising, no new rating action today.
-  Macro backdrop: the AI/semis selloff that started with the AMD short-seller report has
-  spread overnight to Asia (Nikkei -4.8%, Taiwan -6.2%, worst week since 1991) -- ORCL sits
-  inside the crowded AI-capex-debt factor at the center of that unwind, a confirming tailwind
-  for the short, not a new independent catalyst. **Trailed the stop down** from ~118.5 to
-  ~113.5 (just above Nov 18's close/high zone, the last meaningful resistance before the
-  current leg down) now that nine sessions have passed with no bounce -- locks in more of
-  the gain while still leaving room for normal volatility. Held full size.
+- **Status (Fri 2026-11-20, PM):** price ~102 vs. 122.75 avg entry (+16.9% on the short),
+  a fresh 52-week low, down another -7.7% just today as the broader market correction
+  deepened (SPY -2.8%, SMH -9.2%). No new company-specific news -- multiple sources confirm
+  this is still the existing debt/capex story (Guggenheim reiterated Buy/$400 despite the
+  move; no new rating action today). ORCL is now "approaching critical support near $100-110"
+  per multiple sources. **Trailed the stop down further** from ~113.5 to ~110.6 (just above
+  Nov 19's close of 110.57/low of 110.24, the last resistance zone before today's leg down)
+  -- locks in more of a now-large gain given ten straight sessions with zero bounce, while
+  still leaving room above the current ~102 price for normal volatility. Held full size.
 - **Target:** no nearby chart support before $100 (round-number psychological level per
   multiple sources); continue trailing the stop down as it extends rather than
   pre-committing to a number.
-- **Stop:** close back above ~113.5 (last resistance zone before the latest leg down).
+- **Stop:** close back above ~110.6 (last resistance zone before the latest leg down).
 - **Invalidate:** credit-positive resolution (rating affirmed/upgraded), a capex guide-down,
   or a major new non-OpenAI RPO win with real cash backing it. Tepper-style buying becoming
   a broader trend plus a reclaim of the 50d would also argue for covering even without one
@@ -47,16 +44,18 @@ weeks ago, where banks cut targets on the same beat day). Gapped from Nov 18's 3
 a 355.81 open and held well above the gap through the morning, day 1, RSI 49.6 -- not yet
 overbought despite the move. No near-term earnings binary (next report ~3 months out).
 - **Entry day 2026-11-19, ~364.65, size ~6%.**
-- **Status (Fri 2026-11-20, AM):** price ~351.6, now -3.3% below avg entry. Day 1 (Nov 19)
+- **Status (Fri 2026-11-20, PM):** price ~344.5, now -5.4% below avg entry. Day 1 (Nov 19)
   closed 361.73 after touching 370 intraday; day 2 (today) opened 359.04, popped to 366.79,
-  then reversed hard to a 347.2 low, now trading ~351.6 -- a wide, ugly reversal candle on the
-  second day. Checked for a company-specific cause: none found. Confirmed via search that
-  analysts are still broadly raising targets today (UBS, Susquehanna, DA Davidson, Citigroup,
-  Mizuho, BTIG all hiked; only Wells Fargo trimmed, and still to $510) -- consensus target
-  ~$403, well above current price. The fade reads as broad risk-off bleeding into security
-  software (CRWD also -4.1% today) even as plain SaaS (CRM +2.4%, ADBE +3.1%, NOW +3.5%) held
-  up fine -- a sector-specific wrinkle worth watching, not yet a thesis break. Price is still
-  ~2.7% above the 342.36 gap-invalidation line; stop not hit. Held full size, no action.
+  then reversed hard to an intraday low of 343.69, now trading ~344.5 -- the reversal deepened
+  further into the afternoon as the broader correction accelerated (SPY -2.8%, SMH -9.2% today).
+  Re-confirmed via search: no company-specific negative news: today's low/current price (343.69-
+  346.64) stayed just above the 342.36 gap-invalidation line (Nov 18's high) -- the stop has
+  **not** fired. Consensus analyst target still ~$403-416 (16 analysts, 10 buy/5 hold/1 sell),
+  no downgrades found. This is the broader risk-off hitting security software specifically
+  (CRWD also down hard) on a day the whole market is down hard, not a PANW-specific break --
+  held full size rather than act on fear of a weekend gap when the written invalidation line
+  hasn't actually been crossed. Margin to the stop is now very thin (~0.6%) -- check first
+  thing Monday whether it closed above or below 342.36.
 - **Target:** trail the rising 20d/50d as it extends; take partial profits into further
   strength rather than holding for a fixed number.
 - **Stop/invalidate:** closes back inside the gap -- i.e. below Nov 18's high of 342.36 (the
@@ -106,11 +105,20 @@ overbought despite the move. No near-term earnings binary (next report ~3 months
   META -1.44%, MSFT +0.98%, AAPL +0.38%, NVDA -2.61%).** Didn't research the driver -- flagging
   the relative-strength divergence to check next run; not chasing a top mover without a
   thesis.
-- **Regime: AI/semis factor unwind deepened and spread to Asia overnight (Nikkei -4.8%,
-  Taiwan -6.2%, worst week since 1991), but breadth and credit outside the AI complex stayed
-  constructive today.** SPY/DIA/IWM all green intraday (+0.28%/+0.85%/+0.48%) alongside
-  defensives and financials (XLP/XLV/XLU/XLF/XLY all up), while QQQ/XLK/SMH stayed red
-  (-0.32%/-1.18%/-2.25%, NVDA -2.61%, AMD -3.14%, MU -4.55%). HYG/KRE/XLF all calm-to-green --
-  credit still not cracking. Reads as the factor-specific unwind continuing to deepen and
-  broaden geographically (not across US sectors) rather than becoming a US macro/credit event.
-  Keep checking breadth and credit separately every run.
+- **Regime: the AI/semis unwind broadened into a confirmed technical correction by the
+  afternoon (2026-11-20 PM) -- a sharp reversal from the AM read just hours earlier.** SPY
+  -2.8% (-8.4% below its 50d), QQQ -4.5%, SMH -9.2%, with NVDA -10.7%, AMD -12.6%, AVGO -12.2%,
+  MU -13.1% intraday; web search confirms S&P 500 is now -10% from its peak, officially a
+  technical correction, driven by Anthropic's IPO debut fizzling (-13%) on top of the ongoing
+  AMD firmware allegation. Breadth narrowed in a classically defensive pattern though, not an
+  indiscriminate panic: XLP/XLV/XLE still green, XLU flat, while XLY/XLI/XLB/XLK/XLC/XLF all
+  red. Credit still not cracking (HYG only -0.26% today, vs_sma50 -0.74%; LQD actually up on
+  falling yields). Read as a genuine, broadening growth/AI-factor correction with a flight to
+  quality -- not yet the full macro/credit break that would call for defensive hedging, but
+  the fastest deterioration yet from one check to the next same day. Re-check breadth and
+  credit from scratch Monday rather than assuming either the AM or PM read still holds.
+- **GLD/TLT divergence deepened further (2026-11-20 PM): GLD -3.57% today while TLT +1.53%.**
+  Same unusual pattern flagged this morning (gold selling off even as yields fall) got more
+  pronounced into the afternoon, alongside SLV -6.07% -- still reads as broad commodity/crowded-
+  trade de-grossing rather than a classic risk-on/risk-off signal. Not actionable, tracking as
+  a systemic-stress tell.
