@@ -1,6 +1,6 @@
 # Open positions: theses and exit plans
 
-_(Reviewed 2026-11-19 PM -- ~2:45pm ET.)_
+_(Reviewed 2026-11-20 AM -- ~10:00am ET.)_
 
 ## ORCL — short, opened 2026-11-13 ~$122.75 (size ~3.5%), confidence 0.58
 [D] Broken story short. Genuinely deteriorating fundamentals: promised Oct 28 to cap new
@@ -8,25 +8,24 @@ capital raises at $20B through FY2030, blew through the entire cap in one filing
 later (Nov 2: $10B stock + $10B debt), total debt/lease obligations ~$169B, S&P downgraded
 to BBB-, FY26 FCF was -$23.7B against a guided $90-95B of FY capex. Crashed on the Nov 2/5
 financing news, bounced +8.8% Nov 9-11 with the broader oversold AI/semis complex but never
-reclaimed the 50d (closest was -6.1% below it), then rolled over seven straight sessions
-(Nov 12 through 18).
-- **Status (Thu 2026-11-19, PM):** price ~111.8-112 vs. 122.75 avg entry (+8.9% on the short).
-  This morning's AI-sentiment bounce (+1.9% to ~116.35, high 118.5) fully reversed intraday --
-  a broad-market short-seller shock (Hunterbrook's AMD China-export-firmware allegation, AMD
-  denies it) erased the entire Anthropic-IPO rally same-session (SPY/QQQ/SMH all flipped from
-  +0.8%/+1.8%/+3.5% to -1.4%/-1.4%/-1.4%, Dow -1000, VIX ~28) and ORCL rolled over hard with it,
-  printing a fresh low (110.81) below even the summer low (114.33, Jul 24) with no nearby
-  historical support. No ORCL-specific news (Bernstein $325 PT, Guggenheim $400 PT both
-  unchanged, still valuation opinions). The move is market-wide, not a confirming ORCL-specific
-  divergence today, but no invalidation condition fired either. **Trailed the stop down** from
-  the Nov 17 high (~121) to today's high (~118.5) now that it's a new, lower lower-high and the
-  position has already breached its first target zone -- locks in more of the gain without
-  giving back the thesis. Held full size (small position, not worth trimming for the dollar
-  amount involved).
-- **Target:** initial 111-115 zone has been breached (low 110.81); no nearby support in the
-  price history before this, so continue trailing the stop down as it extends rather than
+reclaimed the 50d (closest was -6.1% below it), then rolled over nine straight sessions
+(Nov 12 through 20) with no bounce attempt of any size.
+- **Status (Fri 2026-11-20, AM):** price ~108.8 vs. 122.75 avg entry (+11.4% on the short).
+  Continued straight down with no bounce -- today's intraday high so far (108.88) is far
+  below Nov 19's high (118.5), confirming the move is still accelerating, not basing. Search
+  confirms this is now a widely-watched story: ORCL is "approaching critical support near
+  $100," net debt ~$132B against $37B cash, CDS costs rising, no new rating action today.
+  Macro backdrop: the AI/semis selloff that started with the AMD short-seller report has
+  spread overnight to Asia (Nikkei -4.8%, Taiwan -6.2%, worst week since 1991) -- ORCL sits
+  inside the crowded AI-capex-debt factor at the center of that unwind, a confirming tailwind
+  for the short, not a new independent catalyst. **Trailed the stop down** from ~118.5 to
+  ~113.5 (just above Nov 18's close/high zone, the last meaningful resistance before the
+  current leg down) now that nine sessions have passed with no bounce -- locks in more of
+  the gain while still leaving room for normal volatility. Held full size.
+- **Target:** no nearby chart support before $100 (round-number psychological level per
+  multiple sources); continue trailing the stop down as it extends rather than
   pre-committing to a number.
-- **Stop:** close back above ~118.5 (today's high, a new lower high in the sequence).
+- **Stop:** close back above ~113.5 (last resistance zone before the latest leg down).
 - **Invalidate:** credit-positive resolution (rating affirmed/upgraded), a capex guide-down,
   or a major new non-OpenAI RPO win with real cash backing it. Tepper-style buying becoming
   a broader trend plus a reclaim of the 50d would also argue for covering even without one
@@ -34,9 +33,9 @@ reclaimed the 50d (closest was -6.1% below it), then rolled over seven straight 
 - **Next earnings:** 2026-12-14, after close (confirmed). Decide deliberately whether to
   hold through it as the date nears -- binary risk this size argues for covering/trimming
   beforehand unless clearly working by then.
-- **Next decision point:** does today's broad risk-off stabilize or extend tomorrow -- if ORCL
-  gets a relief bounce, check whether it's confined to the stock or the whole tape before
-  reading anything into it (same lesson as the AM-rally-that-reversed).
+- **Next decision point:** watch for the first real bounce attempt -- if/when ORCL stabilizes,
+  check whether it's an ORCL-specific reclaim or just riding a broader AI-complex relief
+  bounce before reading anything into it.
 
 ## PANW — long, opened 2026-11-19 ~$364.65 (size ~6%), confidence 0.62
 [A] PEAD. Q1 FY26 reported 2026-11-18 after close: double beat (EPS $1.05 vs ~$0.97 est,
@@ -45,65 +44,73 @@ YoY to $9.73B, $1.9B adjusted FCF. Raised FY26 guide above consensus on both rev
 ($14.52-14.57B vs ~$14.16B est) and EPS ($4.26-4.30 vs ~$4.18B est). Multiple analysts raised
 price targets the same day -- a quality-confirming signal (the opposite of the CSCO beat two
 weeks ago, where banks cut targets on the same beat day). Gapped from Nov 18's 339.92 close to
-a 355.81 open and held well above the gap through the morning (range 354.2-370, trading
-~364.65), day 1, RSI 49.6 -- not yet overbought despite the move. No near-term earnings binary
-(next report ~3 months out).
+a 355.81 open and held well above the gap through the morning, day 1, RSI 49.6 -- not yet
+overbought despite the move. No near-term earnings binary (next report ~3 months out).
 - **Entry day 2026-11-19, ~364.65, size ~6%.**
-- **Status (Thu 2026-11-19, PM):** price ~360.2-360.5, still +6% on the day even after the
-  broad-market reversal (SPY/QQQ/SMH all flipped negative this afternoon on the AMD
-  short-seller shock). PANW gave back some of its intraday high but held well above the
-  342.36 gap-invalidation line and didn't get dragged into the semis/software selloff the way
-  ORCL and the broader AI complex did -- a good early sign the market is still pricing its own
-  beat-and-raise rather than treating it as generic AI-complex beta. Still day 0/1, nothing to
-  act on yet.
+- **Status (Fri 2026-11-20, AM):** price ~351.6, now -3.3% below avg entry. Day 1 (Nov 19)
+  closed 361.73 after touching 370 intraday; day 2 (today) opened 359.04, popped to 366.79,
+  then reversed hard to a 347.2 low, now trading ~351.6 -- a wide, ugly reversal candle on the
+  second day. Checked for a company-specific cause: none found. Confirmed via search that
+  analysts are still broadly raising targets today (UBS, Susquehanna, DA Davidson, Citigroup,
+  Mizuho, BTIG all hiked; only Wells Fargo trimmed, and still to $510) -- consensus target
+  ~$403, well above current price. The fade reads as broad risk-off bleeding into security
+  software (CRWD also -4.1% today) even as plain SaaS (CRM +2.4%, ADBE +3.1%, NOW +3.5%) held
+  up fine -- a sector-specific wrinkle worth watching, not yet a thesis break. Price is still
+  ~2.7% above the 342.36 gap-invalidation line; stop not hit. Held full size, no action.
 - **Target:** trail the rising 20d/50d as it extends; take partial profits into further
   strength rather than holding for a fixed number.
 - **Stop/invalidate:** closes back inside the gap -- i.e. below Nov 18's high of 342.36 (the
-  actual gap boundary, not a round number).
+  actual gap boundary, not a round number). Getting close (-2.7% away) -- check first thing
+  next run.
 - **Time exit:** if it stalls flat with no follow-through within ~2 weeks, recycle the
   capital.
-- **Next decision point:** does the gap hold into a second/third session (days 2-3), or fade
-  back toward the gap like CSCO/NVDA did -- that's the thing to check first next run.
+- **Next decision point:** does day 3 stabilize above the gap or fade through 342.36 -- a
+  close below that line is the actual invalidation regardless of how ugly today's candle
+  looked intraday.
 
 ## Watchlist
 
-- **CRWD — sympathy rally off PANW's print, not its own confirmed catalyst, still
-  disqualified.** Up ~8% on 2026-11-18 and extending further today (~252-257 intraday,
-  reclaiming its 50d at +2.4%) purely on cybersecurity-sector sentiment from PANW's
-  beat-and-raise. CRWD reports its own Q3 earnings **2026-12-01** -- a binary event close
-  enough to a realistic holding horizon that entering now on someone else's catalyst isn't a
-  clean playbook C/E setup. Watch whether it holds its gain through the Dec 1 print before
-  considering a position on CRWD's own numbers.
-- **AMD — flipped from an AM capex-deal pop to a PM short-seller flush on the same day;
-  passed on both, not yet actionable either way.** Hunterbrook (short-seller) published an
-  afternoon report alleging AMD firmware kept shipping to IEIT, a blacklisted Chinese server
-  maker, via shell-like affiliates (Aivres/Kaytus/Maginfra) -- AMD denies it, Commerce hasn't
-  acted. Stock round-tripped from the AM Meta-partnership pop straight to -7.8% on the day.
-  This is a flush, not a failed rally -- playbook D needs the latter -- and the allegation is
-  disputed/unconfirmed, not a company-confirmed structural break. Watch for (a) any
-  regulatory/customer confirmation that makes it a real structural catalyst, and (b) a bounce
-  that fails below resistance, before treating this as a short candidate.
+- **AMD — still a flush, no failed-rally setup yet.** Rallied to a 555 high on 2026-11-18
+  (post Meta-partnership news) then crashed on Hunterbrook's firmware allegation 2026-11-19
+  (low 470.56, closed 489.19) and kept drifting down today (471.71, no bounce). This is a
+  continuing flush, not a bounce-then-rollover -- playbook D still needs the latter. Watch for
+  an actual bounce toward the 530-555 zone that then fails, or regulatory/customer
+  confirmation of the allegation, before treating this as a short candidate.
+- **CRM — bounced today (187.3, +2.4%) after three straight down days (194.52 -> 190.4 ->
+  183.31), but still disqualified for playbook E** (needs quality name *above* its 200d; CRM
+  is -5% below it). Not actionable as an oversold-bounce long; could become a playbook D short
+  candidate instead if a rally like today's fails below resistance -- watch the next 1-2
+  sessions.
+- **CRWD — still disqualified, reports its own Q3 earnings 2026-12-01.** Gave back some of
+  its PANW-sympathy gain today (-4.1%) in the broader security-software-specific weakness
+  (PANW also -2.8% while plain SaaS like CRM/ADBE/NOW held up). Watch whether this becomes a
+  sector-specific pattern or just one volatile day.
 - **AVGO AI-capex-deal pop (Anthropic chip financing) — passed, not disqualified, just not
   the cleanest entry today.** Real catalyst, but the stock has already run hard multi-year
   without a fresh company-specific beat like PANW's today. Revisit on a pullback to a clean
   playbook B level or its own beat-and-raise.
 - **Managed care (UNH/CVS) — thesis for exiting UNH (2026-11-17) confirmed hard the very
-  next day** by the CMS Medicare Advantage audit/clawback proposal. Still not a re-entry
-  candidate while both the political and regulatory stories are live.
+  next day** by the CMS Medicare Advantage audit/clawback proposal. UNH bounced +4.4% today
+  (RSI 30, deeply oversold) but still not a re-entry candidate while both the political and
+  regulatory stories are live -- one green day after a steep selloff isn't a resolution.
 - **Energy majors (COP/CVX/XOM/OXY) — still disqualified**, oil supply-glut downtrend
   (IEA) not yet stabilized.
-- **Gold/silver/copper miners — broad commodity de-grossing, not just gold/silver.** Not
-  actionable, just tracking.
-- **CRM — still in the flush.** RSI still depressed, no inside/up day yet.
-- **NOW / CAT — [D] possible broken-story shorts, still not actionable.** Both still
-  deepening, no failed-rally bounce yet.
-- **Regime: the AM bounce fully reversed intraday -- still a correction, breadth broadening,
-  credit still firm.** SPY/QQQ/SMH went from +0.78%/+1.76%/+3.47% (AM, on Anthropic's IPO) to
-  -1.39%/-1.35%/-1.39% (PM close) same session, on the AMD short-seller shock (Dow -1000,
-  VIX ~28). SPY round-tripped from above its 200d back below it (-1.3%) within the day. Unlike
-  prior weeks, DIA (-1.65%) and IWM (-1.65%) joined QQQ's weakness today -- the breadth-
-  broadening condition flagged in lessons as a "correction going macro" signal has now
-  partially fired. But HYG stayed only mildly negative (vs_sma50 -0.49%) -- credit still not
-  cracking -- so this reads as a volatility/sentiment-driven broad risk-off day, not (yet) a
-  credit-confirmed macro break. Keep checking both breadth and credit every run; don't let one
-  without the other force a full defensive posture.
+- **Gold/silver/copper miners — broad commodity de-grossing, not just gold/silver.** GLD
+  -2.1% today even as TLT +0.5% (yields falling) -- gold selling off *with* falling yields is
+  the unusual read (normally they move together); looks more like indiscriminate de-grossing/
+  liquidity-driven selling across crowded trades (including a traditional safe haven) than a
+  classic risk-on/risk-off move. Not actionable, just tracking as a systemic-stress tell.
+- **NOW / CAT — [D] possible broken-story shorts, still not actionable.** NOW actually up
+  +3.5% today; CAT still deepening. No failed-rally bounce yet in either.
+- **GOOGL — up +3.85% today, a standout versus every other mega-cap tech name (AMZN +0.99%,
+  META -1.44%, MSFT +0.98%, AAPL +0.38%, NVDA -2.61%).** Didn't research the driver -- flagging
+  the relative-strength divergence to check next run; not chasing a top mover without a
+  thesis.
+- **Regime: AI/semis factor unwind deepened and spread to Asia overnight (Nikkei -4.8%,
+  Taiwan -6.2%, worst week since 1991), but breadth and credit outside the AI complex stayed
+  constructive today.** SPY/DIA/IWM all green intraday (+0.28%/+0.85%/+0.48%) alongside
+  defensives and financials (XLP/XLV/XLU/XLF/XLY all up), while QQQ/XLK/SMH stayed red
+  (-0.32%/-1.18%/-2.25%, NVDA -2.61%, AMD -3.14%, MU -4.55%). HYG/KRE/XLF all calm-to-green --
+  credit still not cracking. Reads as the factor-specific unwind continuing to deepen and
+  broaden geographically (not across US sectors) rather than becoming a US macro/credit event.
+  Keep checking breadth and credit separately every run.
