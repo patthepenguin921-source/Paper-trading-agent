@@ -3,136 +3,114 @@
 Curated by the analyst. It's rewritten during each weekly review, so keep it
 short and evidence-backed.
 
-_(Week 2 review, 2026-11-14. One closed trade (ABNB), two open (UNH, ORCL short).
-Still a small sample -- treat anything below without multiple data points as a
-working hypothesis, not settled doctrine.)_
+_(Week 3 review, 2026-11-21. Since last review: one trade closed (UNH, small loss),
+one opened (PANW, playbook A, currently underwater), ORCL short still open and now the
+account's standout winner. Still early -- 4 closed/graded trades total -- but enough
+repetition on playbook A specifically to upgrade a pattern to doctrine.)_
 
-- **First closed trade: ABNB PEAD, 5 days held, ~-4.4%.** Bought 2026-11-06 ~190.46 on a
-  genuine Q3 beat-and-raise gap; sold 2026-11-11 ~182 when price traded back inside the
-  unfilled gap (playbook A's precise invalidation) after four straight weak sessions.
-  Fundamentals never broke -- analysts were still raising price targets the same week I
-  exited -- so this was a clean stop-exit on a failed technical setup, not a bad-news
-  trade. Write the playbook A exit plan around the actual gap boundary (prior session's
-  high/low), not a round-number soft stop -- it's a more precise, less arguable
-  invalidation and made this exit easy to act on from intraday data.
-- **A genuine earnings beat is not sufficient for a playbook A long -- the gap still has
-  to hold.** CSCO (2026-11-13): strongest rev/EPS growth in 15 years, beat and raised,
-  yet fell -6.3% because the market judged the *quality* of the beat as weak (250bps
-  non-GAAP gross margin decline, soft Q2 guide) and three banks cut price targets same
-  day. A beat that gaps down is closer to a broken-story signal than a PEAD setup, even
-  without a guidance cut -- always check the stock actually gapped up *and held it*.
-- **Credit-vs-growth divergence correctly separated a factor unwind from a systemic
-  correction, two weeks running.** HYG/LQD stayed firm all week (RSI ~52-76, roughly
-  flat-to-above 50d) while QQQ/SMH broke hard (QQQ now slightly below its own 200d,
-  SMH -13% below its 50d). Read this as "AI/semis factor unwind," not "broad bear
-  market," and stayed net long in unrelated sectors (UNH) instead of de-risking
-  everywhere. Still check this divergence every run -- HYG's vs_sma50 turned slightly
-  negative (-0.26%) for the first time this week, worth watching for a genuine crack.
-- **Don't credit cash with alpha -- and the math now backs this up precisely.** Account
-  return since inception (-0.12%) is almost exactly explained by the three trades made
-  (ABNB -4.4% on 5% size, UNH +3% on 6% size, ORCL short -2% on 4% size netting to
-  roughly -0.12% of equity) -- cash itself contributed ~zero. The account still beat SPY
-  (-0.12% vs -1.62%) only because the index fell further, not because of stock-picking
-  edge. Keep separating "beat the market" from "found an edge" -- they're different
-  claims and only closed-trade expectancy proves the second one.
-- **Patience on short entries validated: passing on premature shorts and premature
-  reclaims both paid off the same week.** Waited out ORCL/NOW/CAT making new lows before
-  shorting (playbook D requires a failed rally, not a flush) -- ORCL's bounce stalling
-  below its 50d and rolling over became the account's first short (2026-11-13). Separately,
-  the QCOM/TXN/AVGO/AMD "reclaim" from 11-11/11-12 fully reversed on 11-13, confirming
-  that one calendar session of relative strength is noise until it survives a second,
-  independent session. Two different disciplines (wait for failed rally; wait for a
-  second session), both vindicated in the same week.
-- **First short (ORCL) was entered on a bounce that stalled below resistance, not a
-  textbook reclaim-then-fail of the 50d** -- the stock never got above its 50d (closest
-  -6.1% below) before rolling over. Backed by a genuine, worsening fundamental catalyst
-  (blew through its own $20B capital-raise cap within 5 days, S&P downgrade to BBB-), so
-  treated as meeting playbook D's "failed rally, not a flush" bar. One week in: -2.1% on
-  a small bounce, well inside the stop, no verdict yet -- still the trade to watch to
-  settle whether "stalls below resistance" is as reliable an entry as a true
-  reclaim-then-fail.
-- **A real, confirmed catalyst doesn't override the "don't chase" rule by itself.** AMD
-  jumped on a genuine Google Cloud EPYC-chip win, but had already run ~26% in two days
-  with RSI back to 47 before I could act -- passed. A catalyst explains *why* a stock
-  moved, not that the entry price is still good; still need a pullback or a confirmed
-  hold above resistance.
-- **A scandal/governance headline on a name you don't own is not an automatic short --
-  and even after it resolves, a settled story still isn't a short until price action
-  confirms it.** NVDA's CEO scandal (Jensen Huang resignation) gave two separate,
-  independent disqualifiers at two different times: an unresolved binary first, then an
-  accelerating flush (not a failed rally) after it resolved. Keep checking both
-  conditions independently rather than treating "the news finally happened" as a green
-  light by itself.
-- **Confidence scores are only being recorded inconsistently.** Only the ORCL short
-  (0.58) has an explicit numeric confidence tagged in the journal; ABNB/UNH entries
-  didn't get one. Can't assess calibration without several tagged data points -- tag
-  every new trade with an explicit confidence score going forward, not just the
-  playbook letter, so there's something to grade in a few weeks.
-- **First live trades sized at the low end of their tier on purpose** (ABNB 5%, UNH 6%,
-  both "solid" tier capped near the bottom) to de-risk the first real test of the
-  process. Reasonable for trade #1-2; revisit sizing once there's a longer track record,
-  but no reason yet to size up given only one closed trade (a loss) exists.
-- **Macro note for next week: bond market now pricing Fed hikes for Dec/Jan**, not cuts
-  (per 2026-11-14 coverage), with the 10Y having touched 5% intraday on 11-13 -- a new,
-  explicit hawkish repricing on top of the existing AI/semis factor unwind. If this
-  broadens into credit (HYG cracking) or breadth (DIA/IWM joining QQQ's weakness), that's
-  the signal the correction is becoming macro rather than single-factor -- re-check the
-  regime table every run rather than assuming the "factor unwind" read still holds by
-  default.
-- **A reinforcing fundamental catalyst is not a reason to size up right before a binary
-  event, even on a working position.** 2026-11-16: confirmed via web search that the 10Y
-  hit 5.14% with a December Fed hike fully priced -- a genuine, independent second reason
-  the ORCL short should work (rising rates raise the cost of servicing its ~$169B debt).
-  Passed on adding size anyway because NVDA earnings the next day is a binary for the
-  whole AI-compute complex Oracle sits in -- a good fundamental case doesn't override bad
-  entry timing into event risk. Revisit once the print resolves; this is the discipline to
-  grade next review.
-- **Second closed trade: UNH, 11 days held, roughly flat-to-small-loss.** Bought 2026-11-06
-  ~395.63 on a genuine fundamentals-plus-defensive-rotation thesis; closed 2026-11-17
-  ~390 after a sector-wide Sen. Warren healthcare-breakup headline (named UnitedHealth/
-  CVS/Cigna explicitly) drove a -5.2% gap that broke the trailing stop. Fundamentals never
-  broke -- this is a clean stop-exit, not a thesis failure, same pattern as the ABNB loss.
-  New wrinkle: the identical political headline first hit the stock 2026-11-02 for only
-  -1.7% and I correctly read it as already-priced-in noise on 11-15/16 -- the same story
-  can stay immaterial for two weeks and then suddenly become the dominant driver with no
-  new substantive development, just louder repetition plus a sector read-through (CVS
-  also fell hard same day). Don't anchor on "I already checked this headline and it didn't
-  matter" -- re-weigh magnitude and breadth (is the whole group moving, not just one name)
-  each time it resurfaces, not just whether the content is new.
-- **Acted on an intraday stop breach instead of waiting for a close-below-stop
-  confirmation for the first time (UNH, 2026-11-17).** The written rule says "close below
-  the stop," but price was already ~5% through it mid-morning on a fresh, sector-
-  corroborated catalyst, and the next check wasn't until the PM run. Flagged as a specific
-  discipline to grade next review: did acting early avoid further downside, or was it
-  premature relative to how the stock closed that day? If early exits on intraday
-  breaches keep getting proven right, make the rule explicitly intraday for large,
-  catalyst-driven gaps; if they get proven wrong (price recovers and closes back above the
-  stop), tighten back to requiring an actual close.
-- **The intraday-stop call on UNH got a fast, strong confirmation: a second, independent
-  fundamental catalyst hit the very next session.** Exited 2026-11-17 on a Warren political
-  breakup headline; on 2026-11-18 a separate CMS Medicare Advantage audit/clawback proposal
-  (up to $90B industry-wide) sent UNH down another -11.5% (CVS -5.2%, Humana similar).
-  Political and regulatory risk compounded within 24 hours on the same name -- a reminder
-  that once one thesis-threatening headline fires, don't assume the risk is a one-time,
-  priced-in event; check whether it's attracting follow-on scrutiny before even considering
-  a re-entry on valuation alone.
-- **A stock's own confirmed catalyst and a sector sympathy move on someone else's catalyst
-  look identical on a price chart but aren't the same signal (2026-11-19).** PANW reported
-  its own double beat-and-raise with analyst target hikes same day -- bought it as a clean
-  playbook A. CRWD popped alongside it purely on sector sentiment (it doesn't report until
-  2026-12-01) -- passed, since entering now means underwriting an unresolved binary event
-  inside the likely holding horizon with no company-specific numbers yet to anchor a thesis
-  to. Before trading a mover, check whether the news driving it is *about this company* or
-  about a different one/a macro event -- both can be real and verifiable, but only the
-  former is a tradeable catalyst for that name today.
-- **A broad rally can fully reverse within the same session, not just fade over the following
-  days (2026-11-19).** The AM read ("strong AI-sentiment bounce," SPY/QQQ/SMH all solidly
-  green) was fully round-tripped to negative by the PM run, triggered by one disputed,
-  company-denied short-seller report on a single name (AMD) cascading through the crowded
-  AI/semis factor -- Dow -1000, VIX ~28. Sharper version of the QCOM/TXN/AVGO
-  reclaim-that-reversed lesson: don't treat a same-day AM regime read as settled by the next
-  check a few hours later on a volatile day: re-check, don't assume. Separately, this was the
-  first session where breadth broadened (DIA/IWM joined QQQ's weakness) without credit
-  cracking (HYG stayed only mildly negative) -- a real but partial version of the macro-vs-
-  factor warning flagged the week before; treat breadth and credit as two independent checks,
-  not a package deal.
+- **Playbook A (PEAD) has now failed to hold 2-for-2 on actual trades, and failed to hold
+  on 2 more names passed on from the sidelines (CSCO, NVDA) -- the real failure mode is
+  "beat quality is necessary but not sufficient."** ABNB (genuine beat, gap filled after 4
+  weak sessions) and PANW (double beat, analyst target hikes, gap faded within 2 sessions
+  as the broader tape rolled into a correction) both had clean, quality-confirmed prints
+  with no company-specific bad news -- both still lost money because the *broader market*
+  was already fragile/extended when the trade was entered. Before sizing a PEAD, check
+  whether the index is already below its 50d or mid-correction, not just whether the
+  individual beat looks clean -- a great print can still get swamped by macro risk-off
+  within days.
+- **ORCL short is the account's standout trade and the discipline that built it is worth
+  repeating exactly: wait for a failed rally (not a flush) to enter, then refuse to add
+  size ahead of a binary event even when fresh fundamental catalysts keep arriving.**
+  Entered 2026-11-13 on a stalled bounce below the 50d plus a genuine, deteriorating debt/
+  capex story. Passed on adding size four separate times (two reinforcing catalysts the
+  day before NVDA earnings, two more after) purely because a binary event sat in the path
+  -- a good fundamental case is not a reason for bad entry timing. Mechanically trailed the
+  stop down every session as it extended (130.8 -> 123.5 -> 121 -> 118.5 -> 113.5 -> 110.6)
+  without ever loosening it. Result: +17.6% unrealized as of 2026-11-20, ten+ straight
+  sessions with zero bounce. This is the one trade so far with real, attributable edge
+  (see cash/alpha note below) -- keep the exact process: patient entry, no FOMO adds into
+  binary events, mechanical stop-trailing only in the favorable direction.
+- **Second closed trade: UNH, 11 days held, -1.5%.** Bought 2026-11-06 ~395.63 on a
+  fundamentals-plus-defensive-rotation thesis; closed 2026-11-17 ~389.59 on a Senate
+  breakup-talk headline that broke the trailing stop. Fundamentals (Q3 beat/raise, improving
+  MCR) never broke -- a clean stop-exit on exogenous political risk, not a thesis failure,
+  same pattern as the ABNB loss (correct process, bad outcome).
+- **Acting on an intraday stop breach (not waiting for a close) is now validated and should
+  graduate to doctrine: UNH was ~5% through its stop intraday on a fresh, sector-corroborated
+  catalyst (CVS also down hard same day) -- exited same morning.** The very next session, an
+  independent CMS Medicare Advantage audit/clawback proposal (up to $90B industry-wide) sent
+  UNH down another -11.5%, confirming the early exit. Rule: a same-day intraday breach of
+  several percent on a catalyst that's hitting the whole peer group (not just the one name)
+  is actionable without waiting for the close; a breach on thin, single-name, ambiguous news
+  still warrants waiting for confirmation.
+- **A political/regulatory headline on the same underlying story can sit priced-in for weeks
+  and then suddenly become the dominant driver with no new substantive development --
+  re-weigh magnitude and breadth (is the whole peer group moving, not just one name) every
+  time it resurfaces, not just whether the content is new.** The identical Warren
+  healthcare-breakup story first hit UNH 2026-11-02 for -1.7% (correctly read as noise) and
+  then drove a -5.2% gap on 2026-11-17 with no new facts, just louder repetition plus a
+  sector read-through.
+- **Once one thesis-threatening headline fires, don't assume the risk is a single, priced-in
+  event -- check whether it's attracting follow-on scrutiny before even considering
+  re-entry.** UNH's political headline (11-17) was compounded within 24 hours by an
+  independent regulatory one (CMS audit, 11-18, UNH -11.5% again). Both stories were still
+  live as of 2026-11-20 -- not a re-entry candidate on one green bounce day.
+- **A stock's own confirmed, company-specific catalyst and a sector-sympathy pop on someone
+  else's catalyst look identical on a price chart but are not the same signal.** PANW's
+  2026-11-19 entry was its own double beat-and-raise with same-day analyst target hikes.
+  CRWD/AMD/AVGO popped the same week on someone else's news (PANW's print, a Meta deal, an
+  Anthropic financing deal) without their own fresh numbers -- passed on all three. Before
+  trading a mover, check whether the news driving it is *about this company*.
+- **A real, confirmed catalyst doesn't override "don't chase."** AMD's genuine Google Cloud
+  EPYC win had already produced a ~26% two-day run (RSI back to 47) before action was
+  possible -- passed. A catalyst explains why a stock moved, not that the entry price is
+  still good.
+- **A scandal/governance headline on a name you don't own is not an automatic short, and even
+  after it resolves, a settled story still isn't a short until price action confirms it.**
+  NVDA's CEO-resignation saga gave two independent disqualifiers at two different times
+  (unresolved binary, then an accelerating flush instead of a failed rally) -- correctly
+  passed both times and never traded the name.
+- **A broad rally can fully reverse within the same session, not just fade over following
+  days.** 2026-11-19: an AM AI-sentiment bounce (SPY/QQQ/SMH all solidly green) fully
+  round-tripped to Dow -1000/VIX ~28 by the PM check, triggered by one disputed,
+  company-denied short-seller report on AMD cascading through the crowded AI/semis factor.
+  Never treat an AM regime read as settled by the next check a few hours later on a volatile
+  day -- re-check, don't assume.
+- **Breadth and credit are two independent checks, not a package deal, and both need
+  re-deriving from scratch every run.** The correction that unfolded 2026-11-13 through
+  2026-11-20 (S&P now officially -10% off its peak, a confirmed technical correction) saw
+  breadth broaden (DIA/IWM joining QQQ's weakness, defensives still diverging positively)
+  while credit (HYG) stayed only mildly negative throughout -- read correctly as a
+  factor-specific-but-broadening correction, not a credit-driven systemic break. Don't let a
+  scary index-level headline substitute for checking HYG/LQD directly.
+- **GLD and TLT diverging (gold selling off while yields fall, when they normally move
+  together) is a tell for indiscriminate de-grossing/liquidity-driven selling across crowded
+  trades, not a classic risk-on/risk-off signal.** Seen repeatedly and deepening through the
+  week (GLD -3.6%, TLT +1.5%, SLV -6.1% on 11-20) -- track as a systemic-stress indicator,
+  not yet actionable on its own.
+- **Don't credit cash with alpha -- isolate exactly which trades explain the account's return
+  each review, separate from "beat SPY."** Account is roughly flat (-0.01%) since inception
+  over 13 trading days while SPY is -10.04% over the same stretch -- that gap is overwhelmingly
+  SPY falling in a real correction, not stock-picking skill. The one piece of real,
+  attributable edge so far is the ORCL short; ABNB, UNH, and (so far) PANW have all lost
+  money. Keep separating "beat the market" from "found an edge."
+- **Confidence scores are still too sparse to assess calibration.** Only ORCL (0.58, now a
+  big winner) and PANW (0.62, currently a loser) have explicit numeric confidence; ABNB and
+  UNH never got one. Keep tagging every new trade with both the playbook letter and a numeric
+  confidence -- revisit calibration once there are 5+ tagged, closed trades.
+- **New trades have all been sized at the low end of their conviction tier (ABNB 5%, UNH
+  5.9-6.2%, PANW ~6%) deliberately, to de-risk the still-unproven process.** Reasonable for
+  trades #1-3; still only one clearly-graded win (ORCL) against two closed losses (ABNB,
+  UNH) and one open loss (PANW) -- no evidence yet to justify sizing up across the board.
+- **When data feeds inside the brief disagree on a position's live price near a decision
+  point, don't trust either number blindly -- confirm with a fresh check before acting.**
+  Seen this review on both ORCL and PANW, where the "open positions" table price and the
+  "universe stats" live price diverged by 2-3% with the market closed for the weekend --
+  exactly the kind of gap that matters when a position is sitting within a point or two of
+  its written invalidation line (as PANW is now).
+- **The account enters next week in a confirmed technical correction (S&P -10% off highs,
+  2026-11-20), driven by an AI/semis factor unwind (AMD firmware allegation, Anthropic IPO
+  fizzle) rather than a credit event -- credit (HYG) still has not cracked.** Re-derive the
+  regime table fresh every run rather than assuming either the factor-unwind read or any
+  single day's AM/PM snapshot still holds; this correction has moved faster, session to
+  session, than anything logged in the account's first two weeks.
