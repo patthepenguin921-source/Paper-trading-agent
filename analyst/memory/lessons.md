@@ -114,3 +114,26 @@ repetition on playbook A specifically to upgrade a pattern to doctrine.)_
   regime table fresh every run rather than assuming either the factor-unwind read or any
   single day's AM/PM snapshot still holds; this correction has moved faster, session to
   session, than anything logged in the account's first two weeks.
+- **A trailing stop locks in a floor on paper, but a weekend/overnight binary catalyst can
+  gap price straight through it, and the realized exit is whatever the gap lands on, not
+  the stop level.** ORCL short: stop trailed to ~110.6 Friday 11-20 (price 101.19, unrealized
+  +17-18%). Over the weekend NVDA reinstated Jensen Huang as CEO (resolving an
+  espionage-resignation saga), sparking a broad AI-complex relief rally; ORCL gapped from
+  101.19 straight to a 116.44 open Monday, never trading near 110.6 at all. Realized gain on
+  the cover was ~6.5% -- the gap-through cost roughly a third of the peak unrealized gain
+  versus what the written stop level implied. The thesis itself (debt/capex deterioration)
+  was never specifically about an NVDA-adjacent binary event, but ORCL's price is still
+  sentiment-linked to the broader AI-capex complex through the OpenAI/Stargate trade -- a
+  name can be correlated to a sector risk that isn't explicit in its own written invalidation
+  conditions. When sizing a position whose price is sentiment-linked to a name with its own
+  live binary event (even one not directly about the held position), weigh that gap risk
+  explicitly, especially for shorts where a gap-through is adverse.
+- **A real, fundamental, catalyst-driven reversal that validates closing a position in the
+  opposite direction does not, by itself, make that same catalyst's extended movers a good
+  new entry.** The NVDA reinstatement news that correctly triggered covering the ORCL short
+  (sector sympathy, thesis-relevant funding news) also drove NVDA/AMD/MU/LRCX/INTC +10-35%
+  intraday the same morning -- buying any of them at that point would have repeated the
+  AMD-Google-win mistake (real catalyst, but the move already happened before action was
+  possible). Closing a position and opening a new one can both be correctly triggered by the
+  same news without both being good trades; evaluate entry price and extension separately
+  from catalyst quality every time.
