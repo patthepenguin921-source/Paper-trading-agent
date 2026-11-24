@@ -1,9 +1,11 @@
 # Open positions: theses and exit plans
 
-_(2026-11-24 AM run. Monday's AI-complex relief rally is partially reversing today --
-SPY -0.26%, QQQ -1.24%, SMH -5.22%, semis complex giving back ~1/3 of Monday's gain on
-rally-sustainability skepticism plus new semiconductor export-control rules. SPY/QQQ still
-below their 50d. No trades this run.)_
+_(2026-11-24 PM run. Monday's AI-complex relief rally kept reversing through the day --
+SPY -0.68%, QQQ -2.08%, SMH -6.82%, AMD/MU/NVDA/TXN down 8-11% on a resurfacing Hunterbrook
+short report (AMD, unresolved since 11-19) plus fresh reports of imminent broad Trump
+tariffs on China/EU/other partners (as soon as tomorrow). Healthcare/biotech rallied
+(XLV +3.0%, XBI +6.2%) on Sanofi's $41B Insmed deal, an FDA approval (Cogent), and rotation
+out of AI/semis. Credit (HYG) still hasn't cracked. No trades this run.)_
 
 ## PANW — long, opened 2026-11-19 ~$364.03-364.65 (size ~5.8%), confidence 0.62
 [A] PEAD. Q1 FY27 reported 2026-11-18 after close: double beat (EPS $1.05 vs ~$0.97 est,
@@ -11,11 +13,11 @@ revenue $3.45B vs ~$3.31B est, +39% YoY), RPO +35% YoY to $21B, raised FY26 guid
 consensus on both revenue and EPS. Multiple analysts raised price targets same day
 (quality-confirming print). Gapped from Nov 18's 339.92 close to a 355.81 open and has
 held above the gap every session since (including the correction's worst days).
-- **Status (2026-11-24 AM): ~349-350 (-3.9% vs. entry), still comfortably above the
-  342.36 invalidation line (today's low so far 347.76, ~2.3 points of cushion).** No
-  PANW-specific negative news since entry -- the only recent headline is an immaterial
-  PGA Tour sponsorship item plus Monday's Phillip Securities Buy upgrade. Consensus
-  analyst targets ~$403-416 (10 buy/5 hold/1 sell, no downgrades found at any point).
+- **Status (2026-11-24 PM): ~349 (-4.1% vs. entry), ~6.5 points above the 342.36
+  invalidation line (more cushion than this morning's 2.3 points).** No PANW-specific
+  negative news since entry -- business is domestic/services-based, low direct tariff
+  exposure. Consensus analyst targets ~$403-416 (10 buy/5 hold/1 sell, no downgrades
+  found at any point).
 - **Stop/invalidate:** a close below Nov 18's high, 342.36 (the actual gap boundary, not
   a round number). Exit without renegotiating if it closes below, regardless of the
   still-intact fundamental story (repeat of the ABNB pattern: correct thesis, broken
@@ -36,34 +38,49 @@ held above the gap every session since (including the correction's worst days).
 
 ## Watchlist
 
-- **Regime, 2026-11-24 AM: Monday's relief rally (NVDA/Huang reinstatement) is reversing
-  today, giving back roughly a third of its gain.** SPY -0.26%, QQQ -1.24%, SMH -5.22%,
-  NVDA/AMD/MU/AMAT/LRCX all down 5-7%. Confirmed via web search: driven by skepticism the
-  AI trade can sustain Monday's bounce plus new Commerce Dept semiconductor export-control
-  rules (effective 2026-11-19) and broader tariff uncertainty -- not a new credit event.
-  SPY/QQQ remain below their 50d (SPY -5.12%, QQQ -9.39%); HYG still flat (-0.09% today,
-  -0.65% vs_sma50) -- credit has not cracked through this entire correction. Read as
-  continuation of the same factor-specific (AI/semis) correction, not a broadening macro
-  break, but re-derive fresh every run.
-- **AMD/NVDA/AVGO/MU/INTC/AMAT/LRCX/SMH complex — still 20-27% below their 50-day MAs
-  even after Monday's +10-35% bounce, and now unwinding further (-5 to -7% today).** Not a
-  pullback-to-a-rising-50d setup (playbook B needs an uptrend leader; these are still
-  deep in a downtrend) and not yet a base-breakout. New export-control/tariff overhang
-  adds a fresh fundamental reason for caution beyond the technical extension. Keep
-  watching for an actual higher-low/base over multiple sessions before considering
-  anything here.
+- **Regime, 2026-11-24 PM: Monday's relief rally (NVDA/Huang reinstatement) kept
+  reversing through the session.** SPY -0.68%, QQQ -2.08%, SMH -6.82%, AMD -8.1%,
+  MU -11.2%, NVDA -7.6%, TXN -9.3%. Web search found two distinct, confirmed drivers: (1)
+  a resurfacing Hunterbrook short report alleging AMD firmware ties to a blacklisted
+  Chinese server maker (IEIT) -- same unresolved story as 11-19, not a new development,
+  AMD still disputes it; (2) genuine new macro risk -- White House reportedly preparing
+  sweeping new tariffs on China/EU/dozens of countries, announcement expected as soon as
+  tomorrow (2026-11-25). SPY/QQQ remain below their 50d; HYG still flat (-0.06% today,
+  -0.62% vs_sma50) -- credit has not cracked. Still reads as factor-specific (AI/semis),
+  but the pending tariff announcement is a real macro catalyst that could broaden the
+  correction beyond one factor -- re-check once details are out, don't assume the
+  factor-specific read survives a broad tariff hit.
+- **AMD/NVDA/AVGO/MU/INTC/AMAT/LRCX/SMH complex — still 20-30% below their 50-day MAs,
+  unwinding further today (-6 to -11%) after Monday's bounce.** Today is a flush (sharp
+  single-day decline on two live catalysts), not a failed rally -- playbook D requires
+  entry on a failed rally, not into a flush, so passed on shorting AMD despite the
+  unresolved Hunterbrook allegation. Not a long setup either (not a pullback in an
+  uptrend). Watch for either an actual multi-session failed-rally rollover (short) or a
+  higher-low base (long) before acting.
 - **ORCL — covered the short 2026-11-23 AM (+6.5% realized) on a gap through the trailing
-  stop.** Price has pulled back from Monday's 118.7 high to ~111.67 today (one red
-  session). Not yet a failed-rally re-short setup -- needs a genuine rollover over several
-  sessions, not one down day after a gap. Residual balance-sheet concerns (total debt/
-  lease ~$169B, FY26 FCF still guided negative) remain unresolved. Next earnings
-  2026-12-14 after close.
+  stop.** Continued down today to ~109.19 (now two red sessions since Monday's 118.7
+  high). Getting closer to a failed-rally setup but still needs more confirmation (a
+  rollover, not just a down day riding the broader semis/tariff selloff). Residual
+  balance-sheet concerns (total debt/lease ~$169B, FY26 FCF still guided negative) remain
+  unresolved. Next earnings 2026-12-14 after close.
 - **CRWD — announced $43.9B all-stock acquisition of Zscaler 2026-11-23 same day as a
   strong Q3 beat (record net new ARR $419M, +58% YoY); stock fell ~9% on deal/dilution
-  risk despite the beat.** Up modestly today (~+1.4%) -- one green session, not yet a
-  base. Keep watching for either a failed rally (re-short candidate on continued deal-risk
-  deterioration) or a genuine higher-low base (potential playbook E/B long) over the next
-  several sessions.
+  risk despite the beat.** Up modestly today (~+0.6%) -- still just a couple of green
+  sessions, not yet a base. Keep watching for either a failed rally (re-short candidate on
+  continued deal-risk deterioration) or a genuine higher-low base (potential playbook E/B
+  long) over the next several sessions.
+- **Healthcare/biotech rotation (2026-11-24): XLV +3.0%, XBI +6.2%, LLY/VRTX/REGN/GILD/
+  AMGN/ABBV all +3-5% today.** Driven by Sanofi's $41B Insmed acquisition, an FDA approval
+  (Cogent Biosciences), and rotation out of hard-hit AI/semis -- not each name's own fresh
+  catalyst. The leaders (VRTX/REGN/GILD) are already extended/near highs (RSI 50-62, no
+  pullback), so today's pop is not an entry per playbook -- chasing it would repeat the
+  AMD-Google-win mistake. Watch for a pullback to the 50d in one of these names, or a
+  multi-session continuation that confirms genuine rotation rather than a one-day bounce,
+  before considering a long.
+- **Pending macro catalyst: broad Trump tariff announcement on China/EU/other partners
+  expected within 1-2 sessions (as of 2026-11-24).** Not yet priced with specifics (rates
+  undisclosed). Re-derive the regime table fresh once it lands -- this is a genuine new
+  macro risk distinct from the AI/semis factor story and could broaden the correction.
 - **Managed care (UNH/CVS) — still disqualified.** Checked via web search this run: CMS's
   "CRUSH" Medicare Advantage audit proposal (published 2026-11-16, ~$9B/year clawback
   potential) has an open comment period through 2027-01-19 -- nothing resolved. UNH sued
