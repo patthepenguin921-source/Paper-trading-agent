@@ -1,10 +1,11 @@
 # Open positions: theses and exit plans
 
-_(2026-11-25 run. The pending tariff catalyst flagged last run landed: White House
-proposed 20%+ tariffs on China, 15% on EU/Japan/Korea/Taiwan/Switzerland. Combined with
-continuing AI-capex-ROI skepticism, this broadened the correction -- SPY -2.0%, QQQ -3.02%,
-SMH -4.83%, breadth broad (DIA/IWM both red). Credit (HYG) still hasn't cracked (-0.24%
-today, -0.85% vs its 50d). No trades this run.)_
+_(2026-11-25 PM run. AM read showed the tariff catalyst landing hard (SPY -2.0%, QQQ
+-3.02%, SMH -4.83%); by this PM check the broad index pared most of that (SPY -0.42%, QQQ
+-0.95%) as reporting clarified the tariffs are still proposals (hearings/comment period,
+effective January at the earliest) -- semis specifically did not get the same relief
+(NVDA -4.77%, LRCX -6.9%, MU -5.22%). Credit (HYG) still hasn't cracked (+0.26% today).
+No trades this run.)_
 
 ## PANW — long, opened 2026-11-19 ~$364.03-364.65 (size ~5.8%), confidence 0.62
 [A] PEAD. Q1 FY27 reported 2026-11-18 after close: double beat (EPS $1.05 vs ~$0.97 est,
@@ -12,12 +13,11 @@ revenue $3.45B vs ~$3.31B est, +39% YoY), RPO +35% YoY to $21B, raised FY26 guid
 consensus on both revenue and EPS. Multiple analysts raised price targets same day
 (quality-confirming print). Gapped from Nov 18's 339.92 close to a 355.81 open and has
 held above the gap every session since (including the correction's worst days).
-- **Status (2026-11-25): ~350 (-3.9% vs. entry), ~7.3 points above the 342.36
-  invalidation line -- widest cushion yet, and down only -0.96% today vs. SPY -2.0%/
-  QQQ -3.02%, outperforming the broad tape.** No PANW-specific negative news since entry --
-  business is domestic/services-based, low direct tariff exposure, which is playing out as
-  expected on today's tariff-driven selloff. Consensus analyst targets ~$403-416 (10 buy/
-  5 hold/1 sell, no downgrades found at any point).
+- **Status (2026-11-25 PM): ~353 (-2.9% vs. entry), ~11 points above the 342.36
+  invalidation line -- widest cushion yet, and roughly flat to slightly up today (vs. SPY
+  -0.42%), continuing to outperform.** No PANW-specific negative news since entry --
+  business is domestic/services-based, low direct tariff exposure. Consensus analyst
+  targets ~$403-416 (10 buy/5 hold/1 sell, no downgrades found at any point).
 - **Stop/invalidate:** a close below Nov 18's high, 342.36 (the actual gap boundary, not
   a round number). Exit without renegotiating if it closes below, regardless of the
   still-intact fundamental story (repeat of the ABNB pattern: correct thesis, broken
@@ -38,29 +38,28 @@ held above the gap every session since (including the correction's worst days).
 
 ## Watchlist
 
-- **Regime, 2026-11-25: the pending tariff catalyst landed and the correction broadened.**
-  White House proposed 20%+ tariffs on China (up to 40% if talks fail, stacking to ~45% on
-  some goods), 15% on EU/Japan/Korea/Taiwan/Switzerland -- framed as still proposals, not
-  finalized. Combined with continuing AI-capex-ROI skepticism (NVDA -6.27%, MU -7.76%,
-  AMAT -6.66%, LRCX -7.88%, SMH -4.83%), drove SPY -2.0%, QQQ -3.02%, DIA -1.44%, IWM
-  -1.55% -- breadth broad, not just AI/semis today. HYG still only -0.24% today / -0.85%
-  vs its 50d -- credit has not cracked. GLD -2.31% while TLT +1.02% today (same
-  divergence pattern logged repeatedly this correction) -- still reads as de-grossing
-  stress, not yet a clean risk-on/risk-off signal. Re-derive fresh next run once tariff
-  rates are finalized (currently still proposals) -- don't assume today's read holds if
-  details sharpen or soften.
+- **Regime, 2026-11-25 PM: the tariff catalyst's worst-case read softened intraday.**
+  AM showed SPY -2.0%/QQQ -3.02% on the proposal (20%+ China, up to 40% if talks fail,
+  15% EU/Japan/Korea/Taiwan/Switzerland); by PM, reporting confirmed these are still
+  proposals pending hearings/a comment period, effective January at the earliest, and the
+  index pared back to SPY -0.42%/QQQ -0.95%. Semis did NOT get the same relief (NVDA
+  -4.77%, LRCX -6.9%, MU -5.22%, AMAT -5.58%, SMH -2.0% today) -- a selective, partial
+  bounce, not an all-clear. HYG +0.26% today -- credit still has not cracked. Re-derive
+  fresh next run; don't assume either the AM or PM read holds if tariff details change.
 - **AMD/NVDA/AVGO/MU/INTC/AMAT/LRCX/SMH complex — still well below their 50-day MAs,
-  continuing to unwind today (-6 to -8%).** Still a flush (sharp single-day decline on live
-  catalysts: tariffs + AI-ROI skepticism), not a failed rally or a base. Passed again on
-  both directions.
-- **ORCL — now shows a textbook failed-rally rollover structure: bounced to 118.7 high
-  2026-11-23 (NVDA/Huang reinstatement relief), then three straight lower closes (113.68 ->
-  109.5 -> 102.68 today) making a new closing low below the pre-bounce 101.19 level.**
-  Structurally this is the playbook D setup, but today's -6.37% is itself a flush --
-  passed on entering mid-flush (same logic as passing on AMD yesterday). Re-check next
-  session: if it continues lower on a calmer (non-flush) day, or rolls over again after any
-  bounce, that's the entry. Residual balance-sheet concerns (total debt/lease ~$169B, FY26
-  FCF still guided negative) remain unresolved. Next earnings 2026-12-14 after close.
+  continuing to unwind today even as the broader index recovered.** Still a flush, not a
+  failed rally or a base. Passed again on both directions.
+- **ORCL — fundamental deterioration now confirmed independently: hit a new 52-week low
+  (99.34 intraday) and credit default swaps hit a record ~356bps (2026-11-25), beyond just
+  riding the broader semis selloff.** Structurally still the playbook D rollover (bounced to
+  118.7 on 11-23, three lower closes since, new low today) and the credit-stress
+  confirmation strengthens the short case. But today's candle (open 103.24, low 99.34,
+  back to ~104 by the PM check) is a flush that already bounced ~4.7% off its low
+  intraday -- not a confirmed failed rally, entering now risks chasing an in-progress
+  bounce. **Next session: watch whether this bounce fails and rolls over (the entry
+  trigger) or keeps extending (wait longer).** Residual balance-sheet concerns (total
+  debt/lease ~$169B, FY26 FCF still guided negative, Nov equity raise holders underwater at
+  $116) remain unresolved. Next earnings 2026-12-14 after close.
 - **CRWD — $43.9B Zscaler acquisition (2026-11-23) still digesting; down ~3% today with
   the broad tape.** No new read since last check -- still too early to call either a
   failed-rally re-short or a basing long. Keep watching.
